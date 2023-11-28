@@ -2,7 +2,8 @@ import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig
 import json
 import time 
-from prompts import BASELINE_PROMPT_WIKI, VERIFICATION_QUESTION_PROMPT_WIKI, EXECUTE_PLAN_PROMPT, FINAL_VERIFIED_PROMPT
+from prompts import (BASELINE_PROMPT_WIKI, VERIFICATION_QUESTION_PROMPT_WIKI, 
+                     EXECUTE_PLAN_PROMPT, FINAL_VERIFIED_PROMPT)
 
 import json
 
@@ -14,13 +15,19 @@ def read_json_file(path):
             records.append(record)
     return records
 
+def import_model_and_tokenizer(model_id, quantization_config=None):
+    model = AutoModelForCausalLM.from_pretrained(model_id,
+                                                 quantization_config=quantization_config,
+                                                 use_cache=True,
+                                                 device_map='auto')
+    tokenizer = AutoTokenizer.from_pretrained(model_id)
+    tokenizer.pad_token = tokenizer.eos_token
+    tokenizer.padding_side = "right"
+    return model, tokenizer
+
 file_path = '/proj/layegh/users/x_amila/CoV/wikidata_questions.json'
-data = read_json_file(file_path)
-
-
 llama_model_id = "NousResearch/Llama-2-7b-hf"  # non-gated
 zephyr_model_id = "HuggingFaceH4/zephyr-7b-beta"
-
 bnb_config = BitsAndBytesConfig(
     load_in_4bit=True,
     bnb_4bit_use_double_quant=True, 
@@ -28,16 +35,9 @@ bnb_config = BitsAndBytesConfig(
     bnb_4bit_compute_dtype=torch.bfloat16
 )
 
+data = read_json_file(file_path)
 
-model = AutoModelForCausalLM.from_pretrained(zephyr_model_id,
-                                             quantization_config=bnb_config,
-                                             use_cache=True,
-                                             device_map='auto')
-
-tokenizer = AutoTokenizer.from_pretrained(zephyr_model_id)
-
-tokenizer.pad_token = tokenizer.eos_token
-tokenizer.padding_side = "right"
+model, tokenizer = import_model_and_tokenizer(zephyr_model_id, quantization_config=bnb_config)
 
 
 questions = []
