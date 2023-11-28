@@ -1,0 +1,374 @@
+Hello cluster computing world!
+JOB: 10004565
+The following is RAM info.
+              total        used        free      shared  buff/cache   available
+Mem:          1.0Ti        57Gi       843Gi       629Mi       106Gi       944Gi
+Swap:          14Gi          0B        14Gi
+The following is GPU info.
+Mon Nov 27 16:54:48 2023       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 525.147.05   Driver Version: 525.147.05   CUDA Version: 12.1     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  NVIDIA A100-SXM...  On   | 00000000:47:00.0 Off |                    0 |
+| N/A   34C    P0    54W / 400W |      0MiB / 40960MiB |      0%      Default |
+|                               |                      |             Disabled |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                                  |
+|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
+|        ID   ID                                                   Usage      |
+|=============================================================================|
+|  No running processes found                                                 |
++-----------------------------------------------------------------------------+
+Launching experiments with apptainer.
+
+Loading checkpoint shards:   0%|          | 0/8 [00:00<?, ?it/s]
+Loading checkpoint shards:  12%|█▎        | 1/8 [00:06<00:48,  6.89s/it]
+Loading checkpoint shards:  25%|██▌       | 2/8 [00:14<00:42,  7.07s/it]
+Loading checkpoint shards:  38%|███▊      | 3/8 [00:21<00:35,  7.13s/it]
+Loading checkpoint shards:  50%|█████     | 4/8 [00:28<00:28,  7.11s/it]
+Loading checkpoint shards:  62%|██████▎   | 5/8 [00:35<00:21,  7.14s/it]
+Loading checkpoint shards:  75%|███████▌  | 6/8 [00:43<00:15,  7.50s/it]
+Loading checkpoint shards:  88%|████████▊ | 7/8 [00:52<00:07,  7.80s/it]
+Loading checkpoint shards: 100%|██████████| 8/8 [00:55<00:00,  6.27s/it]
+Loading checkpoint shards: 100%|██████████| 8/8 [00:55<00:00,  6.90s/it]
+Asking to truncate to max_length but no maximum length is provided and the model has no predefined maximum length. Default to no truncation.
+/home/x_amila/.local/lib/python3.8/site-packages/transformers/generation/utils.py:1421: UserWarning: You have modified the pretrained model configuration to control generation. This is a deprecated strategy to control generation and will be removed soon, in a future version. Please use and modify the model generation configuration (see https://huggingface.co/docs/transformers/generation_strategies#default-text-generation-configuration )
+  warnings.warn(
+Question: Who are some actors who were born in RJ, Rio de Janeiro?
+
+Answer: 
+1. Sonia Braga (b. August 8, 1950)
+2. Fernanda Montenegro (b. May 1, 1939)
+3. Lília Cabral (b. January 20, 1939)
+4. Leonardo Villar (b. April 26, 19
+
+---------------------------------------------------
+
+Question: Who are some actors who were born in Prague?
+
+Answer: 
+1. Ivana Trump (Ivana Zátrenská)
+2. Miloš Forman
+3. Hana Vítová
+4. Karel Dobkowski
+5. Jan Němec
+6. Jiří Voskovec
+7. Vlasta Burianová
+8. Dagmar Kárová
+9.
+
+---------------------------------------------------
+
+Question: Who are some actors who were born in Berlin?
+
+Answer: 
+1. Marlene Dietrich (1901-1992)
+2. Heinz Rühmann (1898-1994)
+3. Harald Juhnke (1920-2005)
+4. Armin Mueller-Stahl (born 1930)
+5. Dietmar B
+
+---------------------------------------------------
+
+Question: Who are some actors who were born in Munich?
+
+Answer: 
+1. Johanna Wokalek (born 1978)
+2. Jürgen Prochnow (born 1941)
+3. Svenja Sold (born 1966)
+4. Nina Kunzendd (born 1982)
+5. Maximilian Brückner (born 199
+
+---------------------------------------------------
+
+Question: Who are some actors who were born in Paris?
+
+Answer: 
+1. Isabelle Adjani (born June 19, 1955)
+2. Charlotte Gainsbourg (born July 22, 1971)
+3. Marion Cotillard (born September 30, 1975)
+4. Louis Garrel (born May 13, 1983)
+
+---------------------------------------------------
+
+Question: Who are some painters who were born in Paris?
+
+Answer: 
+1. Pablo Picasso (1881-1973)
+2. Henri Matisse (1869-1954)
+3. Georges Braque (1882-1963)
+4. Marc Chagall (1887-1985)
+5. Jean Arp (1887
+
+---------------------------------------------------
+
+Question: Who are some painters who were born in Florence?
+
+Answer: 
+1. Leonardo da Vinci (1452-1519)
+2. Sandro Botticelli (1445-1510)
+3. Domenico Ghirlandaio (1449-1494)
+4. Filippo Lippi (1406-1469)
+5
+
+---------------------------------------------------
+
+Question: Who are some painters who were born in Amsterdam?
+
+Answer: 
+1. Vincent van Gogh (1853-1890)
+2. Johannes Vermeer (1632-1708)
+3. Rembrandt van Rijn (1606-1669)
+4. Piet Mondrian (1872-1944)
+5. Willem de
+
+---------------------------------------------------
+
+Question: Who are some painters who were born in Rome?
+
+Answer: 
+1. Michelangelo (1475-1564)
+2. Annibale Carracci (1560-1609)
+3. Pietro da Cortona (1596-1669)
+4. Francesco Borromini (1576-1638)
+5. Gian Lorenzo Bern
+
+---------------------------------------------------
+
+Question: Who are some painters who were born in NY, New York?
+
+Answer: 
+1. Jackson Pollock (1912-1956)
+2. Mark Rothko (1903-1970)
+3. Willem de Kooning (1904-1997)
+4. Lee Krasner (1908-1984)
+5. Clyfford Still
+
+---------------------------------------------------
+
+Question: Who are some pianists who were born in Paris?
+
+Answer: 
+1. Alfred Cortot (1887-1962)
+2. Jean-Yves Thibaudet (born 1961)
+3. Pascal Rogé (born 1954)
+4. Jean-Efflam Bavouz (born 1957)
+5. Claire Désert (born 1
+
+---------------------------------------------------
+
+Question: Who are some pianists who were born in NY, New York?
+
+Answer: 
+1. Irving Berlin (1888-1989)
+2. George Gershwin (1898-1937)
+3. Teddy Wilson (1918-1986)
+4. John Lewis (1920-2001)
+5. Dave McKenna (1924
+
+---------------------------------------------------
+
+Question: Who are some pianists who were born in London?
+
+Answer: 
+1. Benjamin Grosvenor (born 1986)
+2. John Lill (born 1954)
+3. John Ogden (born 1954)
+4. James Rhodes (born 1978)
+5. Alfred Brendel (born 1931, although primarily identified with Austria)
+6.
+
+---------------------------------------------------
+
+Question: Who are some pianists who were born in Moscow?
+
+Answer: 
+1. Sviatoslav Richter (1915-1997)
+2. Emil Gilels (1895-1985)
+3. Nikolai Rubinstein (1835-1902)
+4. Alexander Scriabin (1872-1915)
+5.
+
+---------------------------------------------------
+
+Question: Who are some pianists who were born in Tokyo?
+
+Answer: 
+1. Yuji Takahashi (高橋裕児, born 1937)
+2. Aki Takahashi (高橋明, born 1942)
+3. Hiroshi Hiraoka (平岡広, born 1948)
+4. Akiko Yano (矢野
+
+---------------------------------------------------
+
+Question: Who are some writers who were born in Tokyo?
+
+Answer: 
+1. Haruki Murakami (村上春樹)
+2. Yukio Mishima (三島諫侯)
+3. Yoko Ogawa (小川詠子)
+4. Yukio Tsushima (筑島幸夫)
+5. Ryūtarō Maekawa (前川龍
+
+---------------------------------------------------
+
+Question: Who are some writers who were born in Berlin?
+
+Answer: 
+1. Alfred Döblin (1871-1957)
+2. Walter Benjamin (1892-1940)
+3. Stefan Zweig (1881-1942)
+4. Lion Feuchtwanger (1884-1958)
+5. Bertolt Brecht (18
+
+---------------------------------------------------
+
+Question: Who are some writers who were born in Moscow?
+
+Answer: 
+1. Fyodor Dostoyevsky (1821-1881)
+2. Vladimir Nabokov (1899-1977)
+3. Mikhail Bulgakov (1891-1940)
+4. Ivan Turgenev (1818-1883)
+
+---------------------------------------------------
+
+Question: Who are some writers who were born in Rome?
+
+Answer: 
+1. Giorgio Bassani (born 1917)
+2. Carlo Collodi (born Giuseppe Ferrucci, 1826-1890)
+3. Goffredo Parise (born 1930)
+4. Giuseppe Ferraiolo (born 1955)
+5. Vitt
+
+---------------------------------------------------
+
+Question: Who are some writers who were born in Chicago?
+
+Answer: 
+1. Nelson Algren (1909-1981)
+2. Sandra Cisneros (born 1954)
+3. Carl Sandburg (1870-1967)
+4. Sherman Alexie (born 1966)
+5. Gwendolyn Brooks (1917-
+
+---------------------------------------------------
+
+Question: Who are some journalists who were born in Paris?
+
+Answer: 
+1. Georges Bidault (1899-1983)
+2. Claude Bourdet (1921-2012)
+3. Colette Bourland (1928-2016)
+4. Jean Daniel (born 1928)
+5. Pierre Bourdieu (1930-20
+
+---------------------------------------------------
+
+Question: Who are some journalists who were born in Vienna?
+
+Answer: 
+1. Karl Lagerfeld (journalist and photographer, born 1933)
+2. Christiane Amanpour (journalist and TV anchor, born 1951)
+3. Fritz Stern (historian and journalist, born 1926)
+4. Peter Schwarz (journalist and editor, born 194
+
+---------------------------------------------------
+
+Question: Who are some journalists who were born in NY, New York?
+
+Answer: 
+1. Katie Couric (born 1957)
+2. Barbara Walters (born 1929)
+3. Anderson Cooper (born 1967)
+4. Wolf Blitzer (born 1948)
+5. Lesley Stahl (born 1941)
+6. Cynthia Nixon (born
+
+---------------------------------------------------
+
+Question: Who are some journalists who were born in Moscow?
+
+Answer: 
+1. Masha Gessen - Russian-American journalist and author
+2. Mikhail Zyzik - Russian journalist and editor-in-chief of Meduza
+3. Yulia Yuzikova - Russian investigative journalist and founder of The Bell
+4. Miroslava Duma - Russian fashion journalist and founder of Buro 24/7
+
+---------------------------------------------------
+
+Question: Who are some journalists who were born in London?
+
+Answer: 
+1. Robert Peston (born 1967)
+2. Emily Maitlis (born 1969)
+3. Nick Robinson (born 1962)
+4. Laura Kuenssberg (born 1971)
+5. David Dimbleby (born 1938)
+6. Andrew Neil (born
+
+---------------------------------------------------
+
+Question: Who are some photographers who were born in Paris?
+
+Answer: 
+1. Henri Cartier-Bresson (1900-2004)
+2. Brassaï (György Sandor Goldstein, 1899-1984)
+3. Eugène Atget (1857-1927)
+4. Sarah Moon (born 1941)
+
+
+---------------------------------------------------
+
+Question: Who are some photographers who were born in NY, New York?
+
+Answer: 
+1. Richard Avedon (1923-2004)
+2. Diane Arbus (1923-1971)
+3. Joel Meyerowitz (born 1938)
+4. Nan Goldin (born 1953)
+5. Cindy Sherman (born 195
+
+---------------------------------------------------
+
+Question: Who are some photographers who were born in Prague?
+
+Answer: 
+1. František Drtikol (1883-1961)
+2. Jaromír Funke (1896-1945)
+3. Josef Sudek (1896-1976)
+4. Jaroslav Rössler (1893-1978)
+5
+
+---------------------------------------------------
+
+Question: Who are some photographers who were born in Berlin?
+
+Answer: 
+1. August Sander (1876-1964)
+2. Wolfgang Tillmans (born 1962)
+3. Thomas Struth (born 1954)
+4. Andreas Gursky (born 1955)
+5. Thomas Ruff (born 1958)
+6.
+
+---------------------------------------------------
+
+Question: Who are some photographers who were born in Amsterdam?
+
+Answer: 
+1. Rineke Dijkstra (born 1953)
+2. Eva Besnyö (1910-2005)
+3. Paul Citroën (1896-1985)
+4. Carel Blatz (1880-1942)
+5. Jacob Rauws (born
+
+---------------------------------------------------
+

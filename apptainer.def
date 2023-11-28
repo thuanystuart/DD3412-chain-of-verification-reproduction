@@ -1,0 +1,16 @@
+Bootstrap: docker
+#From: nvidia/cuda:12.1.0-devel-ubuntu20.04
+From: yaotianqi6666/ml_hf_pytorch
+#From: cyw314/cu111
+
+%files
+    ./requirements.txt /requirements.txt
+
+%post
+    apt -qy update
+    apt -qy install git build-essential python3 python3-pip
+    pip3 install -r ./requirements.txt
+
+%environment
+    # export LD_LIBRARY_PATH=/usr/local/lib
+    # export WANDB_API_KEY=xxxxxxxx
