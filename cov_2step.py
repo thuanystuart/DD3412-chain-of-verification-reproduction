@@ -2,7 +2,7 @@ import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig
 import json
 import time 
-
+from prompts import BASELINE_PROMPT_WIKI, VERIFICATION_QUESTION_PROMPT_WIKI, EXECUTE_PLAN_PROMPT, FINAL_VERIFIED_PROMPT
 
 import json
 
@@ -39,42 +39,6 @@ tokenizer = AutoTokenizer.from_pretrained(zephyr_model_id)
 tokenizer.pad_token = tokenizer.eos_token
 tokenizer.padding_side = "right"
 
-BASELINE_PROMPT_WIKI = """Answer the below question which is asking for a list of persons. Output should be a numbered list and only contains the relevant & concise enitites as answer. NO ADDITIONAL DETAILS.
-
-Question: {original_question}
-
-Answer:"""
-
-
-VERIFICATION_QUESTION_PROMPT_WIKI = """Your task is to create a series of verification questions based on the below question, the verfication question template and baseline response.
-Example Question: Who are some movie actors who were born in Boston?
-Example Verification Question Template: Was [movie actor] born in Boston?
-Example Baseline Response: 1. Matt Damon 
-2. Chris Evans 
-Verification questions: 1. Where was Matt Damon born?
-2. Where was Chirs Evans born?
-
-Explanation: In the above example the verification questions focused only on the ANSWER_ENTITY (name of the movie actor) and QUESTION_ENTITY (birth place) based on the template and substitutes entity values from the baseline response.
-Similarly you need to focus on the ANSWER_ENTITY and QUESTION_ENTITY from the actual question and substitute the entity values from the baseline response to generate verification questions.
-
-Actual Question: {original_question}
-Baseline Response: {baseline_response}
-Verification Questions:"""
-
-EXECUTE_PLAN_PROMPT_SEARCH_TOOL = """Answer the following questions. Think step by step and answer each question concisely.
-
-Questions: {verification_questions}
-
-Answers:"""
-
-FINAL_VERIFIED_PROMPT = """Given the below `Original Query` and `Baseline Answer`, analyze the `Verification Questions & Answers` to finally filter the refined answer.
-Original Query: {original_question}
-Baseline Answer: {baseline_response}
-
-Verification Questions & Answer Pairs:
-{verification_questions} & {verification_answers}
-
-Final Refined Answer:"""
 
 questions = []
 for record in data:
@@ -98,7 +62,7 @@ for q in questions[:30]:
     verif_tokens = tokenizer.batch_decode(verif_outputs.detach().cpu().numpy(), skip_special_tokens=True)[0][len(verification_question_prompt_tmpl):]
     verif_tokens = verif_tokens.split("<|assistant|>")[1]
     
-    execute_questions_prompt_tmpl = EXECUTE_PLAN_PROMPT_SEARCH_TOOL.format(verification_questions=verif_tokens)
+    execute_questions_prompt_tmpl = EXECUTE_PLAN_PROMPT.format(verification_questions=verif_tokens)
     execute_verif_prompt = f"<|system|>\n</s>\n<|user|>\n{execute_questions_prompt_tmpl}</s>\n<|assistant|>\n"
     execute_verif_input_ids = tokenizer(execute_verif_prompt, return_tensors="pt", truncation=True).input_ids.cuda()
     execute_verif_outputs = model.generate(input_ids=execute_verif_input_ids, max_new_tokens=100, do_sample=True, top_p=0.9,temperature=0.7)
