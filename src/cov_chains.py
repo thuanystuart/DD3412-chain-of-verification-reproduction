@@ -3,8 +3,8 @@ from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig
 import json
 import time 
 from data.data_processor import read_json_file, questions_from_wiki
-from utils import import_model_and_tokenizer
-from prompts import (BASELINE_PROMPT_WIKI, VERIFICATION_QUESTION_PROMPT_WIKI, 
+from src.utils import import_model_and_tokenizer
+from src.prompts import (BASELINE_PROMPT_WIKI, VERIFICATION_QUESTION_PROMPT_WIKI, 
                      EXECUTE_PLAN_PROMPT, FINAL_VERIFIED_PROMPT)
 
 class WikiDataChainofVerificationTwoStep:
@@ -53,7 +53,7 @@ class WikiDataChainofVerificationTwoStep:
             self.print_results(q, baseline_tokens, verif_tokens, execute_verif_tokens, final_verified_tokens)
             #time.sleep(2)
 
-file_path = '/proj/layegh/users/x_amila/CoV/wikidata_questions.json'
+file_path = '/proj/layegh/users/x_amila/CoV/data/wikidata_questions.json'
 llama_model_id = "NousResearch/Llama-2-7b-hf"  # non-gated
 zephyr_model_id = "HuggingFaceH4/zephyr-7b-beta"
 
