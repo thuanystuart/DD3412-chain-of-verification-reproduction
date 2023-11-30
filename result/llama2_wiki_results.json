@@ -1,0 +1,317 @@
+[
+  {
+    "Question": "Who are some actors who were born in RJ, Rio de Janeiro?",
+    "Baseline Answer": "  Sure, here are three actors who were born in Rio de Janeiro (RJ), Brazil:\n\n1. Sonia Braga\n2. Wagner Moura\n3. Fernanda Montenegro",
+    "Verification Questions": "  Sure, here are three verification questions based on the actual question and the baseline response:\n\n1. Where was Sonia Braga born?\n2. Where was Wagner Moura born?\n3. Where was Fernanda Montenegro born?\n\nThese verification questions focus on the ANSWER_ENTITY (name of the actor) and QUESTION_ENTITY (birth place) based on the template and substitute the entity values from the baseline response.",
+    "Execute Plan": "  Sure, I'm ready to answer the verification questions! Here are my responses:\n\n1. Where was Sonia Braga born?\nAnswer: Cambridge, Massachusetts\n2. Where was Wagner Moura born?\nAnswer: Sudbury, Massachusetts\n3. Where was Fernanda Montenegro born?\nAnswer: Boston, Massachusetts",
+    "Final Refined Answer": "  Based on the verification questions and answers, the refined answer to the original question \"Who are some actors who were born in RJ, Rio de Janeiro?\" is:\n\n1. Fernanda Montenegro\n\nExplanation:\n\nThe baseline answer provided three actors who were born in Rio de Janeiro (RJ), Brazil. However, upon verification, it was found that:\n\n* Sonia Braga was born in Cambridge, Massachusetts,"
+  },
+  {
+    "Question": "Who are some actors who were born in Prague?",
+    "Baseline Answer": "  Sure, here are three actors who were born in Prague:\n\n1. Miloš Forman\n2. Václav Neuzil\n3. Karel Roden",
+    "Verification Questions": "  Sure, here are three verification questions based on the actual question and the baseline response:\n\n1. Where was Miloš Forman born?\n2. Where was Václav Neuzil born?\n3. Where was Karel Roden born?\n\nThese verification questions focus on the ANSWER_ENTITY (name of the actor) and QUESTION_ENTITY (birth place) based on the template and substitute the entity values from the baseline response.",
+    "Execute Plan": "  Sure, I'm ready to answer the verification questions! Here are my responses:\n\n1. Where was Miloš Forman born?\nAnswer: Prague, Czech Republic\n2. Where was Václav Neuzil born?\nAnswer: Prague, Czech Republic\n3. Where was Karel Roden born?\nAnswer: Prague, Czech Republic\n\nI hope these answers are correct! Let me know if you have any further questions.",
+    "Final Refined Answer": "  Sure! Based on the verification questions and answers, the final refined answer is:\n\n1. Miloš Forman\n2. Václav Neuzil\n3. Karel Roden"
+  },
+  {
+    "Question": "Who are some actors who were born in Berlin?",
+    "Baseline Answer": "  Sure, here are three actors who were born in Berlin:\n\n1. Helmut Griem\n2. Ulrich Thomsen\n3. Daniel Brühl",
+    "Verification Questions": "  Sure, here are three verification questions based on the actual question and baseline response:\n\n1. Where was Helmut Griem born?\n2. Where was Ulrich Thomsen born?\n3. Where was Daniel Brühl born?\n\nThese verification questions focus on the ANSWER_ENTITY (name of the actor) and QUESTION_ENTITY (birth place) based on the template and substitute entity values from the baseline response.",
+    "Execute Plan": "  Sure, here are the answers to the verification questions based on the information provided in the baseline response:\n\n1. Where was Helmut Griem born?\nAnswer: Hamburg, Germany\n2. Where was Ulrich Thomsen born?\nAnswer: Hoyer, Germany\n3. Where was Daniel Brühl born?\nAnswer: Berlin, Germany",
+    "Final Refined Answer": "  Sure, here are the actors born in Berlin based on the verification questions and answers:\n\n1. Daniel Brühl\n\nThe answers to the verification questions are:\n\n1. Where was Helmut Griem born?\nAnswer: Hamburg, Germany\n2. Where was Ulrich Thomsen born?\nAnswer: Hoyer, Germany\n3. Where was Daniel Brühl born?\nAnswer: Berlin, Germany\n\nTherefore, the final refined answer is"
+  },
+  {
+    "Question": "Who are some actors who were born in Munich?",
+    "Baseline Answer": "  Sure, here are three actors who were born in Munich:\n\n1. Christian Bale\n2. Claudia Schiffer\n3. Michael Fassbender",
+    "Verification Questions": "  Sure, here are three verification questions based on the actual question and the baseline response:\n\n1. Where was Christian Bale born?\n2. Where was Claudia Schiffer born?\n3. Where was Michael Fassbender born?\n\nEach of these questions focuses on the ANSWER_ENTITY (name of the actor) and QUESTION_ENTITY (birth place) based on the template and substitutes entity values from the baseline response.",
+    "Execute Plan": "  Sure, here are the answers to the verification questions based on the baseline response:\n\n1. Where was Christian Bale born?\nAnswer: London, England\n2. Where was Claudia Schiffer born?\nAnswer: Rheinberg, Germany\n3. Where was Michael Fassbender born?\nAnswer: Heidelberg, Germany",
+    "Final Refined Answer": "  Sure, here are the actors who were born in Munich based on the verification questions and answers:\n\n1. Michael Fassbender\n\nExplanation:\n\nThe Baseline Answer provided three actors who were born in Munich: Christian Bale, Claudia Schiffer, and Michael Fassbender. The Verification Questions & Answer Pairs were asked to confirm the birth places of these actors.\n\nBased on the answers to the verification"
+  },
+  {
+    "Question": "Who are some actors who were born in Paris?",
+    "Baseline Answer": "  Sure! Here are three actors who were born in Paris:\n\n1. Gerard Depardieu\n2. Isabelle Huppert\n3. Jean Reno",
+    "Verification Questions": "  Sure, here are three verification questions based on the actual question and the baseline response:\n\n1. Where was Gerard Depardieu born?\n2. Where was Isabelle Huppert born?\n3. Where was Jean Reno born?\n\nThese verification questions focus on the ANSWER_ENTITY (name of the actor) and QUESTION_ENTITY (birth place) based on the template and substitute the entity values from the baseline response.",
+    "Execute Plan": "  Sure, I'll do my best to answer the verification questions based on the information provided in the baseline response. Here are my answers:\n\n1. Where was Gerard Depardieu born?\nAnswer: Paris, France\n2. Where was Isabelle Huppert born?\nAnswer: Paris, France\n3. Where was Jean Reno born?\nAnswer: Casablanca, Morocco",
+    "Final Refined Answer": "  Based on the verification questions and answers, the refined answer to the original question \"Who are some actors who were born in Paris?\" is:\n\n1. Isabelle Huppert\n\nExplanation:\n\nThe verification questions and answers confirm that Gerard Depardieu and Jean Reno were not born in Paris, but in other locations. Isabelle Huppert, on the other hand, was born in Paris, France. Therefore, the refined answer"
+  },
+  {
+    "Question": "Who are some painters who were born in Paris?",
+    "Baseline Answer": "  Sure, here are three famous painters who were born in Paris:\n\n1. Claude Monet\n2. Pierre-Auguste Renoir\n3. Édouard Manet",
+    "Verification Questions": "  Sure, here are three verification questions based on the actual question and the baseline response:\n\n1. Where was Claude Monet born?\n2. Where was Pierre-Auguste Renoir born?\n3. Where was Édouard Manet born?\n\nThese verification questions focus on the ANSWER_ENTITY (name of the painter) and QUESTION_ENTITY (birth place) based on the template and substitute entity values from the baseline response.",
+    "Execute Plan": "  Sure, I'm ready to answer the verification questions! Here are my responses:\n\n1. Where was Claude Monet born?\nAnswer: Paris, France\n2. Where was Pierre-Auguste Renoir born?\nAnswer: Limoges, France\n3. Where was Édouard Manet born?\nAnswer: Paris, France",
+    "Final Refined Answer": "  Based on the verification questions and answers, the refined answer to the original question \"Who are some painters who were born in Paris?\" is:\n\n1. Édouard Manet"
+  },
+  {
+    "Question": "Who are some painters who were born in Florence?",
+    "Baseline Answer": "  Sure! Here are three painters who were born in Florence:\n\n1. Leonardo da Vinci\n2. Michelangelo Buonarroti\n3. Raphael",
+    "Verification Questions": "  Sure, here are three verification questions based on the actual question and the baseline response:\n\n1. Where was Leonardo da Vinci born?\n2. Where was Michelangelo Buonarroti born?\n3. Where was Raphael born?\n\nThese verification questions focus on the ANSWER_ENTITY (name of the painter) and QUESTION_ENTITY (birth place) based on the template and substituting entity values from the baseline response.",
+    "Execute Plan": "  Sure, I'll do my best to answer the verification questions based on the information provided in the baseline response.\n\n1. Where was Leonardo da Vinci born?\nAnswer: Vinci, Italy\n2. Where was Michelangelo Buonarroti born?\nAnswer: Caprese, Italy\n3. Where was Raphael born?\nAnswer: Urbino, Italy",
+    "Final Refined Answer": "  Sure, based on the provided information, the final refined answer to the original question \"Who are some painters who were born in Florence?\" is:\n\n1. Raphael\n\nHere's the list of painters who were born in Florence, based on the verification questions and answers:\n\n1. Raphael\n2. Leonardo da Vinci\n3. Michelangelo Buonarroti"
+  },
+  {
+    "Question": "Who are some painters who were born in Amsterdam?",
+    "Baseline Answer": "  Sure, here are three painters who were born in Amsterdam:\n\n1. Rembrandt van Rijn\n2. Vincent van Gogh\n3. Piet Mondrian",
+    "Verification Questions": "  Sure, here are three verification questions based on the actual question and the baseline response:\n\n1. Where was Rembrandt van Rijn born?\n2. Where was Vincent van Gogh born?\n3. Where was Piet Mondrian born?\n\nThese verification questions focus on the ANSWER_ENTITY (name of the painter) and QUESTION_ENTITY (birth place) based on the template and substitute entity values from the baseline response.",
+    "Execute Plan": "  Sure, I'm ready to answer the verification questions! Here are my answers:\n\n1. Rembrandt van Rijn was born in Leiden, Netherlands.\n2. Vincent van Gogh was born in Groot-Zundert, Netherlands.\n3. Piet Mondrian was born in Amersfoort, Netherlands.",
+    "Final Refined Answer": "  Sure, I can help you with that! Based on the verification questions and answers, the final refined answer is:\n\n1. Rembrandt van Rijn\n2. Vincent van Gogh\n3. Piet Mondrian\n\nHere's the list of painters who were born in Amsterdam:\n\n1. Rembrandt van Rijn\n2. Vincent van Gogh\n3. Piet Mondrian"
+  },
+  {
+    "Question": "Who are some painters who were born in Rome?",
+    "Baseline Answer": "  Sure, I can help you with that! Here are three painters who were born in Rome:\n\n1. Raphael\n2. Caravaggio\n3. Bernini",
+    "Verification Questions": "  Sure, here are three verification questions based on the actual question and the baseline response:\n\n1. Where was Raphael born?\n2. Where was Caravaggio born?\n3. Where was Bernini born?\n\nThese verification questions focus on the ANSWER_ENTITY (name of the painter) and QUESTION_ENTITY (birth place) based on the template and substitute entity values from the baseline response.",
+    "Execute Plan": "  Sure, I'll do my best to answer the verification questions based on the information provided in the baseline response. Here are my answers:\n\n1. Where was Raphael born?\nAnswer: Urbino, Italy\n2. Where was Caravaggio born?\nAnswer: Milan, Italy\n3. Where was Bernini born?\nAnswer: Naples, Italy",
+    "Final Refined Answer": "  Sure, based on the provided information, here is the final refined answer to the original question \"Who are some painters who were born in Rome?\"\n\n1. Bernini\n\nExplanation:\n\nThe baseline answer provided three painters who were born in Rome: Raphael, Caravaggio, and Bernini. However, based on the verification questions and answers, only Bernini was born in Rome. Raphael was born in Urbino"
+  },
+  {
+    "Question": "Who are some painters who were born in NY, New York?",
+    "Baseline Answer": "  Sure! Here are 3 painters who were born in New York, New York:\n\n1. Jackson Pollock\n2. Willem de Kooning\n3. Jasper Johns",
+    "Verification Questions": "  Sure, here are three verification questions based on the actual question and baseline response:\n\n1. Where was Jackson Pollock born?\n2. Where was Willem de Kooning born?\n3. Where was Jasper Johns born?\n\nThese verification questions focus on the ANSWER_ENTITY (name of the painter) and QUESTION_ENTITY (birth place) based on the template and substitute entity values from the baseline response.",
+    "Execute Plan": "  Sure, here are the answers to the verification questions based on the information provided in the baseline response:\n\n1. Where was Jackson Pollock born?\nAnswer: East Hampton, New York\n2. Where was Willem de Kooning born?\nAnswer: Rotterdam, Netherlands\n3. Where was Jasper Johns born?\nAnswer: Augusta, Georgia",
+    "Final Refined Answer": "  Sure! Based on the verification questions and answers, the final refined answer to the original question \"Who are some painters who were born in NY, New York?\" is:\n\n1. Jasper Johns\n\nHere is the list of painters who were born in NY, New York, as verified by the verification questions and answers:\n\n1. Jasper Johns (born in Augusta, Georgia)"
+  },
+  {
+    "Question": "Who are some pianists who were born in Paris?",
+    "Baseline Answer": "  Sure, here are three pianists who were born in Paris:\n\n1. Maurice Ravel\n2. Claude Debussy\n3. Olivier Messiaen",
+    "Verification Questions": "  Sure, here are three verification questions based on the actual question and the baseline response:\n\n1. Where was Maurice Ravel born?\n2. Where was Claude Debussy born?\n3. Where was Olivier Messiaen born?\n\nThese verification questions focus on the ANSWER_ENTITY (name of the pianist) and QUESTION_ENTITY (birth place) based on the template and substitute the entity values from the baseline response.",
+    "Execute Plan": "  Sure, I'm ready to answer your verification questions! Here are my responses:\n\n1. Where was Maurice Ravel born?\nAnswer: Cambridge, Massachusetts\n2. Where was Claude Debussy born?\nAnswer: Sudbury, Massachusetts\n3. Where was Olivier Messiaen born?\nAnswer: Boston, Massachusetts",
+    "Final Refined Answer": "  Sure, based on the verification questions and answers, the final refined answer is:\n\n1. Maurice Ravel\n2. Claude Debussy\n3. Olivier Messiaen\n\nHere's the list of pianists who were born in Paris:\n\n1. Maurice Ravel\n2. Claude Debussy\n3. Olivier Messiaen"
+  },
+  {
+    "Question": "Who are some pianists who were born in NY, New York?",
+    "Baseline Answer": "  Sure, here are three famous pianists who were born in New York City:\n\n1. Billy Joel\n2. Elton John\n3. Lady Gaga",
+    "Verification Questions": "  Sure, here are three verification questions based on the actual question and the baseline response:\n\n1. Where was Billy Joel born?\n2. Where was Elton John born?\n3. Where was Lady Gaga born?\n\nThese verification questions focus on the ANSWER_ENTITY (name of the pianist) and QUESTION_ENTITY (birth place) based on the template and substitute entity values from the baseline response.",
+    "Execute Plan": "  Sure, here are the answers to the verification questions based on the information provided in the baseline response:\n\n1. Where was Billy Joel born?\nAnswer: Long Island, New York\n2. Where was Elton John born?\nAnswer: Pinner, Middlesex, England\n3. Where was Lady Gaga born?\nAnswer: Manhattan, New York City, New York",
+    "Final Refined Answer": "  Sure! Based on the verification questions and answers, the final refined answer to the original question \"Who are some pianists who were born in NY, New York?\" is:\n\n1. Billy Joel\n\nHere's the numbered list of persons, with the correct answer highlighted:\n\n1. Billy Joel (correct)\n2. Elton John (incorrect - born in England, not NY)\n3. Lady Gaga (incorrect"
+  },
+  {
+    "Question": "Who are some pianists who were born in London?",
+    "Baseline Answer": "  Sure! Here are three famous pianists who were born in London:\n\n1. Sir Elton John\n2. Sir Paul McCartney\n3. Emma Johnson",
+    "Verification Questions": "  Sure! Here are three verification questions based on the actual question and baseline response:\n\n1. Where was Sir Elton John born in London?\n2. Where was Sir Paul McCartney born in London?\n3. Where was Emma Johnson born in London?\n\nThese verification questions focus on the ANSWER_ENTITY (name of the pianist) and QUESTION_ENTITY (birth place in London) based on the template and substituting entity values from the bas",
+    "Execute Plan": "  Sure, I'll do my best to answer the verification questions based on the information provided. Here are my answers:\n\n1. Where was Sir Elton John born in London?\nAnswer: Pinner, London\n2. Where was Sir Paul McCartney born in London?\nAnswer: Walton-on-the-Naze, Essex (just outside of London)\n3. Where was Emma Johnson born in London?\nAnswer: London, England (",
+    "Final Refined Answer": "  Based on the provided information, the final refined answer to the original question \"Who are some pianists who were born in London?\" is:\n\n1. Sir Elton John\n2. Sir Paul McCartney\n\nExplanation:\n\nThe baseline answer provided was:\n\n1. Sir Elton John\n2. Sir Paul McCartney\n3. Emma Johnson\n\nThe verification questions and answers from another source were:\n\n1. Where"
+  },
+  {
+    "Question": "Who are some pianists who were born in Moscow?",
+    "Baseline Answer": "  Sure, here are three pianists who were born in Moscow:\n\n1. Sergei Rachmaninoff\n2. Sergei Prokofiev\n3. Vladimir Horowitz",
+    "Verification Questions": "  Sure, here are three verification questions based on the actual question and the baseline response:\n\n1. Where was Sergei Rachmaninoff born?\n2. Where was Sergei Prokofiev born?\n3. Where was Vladimir Horowitz born?\n\nThese verification questions focus on the ANSWER_ENTITY (name of the pianist) and QUESTION_ENTITY (birth place) based on the template and substitute entity values from the baseline response.",
+    "Execute Plan": "  Sure, I'll do my best to answer the verification questions based on the information provided in the baseline response. Here are my answers:\n\n1. Where was Sergei Rachmaninoff born?\nAnswer: Moscow, Russia\n2. Where was Sergei Prokofiev born?\nAnswer: Donetsk, Ukraine\n3. Where was Vladimir Horowitz born?\nAnswer: Kiev, Ukraine",
+    "Final Refined Answer": "  Sure, I can help you with that! Based on the verification questions and answers provided, the final refined answer is:\n\n1. Sergei Rachmaninoff\n2. Sergei Prokofiev\n3. Vladimir Horowitz\n\nHere's the list of pianists who were born in Moscow, based on the information provided in the baseline response:\n\n1. Sergei Rachmaninoff\n2. Sergei Prokofiev\n"
+  },
+  {
+    "Question": "Who are some pianists who were born in Tokyo?",
+    "Baseline Answer": "  Sure, here are three pianists who were born in Tokyo:\n\n1. Yumi Arai\n2. Rieko Taguchi\n3. Nobuyuki Tsujii",
+    "Verification Questions": "  Sure, here are three verification questions based on the actual question and the baseline response:\n\n1. Where was Yumi Arai born?\n2. Where was Rieko Taguchi born?\n3. Where was Nobuyuki Tsujii born?\n\nThese verification questions focus on the ANSWER_ENTITY (name of the pianist) and QUESTION_ENTITY (birth place) based on the template and substitute the entity values from the baseline response",
+    "Execute Plan": "  Sure, I'll do my best to answer the verification questions based on the information provided in the baseline response. Here are my answers:\n\n1. Where was Yumi Arai born?\nAnswer: Tokyo, Japan\n2. Where was Rieko Taguchi born?\nAnswer: Kyoto, Japan\n3. Where was Nobuyuki Tsujii born?\nAnswer: Osaka, Japan",
+    "Final Refined Answer": "  Sure! Based on the verification questions and answers, the final refined answer is:\n\n1. Yumi Arai\n2. Rieko Taguchi\n3. Nobuyuki Tsujii\n\nHere is the list of pianists who were born in Tokyo, as per the baseline answer and the verification questions:\n\n1. Yumi Arai\n2. Rieko Taguchi\n3. Nobuyuki Tsujii"
+  },
+  {
+    "Question": "Who are some writers who were born in Tokyo?",
+    "Baseline Answer": "  Sure, here are three writers who were born in Tokyo:\n\n1. Haruki Murakami\n2. Banana Yoshimoto\n3. Kazuo Ishiguro",
+    "Verification Questions": "  Sure, here are three verification questions based on the actual question and the baseline response:\n\n1. Where was Haruki Murakami born?\n2. Where was Banana Yoshimoto born?\n3. Where was Kazuo Ishiguro born?\n\nEach of these verification questions focuses on the ANSWER_ENTITY (name of the writer) and QUESTION_ENTITY (birth place) based on the template and substitutes entity values from the",
+    "Execute Plan": "  Sure, I'll do my best to answer the verification questions based on the information provided. Here are my answers:\n\n1. Where was Haruki Murakami born?\nAnswer: Tokyo, Japan\n2. Where was Banana Yoshimoto born?\nAnswer: Kobe, Japan\n3. Where was Kazuo Ishiguro born?\nAnswer: Nagasaki, Japan",
+    "Final Refined Answer": "  Sure! Based on the verification questions and answers, the refined answer to the original question \"Who are some writers who were born in Tokyo?\" is:\n\n1. Haruki Murakami\n\nHere's the list of refined answer as a numbered list of persons:\n\n1. Haruki Murakami"
+  },
+  {
+    "Question": "Who are some writers who were born in Berlin?",
+    "Baseline Answer": "  Sure! Here are three writers who were born in Berlin:\n\n1. Bertolt Brecht\n2. Erich Maria Remarque\n3. W.G. Sebald",
+    "Verification Questions": "  Sure! Here are three verification questions based on the actual question and the baseline response:\n\n1. Where was Bertolt Brecht born?\n2. Where was Erich Maria Remarque born?\n3. Where was W.G. Sebald born?\n\nEach of these verification questions focuses on one of the writers listed in the baseline response and asks for the place of their birth, following the template provided. The answers to these questions can be substituted with the corresponding entity values from the",
+    "Execute Plan": "  Sure, I'll do my best to answer the verification questions based on the information provided in the baseline response. Here are my answers:\n\n1. Where was Bertolt Brecht born?\nAnswer: Augsburg, Germany\n2. Where was Erich Maria Remarque born?\nAnswer: Osnabrück, Germany\n3. Where was W.G. Sebald born?\nAnswer: Wertach, Germany",
+    "Final Refined Answer": "  Based on the provided information, the final refined answer to the original question \"Who are some writers who were born in Berlin?\" is:\n\n1. W.G. Sebald\n\nHere is the list of persons as a numbered list:\n\n1. W.G. Sebald"
+  },
+  {
+    "Question": "Who are some writers who were born in Moscow?",
+    "Baseline Answer": "  Sure, here's the answer to your question:\n\n1. Leo Tolstoy\n2. Fyodor Dostoevsky\n3. Vladimir Nabokov",
+    "Verification Questions": "  Sure, here are three verification questions based on the actual question and baseline response:\n\n1. Where was Leo Tolstoy born?\n2. Where was Fyodor Dostoevsky born?\n3. Where was Vladimir Nabokov born?\n\nEach of these verification questions focuses on the ANSWER_ENTITY (name of the writer) and QUESTION_ENTITY (birth place) based on the template and substitutes entity values from the baseline response",
+    "Execute Plan": "  Sure, I'm ready to answer the verification questions! Here are my answers:\n\n1. Where was Leo Tolstoy born?\nAnswer: Yasnaya Polyana, Russia\n2. Where was Fyodor Dostoevsky born?\nAnswer: Moscow, Russia\n3. Where was Vladimir Nabokov born?\nAnswer: St. Petersburg, Russia",
+    "Final Refined Answer": "  Sure! Based on the verification questions and answers, the final refined answer to the original question \"Who are some writers who were born in Moscow?\" is:\n\n1. Fyodor Dostoevsky\n\nHere's the answer as a numbered list of persons:\n\n1. Fyodor Dostoevsky"
+  },
+  {
+    "Question": "Who are some writers who were born in Rome?",
+    "Baseline Answer": "  Sure, here are three writers who were born in Rome:\n\n1. Cicero\n2. Petrarch\n3. Giovanni Boccaccio",
+    "Verification Questions": "  Sure, here are three verification questions based on the actual question and the baseline response:\n\n1. Where was Cicero born?\n2. Where was Petrarch born?\n3. Where was Giovanni Boccaccio born?\n\nThese verification questions focus on the ANSWER_ENTITY (name of the writer) and QUESTION_ENTITY (birth place) based on the template and substitute the entity values from the baseline response.",
+    "Execute Plan": "  Sure, I'm ready to answer the verification questions! Here are my answers:\n\n1. Where was Cicero born?\nAnswer: Arpinum, Italy\n\n2. Where was Petrarch born?\nAnswer: Arezzo, Italy\n\n3. Where was Giovanni Boccaccio born?\nAnswer: Florence, Italy",
+    "Final Refined Answer": "  Sure, I can help you with that! Based on the verification questions and answers you provided, the final refined answer to the original question \"Who are some writers who were born in Rome?\" is:\n\n1. Giovanni Boccaccio\n\nHere's the list of persons, numbered and based on the information provided:\n\n1. Giovanni Boccaccio (born in Florence, Italy)"
+  },
+  {
+    "Question": "Who are some writers who were born in Chicago?",
+    "Baseline Answer": "  Sure, I can help you with that! Here are three writers who were born in Chicago:\n\n1. Ernest Hemingway\n2. Carl Sandburg\n3. Gwendolyn Brooks",
+    "Verification Questions": "  Sure, here are three verification questions based on the actual question and the baseline response:\n\n1. Where was Ernest Hemingway born?\n2. Where was Carl Sandburg born?\n3. Where was Gwendolyn Brooks born?\n\nThese verification questions focus on the ANSWER_ENTITY (name of the writer) and QUESTION_ENTITY (birth place) based on the template and substitute the entity values from the baseline response.",
+    "Execute Plan": "  Sure, here are the answers to the verification questions based on the baseline response:\n\n1. Where was Ernest Hemingway born?\nAnswer: Oak Park, Illinois.\n2. Where was Carl Sandburg born?\nAnswer: Galesburg, Illinois.\n3. Where was Gwendolyn Brooks born?\nAnswer: Topeka, Kansas.",
+    "Final Refined Answer": "  Sure! Based on the verification questions and answers provided, the final refined answer to the original question \"Who are some writers who were born in Chicago?\" is:\n\n1. Gwendolyn Brooks\n\nHere's the list of refined answers as a numbered list of persons:\n\n1. Gwendolyn Brooks"
+  },
+  {
+    "Question": "Who are some journalists who were born in Paris?",
+    "Baseline Answer": "  Sure! Here are three journalists who were born in Paris:\n\n1. Jean-Louis Burban\n2. Bernard-Henri Lévy\n3. Éric Zemmour",
+    "Verification Questions": "  Sure, here are three verification questions based on the actual question and the baseline response:\n\n1. Where was Jean-Louis Burban born?\n2. Where was Bernard-Henri Lévy born?\n3. Where was Éric Zemmour born?\n\nThese verification questions focus on the ANSWER_ENTITY (name of the journalist) and QUESTION_ENTITY (birth place) based on the template and substitute entity values from the baseline response.",
+    "Execute Plan": "  Sure, I'll do my best to answer the verification questions based on the information provided in the baseline response.\n\n1. Where was Jean-Louis Burban born?\n\nAnswer: Based on the baseline response, Jean-Louis Burban was born in Paris, France.\n\n2. Where was Bernard-Henri Lévy born?\n\nAnswer: Based on the baseline response, Bernard-Henri Lévy was born in Béni",
+    "Final Refined Answer": "  Sure! Based on the verification questions and answers, the refined answer to the original question \"Who are some journalists who were born in Paris?\" is:\n\n1. Éric Zemmour"
+  },
+  {
+    "Question": "Who are some journalists who were born in Vienna?",
+    "Baseline Answer": "  Sure! Here are three journalists who were born in Vienna:\n\n1. Walter Cronkite\n2. Karl Kraus\n3. Hannah Arendt",
+    "Verification Questions": "  Sure, here are three verification questions based on the actual question and the baseline response:\n\n1. Where was Walter Cronkite born?\n2. Where was Karl Kraus born?\n3. Where was Hannah Arendt born?\n\nEach of these questions focuses on the ANSWER_ENTITY (name of the journalist) and QUESTION_ENTITY (birth place) based on the template and substitutes entity values from the baseline response.",
+    "Execute Plan": "  Sure, I'm ready to answer the verification questions based on the baseline response! Here are my answers:\n\n1. Where was Walter Cronkite born?\nAnswer: St. Joseph, Missouri.\n2. Where was Karl Kraus born?\nAnswer: Vienna, Austria.\n3. Where was Hannah Arendt born?\nAnswer: Hannover, Germany.",
+    "Final Refined Answer": "  Based on the provided information, the final refined answer to the original question \"Who are some journalists who were born in Vienna?\" is:\n\n1. Karl Kraus\n\nHere is the list of persons, numbered and based on the information provided:\n\n1. Karl Kraus"
+  },
+  {
+    "Question": "Who are some journalists who were born in NY, New York?",
+    "Baseline Answer": "  Sure! Here are three journalists who were born in New York, New York:\n\n1. Dan Rather\n2. Barbara Walters\n3. Anderson Cooper",
+    "Verification Questions": "  Sure, here are three verification questions based on the actual question and the baseline response:\n\n1. Where was Dan Rather born?\n2. Where was Barbara Walters born?\n3. Where was Anderson Cooper born?\n\nThese verification questions focus on the ANSWER_ENTITY (name of the journalist) and QUESTION_ENTITY (birth place) based on the template and substitute entity values from the baseline response.",
+    "Execute Plan": "  Sure, I'm ready to answer the verification questions! Here are my responses:\n\n1. Where was Dan Rather born?\n\nAnswer: Houston, Texas\n\n2. Where was Barbara Walters born?\n\nAnswer: Boston, Massachusetts\n\n3. Where was Anderson Cooper born?\n\nAnswer: New York City, New York",
+    "Final Refined Answer": "  Sure! Based on the verification questions and answers, the refined answer to the original question \"Who are some journalists who were born in NY, New York?\" is:\n\n1. Barbara Walters\n\nHere is the list of persons as a numbered list:\n\n1. Barbara Walters"
+  },
+  {
+    "Question": "Who are some journalists who were born in Moscow?",
+    "Baseline Answer": "  Sure, here are three journalists who were born in Moscow:\n\n1. Vladimir Pozner\n2. Mikhail Gorbachev\n3. Anna Politkovskaya",
+    "Verification Questions": "  Sure, here are three verification questions based on the actual question and the baseline response:\n\n1. Where was Vladimir Pozner born?\n2. Where was Mikhail Gorbachev born?\n3. Where was Anna Politkovskaya born?\n\nThese verification questions focus on the ANSWER_ENTITY (name of the journalist) and QUESTION_ENTITY (birth place) based on the template and substitute the entity values from the baseline response.",
+    "Execute Plan": "  Sure, I'll do my best to answer the verification questions based on the information provided in the baseline response.\n\n1. Where was Vladimir Pozner born?\nAnswer: Moscow, Russia\n\n2. Where was Mikhail Gorbachev born?\nAnswer: Privolnoye, Russia\n\n3. Where was Anna Politkovskaya born?\nAnswer: Moscow, Russia",
+    "Final Refined Answer": "  Sure, based on the answers to the verification questions, the final refined answer is:\n\n1. Vladimir Pozner\n2. Mikhail Gorbachev\n3. Anna Politkovskaya\n\nAll three journalists were born in Moscow, Russia."
+  },
+  {
+    "Question": "Who are some journalists who were born in London?",
+    "Baseline Answer": "  Sure, here are 3 journalists who were born in London:\n\n1. Benedict Cumberbatch\n2. Piers Morgan\n3. Fiona Bruce",
+    "Verification Questions": "  Sure, here are three verification questions based on the actual question and baseline response:\n\n1. Where was Benedict Cumberbatch born?\n2. Where was Piers Morgan born?\n3. Where was Fiona Bruce born?\n\nThese verification questions focus on the ANSWER_ENTITY (name of the journalist) and QUESTION_ENTITY (birth place) based on the template and substitutes entity values from the baseline response.",
+    "Execute Plan": "  Sure, here are the answers to the verification questions based on the information provided in the baseline response:\n\n1. Where was Benedict Cumberbatch born?\nAnswer: London, England\n2. Where was Piers Morgan born?\nAnswer: London, England\n3. Where was Fiona Bruce born?\nAnswer: London, England",
+    "Final Refined Answer": "  Sure, I can help you with that! Based on the verification questions and answers provided, the final refined answer to the original question \"Who are some journalists who were born in London?\" is:\n\n1. Fiona Bruce\n\nHere's the answer as a numbered list of persons:\n\n1. Fiona Bruce"
+  },
+  {
+    "Question": "Who are some photographers who were born in Paris?",
+    "Baseline Answer": "  Sure, here's the answer to your question:\n\n1. Henri Cartier-Bresson\n2. Man Ray\n3. Jacques-Henri Lartigue\n4. Brassaï\n5. Robert Doisneau",
+    "Verification Questions": "  Sure, here are five verification questions based on the actual question and the baseline response:\n\n1. Where was Henri Cartier-Bresson born?\n2. Where was Man Ray born?\n3. Where was Jacques-Henri Lartigue born?\n4. Where was Brassaï born?\n5. Where was Robert Doisneau born?\n\nThese verification questions focus on the ANSWER_ENTITY (name of the photographer) and QUESTION_",
+    "Execute Plan": "  Sure, I'd be happy to help! Here are the answers to the verification questions based on the information provided:\n\n1. Where was Henri Cartier-Bresson born?\nAnswer: Paris, France\n2. Where was Man Ray born?\nAnswer: Philadelphia, Pennsylvania\n3. Where was Jacques-Henri Lartigue born?\nAnswer: Toulouse, France\n4. Where was Brassaï born?\nAnswer: Brassó (",
+    "Final Refined Answer": "  Sure! Based on the provided information, here is the final refined answer to the original question \"Who are some photographers who were born in Paris?\"\n\n1. Henri Cartier-Bresson\n2. Jacques-Henri Lartigue\n\nExplanation:\n\n* Henri Cartier-Bresson was born in Paris, France.\n* Jacques-Henri Lartigue was born in Toulouse, France, but is known for his work in"
+  },
+  {
+    "Question": "Who are some photographers who were born in NY, New York?",
+    "Baseline Answer": "  Sure, here are ten well-known photographers who were born in New York City:\n\n1. Diane Arbus\n2. Ansel Adams\n3. Richard Avedon\n4. Irving Penn\n5. Cindy Sherman\n6. Nan Goldin\n7. Larry Clark\n8. Robert Mapplethorpe\n9. Andy War",
+    "Verification Questions": "  Sure, here are ten verification questions based on the actual question and baseline response:\n\n1. Where was Diane Arbus born?\n2. Where was Ansel Adams born?\n3. Where was Richard Avedon born?\n4. Where was Irving Penn born?\n5. Where was Cindy Sherman born?\n6. Where was Nan Goldin born?\n7. Where was Larry Clark born?\n8. Where was Robert Mapplethorpe born?\n9.",
+    "Execute Plan": "  Sure, I'd be happy to help! Here are the answers to the verification questions:\n\n1. Where was Diane Arbus born?\nAnswer: New York City, New York.\n2. Where was Ansel Adams born?\nAnswer: San Francisco, California.\n3. Where was Richard Avedon born?\nAnswer: New York City, New York.\n4. Where was Irving Penn born?\nAnswer: Plainfield,",
+    "Final Refined Answer": "  Sure! Based on the verification questions and answers, the refined answer to the original question \"Who are some photographers who were born in NY, New York?\" is:\n\n1. Nan Goldin\n\nHere's the list of photographers and their places of birth, as per the verification questions and answers:\n\n1. Diane Arbus - New York City, New York\n2. Ansel Adams - San Francisco, California\n3. Richard A"
+  },
+  {
+    "Question": "Who are some photographers who were born in Prague?",
+    "Baseline Answer": "  Sure! Here are three photographers who were born in Prague:\n\n1. Jaromír Funke\n2. Josef Koudelka\n3. Antonín Šťastný",
+    "Verification Questions": "  Sure, here are three verification questions based on the actual question and the baseline response:\n\n1. Where was Jaromír Funke born?\n2. Where was Josef Koudelka born?\n3. Where was Antonín Šťastný born?\n\nThese verification questions focus on the ANSWER_ENTITY (name of the photographer) and QUESTION_ENTITY (birth place) based on the template and substitute entity values from the baseline response.",
+    "Execute Plan": "  Sure, I'm ready to answer the verification questions! Here are my responses:\n\n1. Where was Jaromír Funke born?\nAnswer: Prague, Czech Republic\n2. Where was Josef Koudelka born?\nAnswer: Győr, Hungary\n3. Where was Antonín Šťastný born?\nAnswer: Prague, Czech Republic",
+    "Final Refined Answer": "  Sure, based on your responses to the verification questions, here is the final refined answer:\n\n1. Jaromír Funke\n2. Josef Koudelka\n3. Antonín Šťastný\n\nThese are the three photographers who were born in Prague, as confirmed by your answers to the verification questions."
+  },
+  {
+    "Question": "Who are some photographers who were born in Berlin?",
+    "Baseline Answer": "  Sure, here are three photographers who were born in Berlin:\n\n1. Helmut Newton\n2. Bernd und Hilla Becher\n3. Andreas Gursky",
+    "Verification Questions": "  Sure, here are three verification questions based on the actual question and the baseline response:\n\n1. Where was Helmut Newton born?\n2. Where was Bernd und Hilla Becher born?\n3. Where was Andreas Gursky born?\n\nThese verification questions focus on the ANSWER_ENTITY (name of the photographer) and QUESTION_ENTITY (birth place) based on the template and substitute entity values from the baseline response.",
+    "Execute Plan": "  Sure, I'll do my best to answer the verification questions based on the information provided in the baseline response. Here are my answers:\n\n1. Where was Helmut Newton born?\nAnswer: Berlin, Germany\n\n2. Where was Bernd und Hilla Becher born?\nAnswer: Solingen, Germany\n\n3. Where was Andreas Gursky born?\nAnswer: Duisburg, Germany",
+    "Final Refined Answer": "  Sure, based on the information provided in the baseline response and the verification questions and answers, the final refined answer is:\n\n1. Helmut Newton\n2. Bernd und Hilla Becher\n3. Andreas Gursky\n\nAll three photographers were born in Germany, specifically in the cities of:\n\n1. Berlin\n2. Solingen\n3. Duisburg"
+  },
+  {
+    "Question": "Who are some photographers who were born in Amsterdam?",
+    "Baseline Answer": "  Sure! Here are three photographers who were born in Amsterdam:\n\n1. Anton Corbijn\n2. Erwin Olaf\n3. Paul Verhoeven",
+    "Verification Questions": "  Sure, here are three verification questions based on the actual question and the baseline response:\n\n1. Where was Anton Corbijn born?\n2. Where was Erwin Olaf born?\n3. Where was Paul Verhoeven born?\n\nThese verification questions focus on the ANSWER_ENTITY (name of the photographer) and QUESTION_ENTITY (birth place) based on the template and substitute entity values from the baseline response.",
+    "Execute Plan": "  Sure, I'll do my best to answer the verification questions based on the information provided in the baseline response. Here are my answers:\n\n1. Where was Anton Corbijn born?\nAnswer: Born in Strijen, Netherlands.\n2. Where was Erwin Olaf born?\nAnswer: Born in Amsterdam, Netherlands.\n3. Where was Paul Verhoeven born?\nAnswer: Born in Amsterdam, Netherlands.\n\nPlease let me",
+    "Final Refined Answer": "  Sure! Based on the verification questions and answers, the final refined answer is:\n\n1. Anton Corbijn\n2. Erwin Olaf\n3. Paul Verhoeven\n\nAll three photographers were born in Amsterdam, Netherlands."
+  },
+  {
+    "Question": "Who are some film directors who were born in Moscow?",
+    "Baseline Answer": "  Sure, here are three film directors who were born in Moscow:\n\n1. Sergei Eisenstein\n2. Andrei Tarkovsky\n3. Nikita Mikhalkov",
+    "Verification Questions": "  Sure, here are three verification questions based on the actual question and the baseline response:\n\n1. Where was Sergei Eisenstein born?\n2. Where was Andrei Tarkovsky born?\n3. Where was Nikita Mikhalkov born?\n\nThese verification questions focus on the ANSWER_ENTITY (name of the film director) and QUESTION_ENTITY (birth place) based on the template and substitute entity values from the baseline response.",
+    "Execute Plan": "  Sure, here are the answers to the verification questions:\n\n1. Where was Sergei Eisenstein born?\nAnswer: Riga, Latvia\n2. Where was Andrei Tarkovsky born?\nAnswer: Yuryev (now Tallinn), Estonia\n3. Where was Nikita Mikhalkov born?\nAnswer: Moscow, Russia",
+    "Final Refined Answer": "  Sure, I can help you with that! Based on the verification questions and answers provided, the final refined answer to the original question \"Who are some film directors who were born in Moscow?\" is:\n\n1. Nikita Mikhalkov\n\nHere's the numbered list of persons based on the final refined answer:\n\n1. Nikita Mikhalkov"
+  },
+  {
+    "Question": "Who are some film directors who were born in Los Angeles?",
+    "Baseline Answer": "  Sure, here are ten film directors who were born in Los Angeles:\n\n1. James Cameron\n2. Steven Spielberg\n3. Ron Howard\n4. Martin Scorsese\n5. Francis Ford Coppola\n6. John Carpenter\n7. Quentin Tarantino\n8. David Fincher\n9. Tim Burton\n10.",
+    "Verification Questions": "  Sure, here are ten verification questions based on the actual question and the baseline response:\n\n1. Where was James Cameron born?\n2. Where was Steven Spielberg born?\n3. Where was Ron Howard born?\n4. Where was Martin Scorsese born?\n5. Where was Francis Ford Coppola born?\n6. Where was John Carpenter born?\n7. Where was Quentin Tarantino born?\n8. Where was David Fincher born?\n9. Where",
+    "Execute Plan": "  Sure, I'd be happy to help! Here are the answers to the verification questions based on the actual questions and the baseline responses:\n\n1. Where was James Cameron born?\nAnswer: Toronto, Ontario, Canada\n2. Where was Steven Spielberg born?\nAnswer: Cincinnati, Ohio\n3. Where was Ron Howard born?\nAnswer: Duncan, Oklahoma\n4. Where was Martin Scorsese born?\nAnswer: Queens",
+    "Final Refined Answer": "  Sure, I can help you with that! Based on the verification questions and answers, the refined answer to the original question \"Who are some film directors who were born in Los Angeles?\" is:\n\n1. Martin Scorsese\n\nHere's the list of film directors who were born in Los Angeles, along with their birthplaces:\n\n1. Martin Scorsese (Los Angeles, California)\n\nNote that the other directors listed in"
+  },
+  {
+    "Question": "Who are some film directors who were born in Rome?",
+    "Baseline Answer": "  Sure, here are three film directors who were born in Rome:\n\n1. Federico Fellini\n2. Pier Paolo Pasolini\n3. Franco Zeffirelli",
+    "Verification Questions": "  Sure, here are three verification questions based on the actual question and the baseline response:\n\n1. Where was Federico Fellini born?\n2. Where was Pier Paolo Pasolini born?\n3. Where was Franco Zeffirelli born?\n\nThese verification questions focus on the ANSWER_ENTITY (name of the film director) and QUESTION_ENTITY (birth place) based on the template and substitute the entity values from the baseline response.",
+    "Execute Plan": "  Sure, here are the answers to the verification questions based on the baseline response:\n\n1. Where was Federico Fellini born?\nAnswer: Rimini, Italy\n2. Where was Pier Paolo Pasolini born?\nAnswer: Bologna, Italy\n3. Where was Franco Zeffirelli born?\nAnswer: Florence, Italy",
+    "Final Refined Answer": "  Sure! Based on the provided information, here is the final refined answer to the original question \"Who are some film directors who were born in Rome?\" as a numbered list of persons:\n\n1. Franco Zeffirelli\n\nExplanation:\n\nThe baseline answer provided three film directors who were born in Rome, but after verifying the answers to the verification questions, it was determined that only Franco Zeffirelli was actually born"
+  },
+  {
+    "Question": "Who are some film directors who were born in NY, New York?",
+    "Baseline Answer": "  Sure! Here are three film directors who were born in New York, New York:\n\n1. Martin Scorsese\n2. Woody Allen\n3. Spike Lee",
+    "Verification Questions": "  Sure, here are three verification questions based on the actual question and the baseline response:\n\n1. Where was Martin Scorsese born?\n2. Where was Woody Allen born?\n3. Where was Spike Lee born?\n\nEach of these verification questions focuses on the ANSWER_ENTITY (name of the film director) and QUESTION_ENTITY (birth place) based on the template and substitutes entity values from the baseline response.",
+    "Execute Plan": "  Sure, I'm ready to answer the verification questions! Here are my responses:\n\n1. Where was Martin Scorsese born?\nAnswer: New York City, New York.\n2. Where was Woody Allen born?\nAnswer: Brooklyn, New York.\n3. Where was Spike Lee born?\nAnswer: Atlanta, Georgia.",
+    "Final Refined Answer": "  Based on the provided information, the final refined answer is:\n\n1. Spike Lee\n\nHere's the reasoning:\n\n1. Where was Martin Scorsese born?\nAnswer: New York City, New York. (Correct)\n2. Where was Woody Allen born?\nAnswer: Brooklyn, New York. (Correct)\n3. Where was Spike Lee born?\nAnswer: Atlanta, Georgia. (Incorrect"
+  },
+  {
+    "Question": "Who are some film directors who were born in Budapest?",
+    "Baseline Answer": "  Sure, here are three film directors who were born in Budapest:\n\n1. Béla Tarr\n2. István Szabó\n3. Miklós Jancsó",
+    "Verification Questions": "  Sure, here are three verification questions based on the actual question and the baseline response:\n\n1. Where was Béla Tarr born?\n2. Where was István Szabó born?\n3. Where was Miklós Jancsó born?\n\nThese verification questions focus on the ANSWER_ENTITY (name of the film director) and QUESTION_ENTITY (birth place) based on the template and substitute the entity values from the baseline response.",
+    "Execute Plan": "  Sure, I'm ready to answer the verification questions! Here are my responses:\n\n1. Where was Béla Tarr born?\nAnswer: Budapest, Hungary\n2. Where was István Szabó born?\nAnswer: Budapest, Hungary\n3. Where was Miklós Jancsó born?\nAnswer: Budapest, Hungary\n\nAll three film directors were born in Budapest, Hungary.",
+    "Final Refined Answer": "  Sure, I can help you with that! Based on the verification questions and answers, here is the final refined answer:\n\n1. Béla Tarr\n2. István Szabó\n3. Miklós Jancsó\n\nAll three film directors were born in Budapest, Hungary."
+  },
+  {
+    "Question": "Who are some university teachers who were born in Budapest?",
+    "Baseline Answer": "  Sure, here's the answer to your question:\n\n1. George Soros\n2. Elie Wiesel\n3. Noam Chomsky",
+    "Verification Questions": "  Sure, here are three verification questions based on the actual question and the baseline response:\n\n1. Where was George Soros born?\n2. Where was Elie Wiesel born?\n3. Where was Noam Chomsky born?\n\nEach of these verification questions focuses on the ANSWER_ENTITY (name of the university teacher) and the QUESTION_ENTITY (birth place) based on the template and substitutes entity values from the baseline response.",
+    "Execute Plan": "  Sure, I'll do my best to answer the verification questions based on the information provided in the baseline response. Here are my answers:\n\n1. Where was George Soros born?\nAnswer: Budapest, Hungary\n2. Where was Elie Wiesel born?\nAnswer: Sighet, Romania (now part of Ukraine)\n3. Where was Noam Chomsky born?\nAnswer: Philadelphia, Pennsylvania, USA",
+    "Final Refined Answer": "  Sure, I can help you with that! Based on the verification questions and answers, the final refined answer is:\n\n1. Noam Chomsky\n\nHere's the reasoning:\n\n1. Where was George Soros born?\nAnswer: Budapest, Hungary\n2. Where was Elie Wiesel born?\nAnswer: Sighet, Romania (now part of Ukraine)\n3. Where was Noam Chomsky born?\n"
+  },
+  {
+    "Question": "Who are some university teachers who were born in Hamburg?",
+    "Baseline Answer": "  Sure, I can help you with that! Here are three university teachers who were born in Hamburg, Germany:\n\n1. Albert Einstein\n2. Max Planck\n3. Otto von Simson",
+    "Verification Questions": "  Sure, here are three verification questions based on the actual question and the baseline response:\n\n1. Where was Albert Einstein born?\n2. Where was Max Planck born?\n3. Where was Otto von Simson born?\n\nThese verification questions focus on the ANSWER_ENTITY (name of the university teacher) and QUESTION_ENTITY (birth place) based on the template and substitute entity values from the baseline response.",
+    "Execute Plan": "  Sure, I'll do my best to answer the verification questions based on the information provided in the baseline response. Here are my answers:\n\n1. Where was Albert Einstein born?\nAnswer: Princeton, New Jersey\n\n2. Where was Max Planck born?\nAnswer: Kiel, Germany\n\n3. Where was Otto von Simson born?\nAnswer: Berlin, Germany",
+    "Final Refined Answer": "  Sure, I can help you with that! Based on the verification questions and answers, the final refined answer is:\n\n1. Albert Einstein\n2. Max Planck\n3. Otto von Simson\n\nHere's the list of persons in a numbered list:\n\n1. Albert Einstein\n2. Max Planck\n3. Otto von Simson"
+  },
+  {
+    "Question": "Who are some university teachers who were born in Vienna?",
+    "Baseline Answer": "  Sure, here's the answer to your question:\n\n1. Sigmund Freud\n2. Ludwig Wittgenstein\n3. Karl Popper\n4. Adolf Loos\n5. Arnold Schoenberg",
+    "Verification Questions": "  Sure, here are five verification questions based on the actual question and the baseline response:\n\n1. Where was Sigmund Freud born?\n2. Where was Ludwig Wittgenstein born?\n3. Where was Karl Popper born?\n4. Where was Adolf Loos born?\n5. Where was Arnold Schoenberg born?\n\nEach of these verification questions focuses on the ANSWER_ENTITY (name of the university teacher) and QUESTION_ENTITY (",
+    "Execute Plan": "  Sure, I'll do my best to answer the verification questions based on the information provided. Here are my answers:\n\n1. Where was Sigmund Freud born?\nAnswer: Freiberg, Moravia (now Czech Republic)\n2. Where was Ludwig Wittgenstein born?\nAnswer: Vienna, Austria\n3. Where was Karl Popper born?\nAnswer: Vienna, Austria\n4. Where was Adolf Loos born?\nAnswer: Trieste",
+    "Final Refined Answer": "  Sure! Based on the verification questions and answers, the refined answer to the original question \"Who are some university teachers who were born in Vienna?\" is:\n\n1. Karl Popper\n2. Ludwig Wittgenstein"
+  },
+  {
+    "Question": "Who are some university teachers who were born in Berlin?",
+    "Baseline Answer": "  Sure, here are ten notable university teachers who were born in Berlin, in no particular order:\n\n1. Angela Merkel\n2. Helmut Kohl\n3. Joschka Fischer\n4. Wolfgang Schäuble\n5. Gerhard Schröder\n6. Peer Steinbrück\n7. Ursula von der Leyen\n8. Frank-",
+    "Verification Questions": "  Sure, here are ten verification questions based on the actual question and the baseline response:\n\n1. Where was Angela Merkel born?\n2. Where was Helmut Kohl born?\n3. Where was Joschka Fischer born?\n4. Where was Wolfgang Schäuble born?\n5. Where was Gerhard Schröder born?\n6. Where was Peer Steinbrück born?\n7. Where was Ursula von der Leyen born?\n8. Where was Frank-",
+    "Execute Plan": "  Sure, I'd be happy to help! Here are the answers to the verification questions based on the actual questions and the baseline responses:\n\n1. Where was Angela Merkel born?\nAnswer: Hamburg, Germany\n2. Where was Helmut Kohl born?\nAnswer: Ludwigshafen, Germany\n3. Where was Joschka Fischer born?\nAnswer: Rothenburg ob der Tauber, Germany\n4. Where was Wolfgang Schäuble",
+    "Final Refined Answer": "  Sure! Based on the verification questions and answers, the refined answer to the original question \"Who are some university teachers who were born in Berlin?\" is:\n\n1. Angela Merkel\n\nHere is the list of persons, numbered and in no particular order:\n\n1. Angela Merkel"
+  },
+  {
+    "Question": "Who are some university teachers who were born in Rome?",
+    "Baseline Answer": "  Sure, here are three university teachers who were born in Rome:\n\n1. Galileo Galilei\n2. Niccolò Machiavelli\n3. Pope John Paul II",
+    "Verification Questions": "  Sure, here are three verification questions based on the actual question and the baseline response:\n\n1. Where was Galileo Galilei born?\n2. Where was Niccolò Machiavelli born?\n3. Where was Pope John Paul II born?\n\nThese verification questions focus on the ANSWER_ENTITY (name of the university teacher) and QUESTION_ENTITY (birth place) based on the template and substitute the entity values from the baseline response",
+    "Execute Plan": "  Sure, I'll do my best to answer the verification questions based on the information provided in the baseline response. Here are my answers:\n\n1. Where was Galileo Galilei born?\nAnswer: Florence, Italy\n2. Where was Niccolò Machiavelli born?\nAnswer: Florence, Italy\n3. Where was Pope John Paul II born?\nAnswer: Wadowice, Poland",
+    "Final Refined Answer": "  Sure! Based on the verification questions and answers provided, the final refined answer is:\n\n1. Galileo Galilei\n2. Niccolò Machiavelli\n3. Pope John Paul II\n\nHere's the list of university teachers who were born in Rome, based on the information provided in the baseline response:\n\n1. Galileo Galilei\n2. Niccolò Machiavelli\n3. Pope John Paul"
+  },
+  {
+    "Question": "Who are some screenwriter who were born in Los Angeles?",
+    "Baseline Answer": "  Sure! Here are three screenwriters who were born in Los Angeles:\n\n1. Quentin Tarantino\n2. Paul Thomas Anderson\n3. Aaron Sorkin",
+    "Verification Questions": "  Sure, here are three verification questions based on the actual question and baseline response:\n\n1. Where was Quentin Tarantino born?\n2. Where was Paul Thomas Anderson born?\n3. Where was Aaron Sorkin born?\n\nEach of these verification questions focuses on the ANSWER_ENTITY (name of the screenwriter) and QUESTION_ENTITY (birth place) based on the template and substitutes entity values from the baseline response.",
+    "Execute Plan": "  Sure, I'm ready to answer the verification questions! Here are my answers:\n\n1. Where was Quentin Tarantino born?\nAnswer: Knoxville, Tennessee\n2. Where was Paul Thomas Anderson born?\nAnswer: Studio City, California\n3. Where was Aaron Sorkin born?\nAnswer: New York City, New York",
+    "Final Refined Answer": "  Based on the provided verification questions and answers, the refined answer to the original question \"Who are some screenwriters who were born in Los Angeles?\" is:\n\n1. Aaron Sorkin\n\nHere is the list of persons, numbered and with the entity value from the baseline response:\n\n1. Aaron Sorkin (born in New York City, New York)"
+  },
+  {
+    "Question": "Who are some screenwriter who were born in London?",
+    "Baseline Answer": "  Sure! Here are three screenwriters who were born in London:\n\n1. Alan Bennett\n2. Richard Curtis\n3. Steven Moffat",
+    "Verification Questions": "  Sure, here are three verification questions based on the actual question and baseline response:\n\n1. Where was Alan Bennett born?\n2. Where was Richard Curtis born?\n3. Where was Steven Moffat born?\n\nThese verification questions focus on the ANSWER_ENTITY (name of the screenwriter) and QUESTION_ENTITY (birth place) based on the template and substitute entity values from the baseline response.",
+    "Execute Plan": "  Sure, here are the answers to the verification questions based on the information provided in the baseline response:\n\n1. Where was Alan Bennett born?\nAnswer: Leeds, England\n2. Where was Richard Curtis born?\nAnswer: Wellington, New Zealand\n3. Where was Steven Moffat born?\nAnswer: Paisley, Scotland",
+    "Final Refined Answer": "  Sure, based on the information provided in the verification questions and answers, the final refined answer to the original question \"Who are some screenwriters who were born in London?\" is:\n\n1. Steven Moffat\n\nHere is the numbered list of refined answers:\n\n1. Steven Moffat (born in Paisley, Scotland)"
+  },
+  {
+    "Question": "Who are some screenwriter who were born in Moscow?",
+    "Baseline Answer": "  Sure, here are three screenwriters who were born in Moscow:\n\n1. Alexei Saltykov\n2. Ivan Vyrypaev\n3. Vladimir Sorokin",
+    "Verification Questions": "  Sure, here are three verification questions based on the actual question and the baseline response:\n\n1. Where was Alexei Saltykov born?\n2. Where was Ivan Vyrypaev born?\n3. Where was Vladimir Sorokin born?\n\nThese verification questions focus on the ANSWER_ENTITY (name of the screenwriter) and QUESTION_ENTITY (birth place) based on the template and substitute entity values from the baseline response.",
+    "Execute Plan": "  Sure, I'm ready to answer the verification questions! Here are my responses:\n\n1. Where was Alexei Saltykov born?\nAnswer: Moscow, Russia\n2. Where was Ivan Vyrypaev born?\nAnswer: Novosibirsk, Russia\n3. Where was Vladimir Sorokin born?\nAnswer: Leningrad, Russia",
+    "Final Refined Answer": "  Sure, based on your responses to the verification questions, here is the final refined answer:\n\n1. Alexei Saltykov\n2. Ivan Vyrypaev\n3. Vladimir Sorokin\n\nThese are the three screenwriters who were born in Moscow, as confirmed by your responses to the verification questions."
+  },
+  {
+    "Question": "Who are some screenwriter who were born in Paris?",
+    "Baseline Answer": "  Sure, here's the answer to your question:\n\n1. Victor Hugo\n2. Alexandre Dumas\n3. Émile Zola\n4. Gustave Flaubert\n5. Jean-Paul Sartre",
+    "Verification Questions": "  Sure, here are five verification questions based on the actual question \"Who are some screenwriters who were born in Paris?\" and the baseline response:\n\n1. Where was Victor Hugo born?\n2. Where was Alexandre Dumas born?\n3. Where was Émile Zola born?\n4. Where was Gustave Flaubert born?\n5. Where was Jean-Paul Sartre born?\n\nThese verification questions focus on the ANSWER_ENTITY (name of",
+    "Execute Plan": "  Sure, I'd be happy to help! Here are the answers to the verification questions based on the information provided:\n\n1. Where was Victor Hugo born?\nAnswer: Paris, France\n2. Where was Alexandre Dumas born?\nAnswer: Paris, France\n3. Where was Émile Zola born?\nAnswer: Paris, France\n4. Where was Gustave Flaubert born?\nAnswer: Rouen, France\n5. Where was",
+    "Final Refined Answer": "  Sure, I'd be happy to help! Based on the verification questions and answers provided, the final refined answer to the original question \"Who are some screenwriters who were born in Paris?\" is:\n\n1. Victor Hugo\n2. Alexandre Dumas\n3. Émile Zola\n\nThese are the three screenwriters who were born in Paris, France."
+  },
+  {
+    "Question": "Who are some screenwriter who were born in Rome?",
+    "Baseline Answer": "  Sure, here's the answer to your question:\n\n1. Federico Fellini\n2. Pier Paolo Pasolini\n3. Michelangelo Antonioni",
+    "Verification Questions": "  Sure, here are three verification questions based on the actual question and the baseline response:\n\n1. Where was Federico Fellini born?\n2. Where was Pier Paolo Pasolini born?\n3. Where was Michelangelo Antonioni born?\n\nThese verification questions focus on the ANSWER_ENTITY (name of the screenwriter) and QUESTION_ENTITY (birth place) based on the template and substitute entity values from the baseline response.",
+    "Execute Plan": "  Sure, I'll do my best to answer the verification questions based on the information provided in the baseline response. Here are my answers:\n\n1. Federico Fellini was born in Rimini, Italy.\n2. Pier Paolo Pasolini was born in Bologna, Italy.\n3. Michelangelo Antonioni was born in Rome, Italy.",
+    "Final Refined Answer": "  Sure, based on the verification questions and answers provided, the final refined answer to the original question \"Who are some screenwriters who were born in Rome?\" is:\n\n1. Michelangelo Antonioni"
+  }
+]
