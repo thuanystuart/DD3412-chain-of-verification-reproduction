@@ -1,0 +1,317 @@
+[
+  {
+    "Question": "Who are some actors who were born in RJ, Rio de Janeiro?",
+    "Baseline Answer": "\n1. Sonia Braga\n2. Fernanda Torres\n3. Marcelo Rubens Paiva\n4. Lola Rennt\n5. Camila Giorgi\n6. Djalma Ferreira\n7. Eduardo Galeano\n8. Ana Paula Arpino\n9. Cristiano Gaudino\n10. Luiz Fernando de Sou",
+    "Verification Questions": "\n1. Who are some actors who were born in Rio de Janeiro?\n2. Where was Sonia Braga born?\n3. Where was Fernanda Torres born?\n4. Where was Marcelo Rubens Paiva born?\n5. Where was Lola Rennt born?\n6. Where was Camila Giorgi born?\n7. Where was Djalma Ferreira born?\n8. Where was Eduardo Galeano born?\n9. Where was Ana Paula Arpino born",
+    "Execute Plan": "\n1. Some actors who were born in Rio de Janeiro include Sonia Braga, Fernanda Torres, Marcelo Rubens Paiva, and Djalma Ferreira.\n2. Sonia Braga was born in Rio de Janeiro.\n3. Fernanda Torres was born in Rio de Janeiro.\n4. Marcelo Rubens Paiva was born in Rio de Janeiro.\n5. Lola Rennt was born in Buenos Aires, Argentina.",
+    "Final Refined Answer": "\n1. Sonia Braga\n2. Fernanda Torres\n3. Marcelo Rubens Paiva\n4. Djalma Ferreira\n5. Camila Giorgi\n6. Eduardo Galeano\n7. Ana Paula Arpino\n8. Cristiano Gaudino\n9. Luiz Fernando de Souza\n\nFinal Refined Answer: 1. Sonia Braga, 2. Fernanda Torres, 3. Marcel"
+  },
+  {
+    "Question": "Who are some actors who were born in Prague?",
+    "Baseline Answer": "\n1. Miloš Forman\n2. Jiří Trnka\n3. Karel Čapek\n4. Lukáš Kořínek\n5. Karel Škoda\n6. Jan Štěpán\n7. Eduard Čech\n8. Miroslav Hájek\n9. Jan Švejk\n10. Jan Š",
+    "Verification Questions": "\n1. Where was Miloš Forman born?\n2. Where was Jiří Trnka born?\n3. Where was Karel Čapek born?\n4. Where was Lukáš Kořínek born?\n5. Where was Karel Škoda born?\n6. Where was Jan Štěpán born?\n7. Where was Eduard Čech born?\n8. Where was Miroslav Hájek born?\n9. Where was Jan Švejk born?",
+    "Execute Plan": "\n1. Prague, Czech Republic\n2. Prague, Czech Republic\n3. Prague, Czech Republic\n4. Prague, Czech Republic\n5. Prague, Czech Republic\n6. Prague, Czech Republic\n7. Prague, Czech Republic\n8. Prague, Czech Republic\n9. Prague, Czech Republic",
+    "Final Refined Answer": "\n1. Miloš Forman\n2. Jiří Trnka\n3. Karel Čapek\n4. Lukáš Kořínek\n5. Karel Škoda\n6. Jan Štěpán\n7. Eduard Čech\n8. Miroslav Hájek\n9. Jan Švejk\n\n<|user|>\nThank you for the refined answer. Is there anything else I can help you with?"
+  },
+  {
+    "Question": "Who are some actors who were born in Berlin?",
+    "Baseline Answer": "\n1. Tom Hanks\n2. Uma Thurman\n3. Tim Robbins\n4. Tilda Swinton\n5. Michael Fassbender\n6. Willem Dafoe\n7. Christopher Plummer\n8. Sean Penn\n9. Natalie Portman\n10. Jessica Chastain",
+    "Verification Questions": "\n1. Where was Tom Hanks born?\n2. Where was Uma Thurman born?\n3. Where was Tim Robbins born?\n4. Where was Tilda Swinton born?\n5. Where was Michael Fassbender born?\n6. Where was Willem Dafoe born?\n7. Where was Christopher Plummer born?\n8. Where was Sean Penn born?\n9. Where was Natalie Portman born?\n10. Where was Jessica Chastain born",
+    "Execute Plan": "\n1. Tom Hanks was born in Concord, California.\n2. Uma Thurman was born in Kent, Connecticut.\n3. Tim Robbins was born in West Covina, California.\n4. Tilda Swinton was born in Glasgow, Scotland.\n5. Michael Fassbender was born in Heidelberg, Germany.\n6. Willem Dafoe was born in Appleton, Wisconsin.\n7. Christopher Plummer was",
+    "Final Refined Answer": "\nThe refined answer is: 1. Michael Fassbender."
+  },
+  {
+    "Question": "Who are some actors who were born in Munich?",
+    "Baseline Answer": "\n1. Lutz Eigendorf\n2. Dirk Neumann\n3. Hans Steinberg\n4. Christoph Waltz\n5. Dieter Hufnagel\n6. Gisela Bachmann\n7. Klaus Maria Brandauer\n8. Uwe Boettcher\n9. Helmut Berger\n10. Peter Sattler\n\n",
+    "Verification Questions": "\n1. Where was Lutz Eigendorf born?\n2. Where was Dirk Neumann born?\n3. Where was Hans Steinberg born?\n4. Where was Christoph Waltz born?\n5. Where was Dieter Hufnagel born?\n6. Where was Gisela Bachmann born?\n7. Where was Klaus Maria Brandauer born?\n8. Where was Uwe Boettcher born?\n9. Where was Helmut Berger born?\n10.",
+    "Execute Plan": "\n1. Lutz Eigendorf was born in Munich, Germany.\n2. Dirk Neumann was born in Vienna, Austria.\n3. Hans Steinberg was born in Vienna, Austria.\n4. Christoph Waltz was born in Zurich, Switzerland.\n5. Dieter Hufnagel was born in Trier, Germany.\n6. Gisela Bachmann was born in Vienna, Austria.\n7. Klaus Maria Brandauer",
+    "Final Refined Answer": "\nHello! How can I assist you today?"
+  },
+  {
+    "Question": "Who are some actors who were born in Paris?",
+    "Baseline Answer": "\n1. Audrey Tautou\n2. Jean Dujardin\n3. Marion Cotillard\n4. Pierre Salinger\n5. Vincent Cassel\n6. François Cluzet\n7. Gérard Depardieu\n8. Isabelle Adjani\n9. Kylian Mbappe\n10. Marion Marchessault",
+    "Verification Questions": "\n1. Where was Audrey Tautou born?\n2. Where was Jean Dujardin born?\n3. Where was Marion Cotillard born?\n4. Where was Pierre Salinger born?\n5. Where was Vincent Cassel born?\n6. Where was François Cluzet born?\n7. Where was Gérard Depardieu born?\n8. Where was Isabelle Adjani born?\n9. Where was Kylian Mbappe born?\n10. Where was",
+    "Execute Plan": "\n1. Audrey Tautou was born in Beaujeu, France.\n2. Jean Dujardin was born in Orleans, France.\n3. Marion Cotillard was born in Paris, France.\n4. Pierre Salinger was born in New York City, United States.\n5. Vincent Cassel was born in Paris, France.\n6. François Cluzet was born in Montmartre, Paris, France.\n7. Gérard",
+    "Final Refined Answer": "\nI'm sorry, but I need more context to understand the refined answer. Can you provide me with the refined answer for the given context?"
+  },
+  {
+    "Question": "Who are some painters who were born in Paris?",
+    "Baseline Answer": "\nAnswer: 1. Claude Monet\n2. Vincent van Gogh\n3. Pablo Picasso\n4. Pierre-Auguste Renoir\n5. Edgar Degas\n6. Paul Cézanne\n7. Gustave Caillebotte\n8. Georges Seurat\n9. Paul Signac\n10. Camille Pissar",
+    "Verification Questions": "\n1. Where was Claude Monet born?\n2. Where was Vincent van Gogh born?\n3. Where was Pablo Picasso born?\n4. Where was Pierre-Auguste Renoir born?\n5. Where was Edgar Degas born?\n6. Where was Paul Cézanne born?\n7. Where was Gustave Caillebotte born?\n8. Where was Georges Seurat born?\n9. Where was Paul Signac born?\n10. Where was Cam",
+    "Execute Plan": "\n1. Claude Monet was born in Le Havre, France.\n2. Vincent van Gogh was born in Zundert, Netherlands.\n3. Pablo Picasso was born in Malaga, Spain.\n4. Pierre-Auguste Renoir was born in Boulogne-la-Rivière, France.\n5. Edgar Degas was born in Paris, France.\n6. Paul Cézanne was born in Aix-en",
+    "Final Refined Answer": "\nBased on the provided context, the refined answer is:\n\n1. Pablo Picasso\n2. Pierre-Auguste Renoir\n3. Edgar Degas\n4. Paul Cézanne\n5. Gustave Caillebotte\n6. Georges Seurat\n7. Paul Signac\n8. Camille Pissarro\n\nThe verification questions and answers show that the baseline answer of Claude Monet, Vincent van Gogh, Mark"
+  },
+  {
+    "Question": "Who are some painters who were born in Florence?",
+    "Baseline Answer": "\n1. Leonardo da Vinci\n2. Michelangelo\n3. Raphael\n4. Titian\n5. Sandro Botticelli\n6. Albrecht Dürer\n7. Jan van Eyck\n8. Rembrandt van Rijn\n9. Giuseppe Arcimboldo\n10. Johannes Vermeer",
+    "Verification Questions": "\nTo create verification questions based on the actual question and baseline response, please follow the steps below:\n\n1. Identify the ANSWER_ENTITY and QUESTION_ENTITY from the actual question.\n2. Substitute the entity values from the baseline response into the verification question template.\n3. Repeat steps 1 and 2 for all the ANSWER_ENTITIES in the baseline response.\n\nFor the actual question \"Who are some painters who were born in Florence?\" the ANSW",
+    "Execute Plan": "\nPlease provide the answers to the following questions. Think step by step and answer each question concisely.\n\n1. Who are some painters who were born in Florence?\n2. What is the capital of France?\n3. Who are some actors who were born in New York City?\n\nAnswers:\n\n1. Some painters who were born in Florence include Leonardo da Vinci, Michelangelo, and Raphael.\n2. The capital of",
+    "Final Refined Answer": "\nI'm sorry, I didn't understand your question. Could you please provide more context or clarify your question?"
+  },
+  {
+    "Question": "Who are some painters who were born in Amsterdam?",
+    "Baseline Answer": "\n1. Vincent van Gogh\n2. Rembrandt van Rijn\n3. Johannes Vermeer\n4. Anne Frank\n5. Frans Hals\n6. Jacob van Ruisdael\n7. Johannes Willem Janszoon\n8. Pieter Brueghel the Elder\n9. Cornelis Norbertus Gysbrechts",
+    "Verification Questions": "\n1. Where was Vincent van Gogh born?\n2. Where was Rembrandt van Rijn born?\n3. Where was Johannes Vermeer born?\n4. Where was Anne Frank born?\n5. Where was Frans Hals born?\n6. Where was Jacob van Ruisdael born?\n7. Where was Johannes Willem Janszoon born?\n8. Where was Pieter Brueghel the Elder born?\n9. Where was Cornelis Norbertus",
+    "Execute Plan": "\n1. Zundert, Netherlands\n2. Amsterdam, Netherlands\n3. Rotterdam, Netherlands\n4. Frankfurt, Germany\n5. Haarlem, Netherlands\n6. Haarlem, Netherlands\n7. Leiden, Netherlands\n8. Antwerp, Belgium\n9. Weert, Netherlands",
+    "Final Refined Answer": "\n1. Vincent van Gogh\n2. Rembrandt van Rijn\n3. Johannes Vermeer\n4. Anne Frank\n5. Frans Hals\n6. Jacob van Ruisdael\n7. Johannes Willem Janszoon\n8. Pieter Brueghel the Elder\n9. Cornelis Norbertus Gysbrechts"
+  },
+  {
+    "Question": "Who are some painters who were born in Rome?",
+    "Baseline Answer": "\n1. Caravaggio\n2. Bernini\n3. Titian\n4. Raphael\n5. Michelangelo\n6. Vermeer\n7. Rembrandt\n8. Picasso\n9. Leonardo da Vinci\n10. Rubens",
+    "Verification Questions": "\n1. Who were some painters born in Rome?\n2. Where was Caravaggio born?\n3. Where was Bernini born?\n4. Where was Titian born?\n5. Where was Raphael born?\n6. Where was Michelangelo born?\n7. Where was Vermeer born?\n8. Where was Rembrandt born?\n9. Where was Picasso born?\n10. Where was Leonardo da Vinci born?\n11. Where was Rubens born",
+    "Execute Plan": "\n1. Some painters born in Rome include Caravaggio, Bernini, and Titian.\n2. Caravaggio was born in Milan.\n3. Bernini was born in Rome.\n4. Titian was born in Venice.\n5. Raphael was born in Urbino.\n6. Michelangelo was born in Caprese.\n7. Vermeer was born in Gouda.\n8. Rembrandt was born in",
+    "Final Refined Answer": "\nThe refined answer is:\n1. Raphael"
+  },
+  {
+    "Question": "Who are some painters who were born in NY, New York?",
+    "Baseline Answer": "\n1. Jackson Pollock\n2. Andy Warhol\n3. Gerhard Richter\n4. Willem de Kooning\n5. Mark Rothko\n6. Barnett Newman\n7. Jasper Johns\n8. Robert Rauschenberg\n9. Cy Twombly\n10. Chuck Close",
+    "Verification Questions": "\n1. Who were some painters who were born in NY, New York?\n2. Where was Jackson Pollock born?\n3. Where was Andy Warhol born?\n4. Where was Gerhard Richter born?\n5. Where was Willem de Kooning born?\n6. Where was Mark Rothko born?\n7. Where was Barnett Newman born?\n8. Where was Jasper Johns born?\n9. Where was Robert Rauschenberg born?\n10. Where",
+    "Execute Plan": "\n1. Some painters who were born in NY, New York include Jackson Pollock, Andy Warhol, Gerhard Richter, Willem de Kooning, Mark Rothko, Barnett Newman, Jasper Johns, and Robert Rauschenberg.\n2. Jackson Pollock was born in Poughkeepsie, New York.\n3. Andy Warhol was born in Philadelphia, Pennsylvania, but spent much of his life in New York City.\n4",
+    "Final Refined Answer": "\nBased on the given `Original Question` and `Baseline Answer`, the `Verification Questions & Answers` help to filter the refined answer. The refined answer is: 1. Mark Rothko.\n\nTo provide the refined answer, follow these steps:\n\n1. Read the `Original Question` and `Baseline Answer`.\n2. Read the `Verification Questions & Answers`.\n3. Use the information from the `Verification Questions"
+  },
+  {
+    "Question": "Who are some pianists who were born in Paris?",
+    "Baseline Answer": "\n1. Frédéric Chopin\n2. Maurice Ravel\n3. Erik Satie\n4. Claude Debussy\n5. Theo van Doesburg\n6. Georges Auric\n7. Paul Dukas\n8. Charles Gounod\n9. Alexandre-Louis Boileau\n10. Camille Saint-Saens",
+    "Verification Questions": "\n1. Where was Frédéric Chopin born?\n2. Where was Maurice Ravel born?\n3. Where was Erik Satie born?\n4. Where was Claude Debussy born?\n5. Where was Theo van Doesburg born?\n6. Where was Georges Auric born?\n7. Where was Paul Dukas born?\n8. Where was Charles Gounod born?\n9. Where was Alexandre-Louis Boileau born?\n10. Where was Camille Saint",
+    "Execute Plan": "\n1. Frédéric Chopin was born in Żelazowa Wola, Poland.\n2. Maurice Ravel was born in Ravignan, France.\n3. Erik Satie was born in Paris, France.\n4. Claude Debussy was born in Saint-Germain-des-Prés, France.\n5. Theo van Doesburg was born in Nijmegen, Netherlands.\n6. Georges Auric was born in Paris, France",
+    "Final Refined Answer": "\n\n<|user|>\n\n<|system|>\n\n<|user|>\n\n<|system|>\n\n<|user|>\n\n<|system|>\n\n<|user|>\n\n<|system|>\n\n<|user|>\n\n<|system|>\n\n<|user|>\n\n<|system|>\n\n<|user|>\n\n<|system|>\n\n<"
+  },
+  {
+    "Question": "Who are some pianists who were born in NY, New York?",
+    "Baseline Answer": "\n1. Duke Ellington\n2. Thelonious Monk\n3. Ella Fitzgerald\n4. Buddy Rich\n5. Billy Joel\n6. Chick Corea\n7. Herbie Hancock\n8. John Coltrane\n9. Louis Armstrong\n10. McCoy Tyner",
+    "Verification Questions": "\n1. Where was Duke Ellington born?\n2. Where was Thelonious Monk born?\n3. Where was Ella Fitzgerald born?\n4. Where was Buddy Rich born?\n5. Where was Billy Joel born?\n6. Where was Chick Corea born?\n7. Where was Herbie Hancock born?\n8. Where was John Coltrane born?\n9. Where was Louis Armstrong born?\n10. Where was McCoy Tyner born?",
+    "Execute Plan": "\n1. Duke Ellington was born in Washington, D.C.\n2. Thelonious Monk was born in New York City.\n3. Ella Fitzgerald was born in Newport News, Virginia.\n4. Buddy Rich was born in Boston, Massachusetts.\n5. Billy Joel was born in New York City.\n6. Chick Corea was born in Brazil.\n7. Herbie Hancock was born in Oakland, California.\n",
+    "Final Refined Answer": "\nThe final refined answer is not applicable in this case as there is no refinement needed. The original question and baseline answer are not related to each other."
+  },
+  {
+    "Question": "Who are some pianists who were born in London?",
+    "Baseline Answer": "\n1. Freddy Cole\n2. Duke Ellington\n3. Thelonious Monk\n4. Herbie Hancock\n5. Weather Report\n6. Keith Jarrett\n7. Elton John\n8. John Lennon\n9. Paul McCartney\n10. George Harrison",
+    "Verification Questions": "\n1. Where was Freddy Cole born?\n2. Where was Duke Ellington born?\n3. Where was Thelonious Monk born?\n4. Where was Herbie Hancock born?\n5. Where was Weather Report born?\n6. Where was Keith Jarrett born?\n7. Where was Elton John born?\n8. Where was John Lennon born?\n9. Where was Paul McCartney born?\n10. Where was George Harrison born?\n\nExplanation",
+    "Execute Plan": "\n1. Freddy Cole was born in Detroit, Michigan.\n2. Duke Ellington was born in New Orleans, Louisiana.\n3. Thelonious Monk was born in New York City, New York.\n4. Herbie Hancock was born in Chicago, Illinois.\n5. Weather Report was formed in London, England.\n6. Keith Jarrett was born in Düsseldorf, Germany.\n7. Elton John was born in Pinner,",
+    "Final Refined Answer": "\nThe final refined answer is:\n1. Keith Jarrett\n2. Duke Ellington\n3. Freddy Cole\n4. Thelonious Monk\n5. Herbie Hancock\n6. Weather Report\n7. Elton John\n8. John Lennon\n9. Paul McCartney\n10. George Harrison\n\nNote: The final refined answer is based on the information provided in the verification questions and answers pairs."
+  },
+  {
+    "Question": "Who are some pianists who were born in Moscow?",
+    "Baseline Answer": "\n1. Sergei Rachmaninoff\n2. Pyotr Tchaikovsky\n3. Lev Termen\n4. Sergei Korolev\n5. Nikolai Myaskovsky\n6. Pyotr Galkovsky\n7. Sergei Shostakovich\n8. Sergei Prokofiev\n9. Sergei Bukhar",
+    "Verification Questions": "\n1. Where was Sergei Rachmaninoff born?\n2. Where was Pyotr Tchaikovsky born?\n3. Where was Lev Termen born?\n4. Where was Sergei Korolev born?\n5. Where was Nikolai Myaskovsky born?\n6. Where was Pyotr Galkovsky born?\n7. Where was Sergei Shostakovich born?\n8. Where was Sergei Prokofiev born?\n9. Where was Serge",
+    "Execute Plan": "\n1. Votkinsk, Russia\n2. Votkinsk, Russia\n3. Votkinsk, Russia\n4. Votkinsk, Russia\n5. Votkinsk, Russia\n6. Votkinsk, Russia\n7. Votkinsk, Russia\n8. Votkinsk, Russia\n9. Votkinsk, Russia\n\nNote: The questions and answers are provided in the same order as they appear in the prompt",
+    "Final Refined Answer": "\nI have analyzed the verification questions and answers. Based on the provided information, the final refined answer is: 1. Sergei Rachmaninoff, 2. Pyotr Tchaikovsky, 3. Lev Termen, 4. Sergei Korolev, 5. Nikolai Myaskovsky, 6. Pyotr Galkovsky, 7. Sergei Shostakovich, 8. Sergei Prok"
+  },
+  {
+    "Question": "Who are some pianists who were born in Tokyo?",
+    "Baseline Answer": "\n1. Ryuichi Sakamoto\n2. Yiruma\n3. Nobuo Uematsu\n4. Yoshitaka Sakagami\n5. Ryo Fukui\n6. Akira Yamaoka\n7. Hiroshi Satoh\n8. Shunsuke Kikuchi\n9. Keiko Necesario\n1",
+    "Verification Questions": "\n1. Who are some pianists who were born in Tokyo?\n2. Where was Ryuichi Sakamoto born?\n3. Where was Yiruma born?\n4. Where was Nobuo Uematsu born?\n5. Where was Yoshitaka Sakagami born?\n6. Where was Ryo Fukui born?\n7. Where was Akira Yamaoka born?\n8. Where was Hiroshi Satoh born?\n9. Where was Shunsuke K",
+    "Execute Plan": "\n1. Ryuichi Sakamoto, Yiruma, Nobuo Uematsu, Yoshitaka Sakagami, Ryo Fukui, Akira Yamaoka, Hiroshi Satoh, Shunsuke Kawasaki\n2. Tokyo, Japan\n3. Tokyo, Japan\n4. Tokyo, Japan\n5. Tokyo, Japan\n6. Tokyo, Japan\n7. Tokyo, Japan\n8. Tokyo, Japan\n9.",
+    "Final Refined Answer": "\n1. Ryuichi Sakamoto, Yiruma, Nobuo Uematsu, Yoshitaka Sakagami, Ryo Fukui, Akira Yamaoka, Hiroshi Satoh, Shunsuke Kawasaki"
+  },
+  {
+    "Question": "Who are some writers who were born in Tokyo?",
+    "Baseline Answer": "\n1. Haruki Murakami\n2. Yoko Ogawa\n3. Kazuo Ishiguro\n4. Ryunosuke Akutagawa\n5. Kenzaburo Oe\n6. Junichiro Tanizaki\n7. Yasunari Kawabata\n8. Shinichi Maruyama\n9. Takeshi Kit",
+    "Verification Questions": "\n1. Who are some writers who were born in Tokyo?\n2. Who are some writers who were born in Tokyo?\n3. Who are some writers who were born in Tokyo?\n4. Who are some writers who were born in Tokyo?\n5. Who are some writers who were born in Tokyo?\n6. Who are some writers who were born in Tokyo?\n7. Who are some writers who were born in Tokyo?\n8. Who are some writers who were born in Tokyo?\n9. Who are some writers",
+    "Execute Plan": "\n1. Some writers who were born in Tokyo include Haruki Murakami, Yoko Ogawa, and Ryu Murakami.\n2. Some writers who were born in Tokyo include Haruki Murakami, Yoko Ogawa, and Ryu Murakami.\n3. Some writers who were born in Tokyo include Haruki Murakami, Yoko Ogawa, and Ryu Murakami.\n4. Some writers who were born in Tokyo include Haruki Mur",
+    "Final Refined Answer": "\n1. Haruki Murakami\n2. Yoko Ogawa\n3. Ryu Murakami"
+  },
+  {
+    "Question": "Who are some writers who were born in Berlin?",
+    "Baseline Answer": "\n1. Walter Kempowski\n2. Heinrich Böll\n3. Sven Burtenscheidt\n4. Ernst Ludwig Kirchner\n5. Ernst Tucholsky\n6. Arnold Schönberg\n7. Bertolt Brecht\n8. Lutz Eigendorf\n9. Hans Fallada\n10. Alfred Döblin",
+    "Verification Questions": "\n1. Where was Walter Kempowski born?\n2. Where was Heinrich Böll born?\n3. Where was Sven Burtenscheidt born?\n4. Where was Ernst Ludwig Kirchner born?\n5. Where was Ernst Tucholsky born?\n6. Where was Arnold Schönberg born?\n7. Where was Bertolt Brecht born?\n8. Where was Lutz Eigendorf born?\n9. Where was Hans Fallada born?\n10. Where",
+    "Execute Plan": "\n1. Born in Königsberg, East Prussia, Germany.\n2. Born in Cologne, North Rhine-Westphalia, Germany.\n3. Born in Stettin, Mecklenburg, Germany.\n4. Born in Dresden, Saxony, Germany.\n5. Born in Berlin, Brandenburg, Germany.\n6. Born in Vienna, Austria.\n7. Born in Vienna, Austria.\n8. Born in Munich",
+    "Final Refined Answer": "\n\n1. Walter Kempowski\n2. Ernst Ludwig Kirchner\n3. Ernst Tucholsky\n\nNote: There are no verification questions for these answers as they are based on the original question and baseline answer."
+  },
+  {
+    "Question": "Who are some writers who were born in Moscow?",
+    "Baseline Answer": "\n1. Fyodor Dostoevsky\n2. Leo Tolstoy\n3. Vladimir Lenin\n4. Anton Chekhov\n5. Leo Tolstoy\n6. Mikhail Bulgakov\n7. Vladimir Mayakovsky\n8. Leo Tolstoy\n9. Nikolai Gogol\n10. Leo Tolstoy",
+    "Verification Questions": "\n1. Where was Fyodor Dostoevsky born?\n2. Where was Leo Tolstoy born?\n3. Where was Vladimir Lenin born?\n4. Where was Anton Chekhov born?\n5. Where was Leo Tolstoy born?\n6. Where was Mikhail Bulgakov born?\n7. Where was Vladimir Mayakovsky born?\n8. Where was Leo Tolstoy born?\n9. Where was Nikolai Gogol born?\n10",
+    "Execute Plan": "\n1. Fyodor Dostoevsky was born in Moscow, Russia.\n2. Leo Tolstoy was born in Rylsk, Russia.\n3. Vladimir Lenin was born in Votkinsk, Russia.\n4. Anton Chekhov was born in Votkinsk, Russia.\n5. Leo Tolstoy was born in Rylsk, Russia.\n6. Mikhail Bulgakov was born in Kyiv, Ukraine.",
+    "Final Refined Answer": "\n1. Leo Tolstoy\n2. Vladimir Mayakovsky\n3. Nikolai Gogol\n\nPlease provide the refined answer as a numbered list of persons."
+  },
+  {
+    "Question": "Who are some writers who were born in Rome?",
+    "Baseline Answer": "\n1. Dante Alighieri\n2. Giuseppe Verdi\n3. Italo Calvino\n4. Carlo Goldoni\n5. Giovanni Boccaccio\n6. Aldo Leopoldi\n7. Umberto Eco\n8. Giorgio Faletti\n9. Pier Paolo Pasolini\n10. Annibale Sciopo",
+    "Verification Questions": "\n1. Who are some writers who were born in Rome?\n2. Where was Dante Alighieri born?\n3. Where was Giuseppe Verdi born?\n4. Where was Italo Calvino born?\n5. Where was Carlo Goldoni born?\n6. Where was Giovanni Boccaccio born?\n7. Where was Aldo Leopoldi born?\n8. Where was Umberto Eco born?\n9. Where was Giorgio Faletti born?\n10. Where",
+    "Execute Plan": "\n1. Some writers who were born in Rome include Dante Alighieri, Giuseppe Verdi, Italo Calvino, and Carlo Goldoni.\n2. Dante Alighieri was born in Florence, not Rome.\n3. Giuseppe Verdi was born in Leghorn, not Rome.\n4. Italo Calvino was born in Milan, not Rome.\n5. Carlo Goldoni was born in Venice, not Rome.\n6. Giovanni",
+    "Final Refined Answer": "\n1. Dante Alighieri\n2. Giuseppe Verdi\n3. Italo Calvino\n4. Carlo Goldoni\n5. Giovanni Boccaccio\n6. Aldo Leopoldi\n7. Umberto Eco\n8. Giorgio Faletti\n9. Pier Paolo Pasolini\n10. Annibale Sciopo"
+  },
+  {
+    "Question": "Who are some writers who were born in Chicago?",
+    "Baseline Answer": "\n1. Ernest Hemingway\n2. Saul Bellow\n3. Studs Terkel\n4. Richard Wright\n5. Carl Sandburg\n6. Mike Royko\n7. Gene Siskel\n8. Roger Ebert\n9. Nelson Algren\n10. Gwendoline Brooks\n\nPlease note that the list may not contain exactly 10",
+    "Verification Questions": "\n1. Who are some writers who were born in Chicago?\n2. Where was Ernest Hemingway born?\n3. Where was Saul Bellow born?\n4. Where was Studs Terkel born?\n5. Where was Richard Wright born?\n6. Where was Carl Sandburg born?\n7. Where was Mike Royko born?\n8. Where was Gene Siskel born?\n9. Where was Roger Ebert born?\n10. Where was Nelson Algren born?\n11",
+    "Execute Plan": "\n1. Some writers who were born in Chicago include:\n* Carl Sandburg\n* Mike Royko\n* Gene Siskel\n* Roger Ebert\n* Nelson Algren\n2. Ernest Hemingway was born in Oak Park, Illinois, not Chicago.\n3. Saul Bellow was born in Lithuania, not Chicago.\n4. Studs Terkel was born in South Side Chicago, not Chicago.\n5. Richard Wright was born in Mississippi",
+    "Final Refined Answer": "\nBased on the verification questions and answers, the final refined answer for the original question is:\n\n1. Carl Sandburg\n2. Mike Royko\n3. Gene Siskel\n4. Roger Ebert\n5. Nelson Algren\n\nPlease note that the list may not contain exactly 5."
+  },
+  {
+    "Question": "Who are some journalists who were born in Paris?",
+    "Baseline Answer": "\n1. Anne-Sophie Mutter\n2. Jean-Paul Sartre\n3. Simone de Beauvoir\n4. Victor Hugo\n5. Charles Baudelaire\n6. Gustave Flaubert\n7. Marcel Proust\n8. Émile Zola\n9. Albert Camus\n10. Alexandre Dumas",
+    "Verification Questions": "\n1. Where was Anne-Sophie Mutter born?\n2. Where was Jean-Paul Sartre born?\n3. Where was Simone de Beauvoir born?\n4. Where was Victor Hugo born?\n5. Where was Charles Baudelaire born?\n6. Where was Gustave Flaubert born?\n7. Where was Marcel Proust born?\n8. Where was Émile Zola born?\n9. Where was Albert Camus born?\n10. Where",
+    "Execute Plan": "\n1. Anne-Sophie Mutter was born in Hamburg, Germany.\n2. Jean-Paul Sartre was born in Nîmes, France.\n3. Simone de Beauvoir was born in Paris, France.\n4. Victor Hugo was born in Andorra.\n5. Charles Baudelaire was born in Paris, France.\n6. Gustave Flaubert was born in Rouen, France.\n7. Marcel Prou",
+    "Final Refined Answer": "\nThe refined answer for the given context is:\n\n1. Simone de Beauvoir\n\nFinal Refined Answer: 1. Simone de Beauvoir"
+  },
+  {
+    "Question": "Who are some journalists who were born in Vienna?",
+    "Baseline Answer": "\n1. Siegfried Fischer\n2. Peter Handke\n3. Hans Werner Müller\n4. Michael Hainz\n5. Peter Gross\n6. Christoph Böhm\n7. Thomas Kies\n8. Michael Krüger\n9. Alexander Müller\n10. Gerhard Mangold",
+    "Verification Questions": "\n1. Who are some journalists who were born in Vienna?\n2. Where was Siegfried Fischer born?\n3. Where was Peter Handke born?\n4. Where was Hans Werner Müller born?\n5. Where was Michael Hainz born?\n6. Where was Peter Gross born?\n7. Where was Christoph Böhm born?\n8. Where was Thomas Kies born?\n9. Where was Michael Krüger born?\n10. Where was Alexander Müll",
+    "Execute Plan": "\n1. Some journalists who were born in Vienna are Peter Handke, Christoph Böhm, and Thomas Kies.\n2. Siegfried Fischer was born in Munich, Germany.\n3. Peter Handke was born in Vienna, Austria.\n4. Hans Werner Müller was born in Vienna, Austria.\n5. Michael Hainz was born in Vienna, Austria.\n6. Peter Gross was born in Vienna, Austria.\n7.",
+    "Final Refined Answer": "\nGiven the below `Original Question` and `Baseline Answer`, analyze the `Verification Questions & Answers` to finally filter the refined answer.\n\nOriginal Question: Who are some journalists who were born in Vienna?\n\nBaseline Answer: \n\n1. Siegfried Fischer\n2. Peter Handke\n3. Hans Werner Müller\n4. Michael Hainz\n5. Peter Gross\n6. Christoph Böhm"
+  },
+  {
+    "Question": "Who are some journalists who were born in NY, New York?",
+    "Baseline Answer": "\nAnswer: 1. Oprah Winfrey\n2. Anderson Cooper\n3. Ellen DeGeneres\n4. Katie Couric\n5. CNN's Don Lemon\n6. ABC's Good Morning America's George Stephanopoulos\n7. CBS's The Late Show's Stephen Colbert\n8. PBS's Frontline'",
+    "Verification Questions": "\n1. Who are some journalists who were born in NY?\n2. Where was Oprah Winfrey born?\n3. Where was Anderson Cooper born?\n4. Where was Ellen DeGeneres born?\n5. Where was Katie Couric born?\n6. Where was Don Lemon born?\n7. Where was George Stephanopoulos born?\n8. Where was Stephen Colbert born?\n9. Where was Frontline born?\n\nExplanation: In the above example the verification questions",
+    "Execute Plan": "\n1. Some journalists who were born in NY include:\n- Charlie Rose\n- Lester Holt\n- Anderson Cooper\n- Katie Couric\n- George Stephanopoulos\n- Stephen Colbert\n- Don Lemon\n- Frontline (documentary series)\n2. Oprah Winfrey was born in Kosciusko, Mississippi.\n3. Anderson Cooper was born in St. John's, Newfoundland and Labrador.\n4.",
+    "Final Refined Answer": "\n\nThe refined answer is not provided in the given context."
+  },
+  {
+    "Question": "Who are some journalists who were born in Moscow?",
+    "Baseline Answer": "\n1. Vladimir Putin\n2. Dmitry Medvedev\n3. Boris Yeltsin\n4. Sergei Korolev\n5. Andrei Gromyko\n6. Yevgeny Shevardnadze\n7. Nikita Khrushchev\n8. Vladimir Lenin\n9. Leo Tolstoy\n10",
+    "Verification Questions": "\n1. Where was Vladimir Putin born?\n2. Where was Dmitry Medvedev born?\n3. Where was Boris Yeltsin born?\n4. Where was Sergei Korolev born?\n5. Where was Andrei Gromyko born?\n6. Where was Yevgeny Shevardnadze born?\n7. Where was Nikita Khrushchev born?\n8. Where was Vladimir Lenin born?\n9. Where was Leo Tolst",
+    "Execute Plan": "\n1. Vladimir Putin was born in Leningrad, which is now Saint Petersburg, Russia.\n2. Dmitry Medvedev was born in Moscow, Russia.\n3. Boris Yeltsin was born in Sverdlovsk, which is now Yekaterinburg, Russia.\n4. Sergei Korolev was born in Kazan, Russia.\n5. Andrei Gromyko was born in Moscow, Russia.\n6",
+    "Final Refined Answer": "\n\n1. Vladimir Putin\n2. Dmitry Medvedev\n3. Boris Yeltsin\n4. Sergei Korolev\n5. Andrei Gromyko\n6. Yevgeny Shevardnadze\n7. Nikita Khrushchev\n8. Vladimir Lenin\n9. Leo Tolstoy\n\nFinal Refined Answer: 1. Vladimir Putin, 2. Dmitry Med"
+  },
+  {
+    "Question": "Who are some journalists who were born in London?",
+    "Baseline Answer": "\n1. Paxman\n2. Dimbleby\n3. Evans\n4. Kay\n5. Harman\n6. Horton\n7. Lewis\n8. Smith\n9. Woolley\n10. Wood",
+    "Verification Questions": "\n1. Who are some journalists who were born in London?\n2. Where was Paxman born?\n3. Where was Dimbleby born?\n4. Where was Evans born?\n5. Where was Kay born?\n6. Where was Harman born?\n7. Where was Horton born?\n8. Where was Lewis born?\n9. Where was Smith born?\n10. Where was Woolley born?\n11. Where was Wood born?",
+    "Execute Plan": "\n1. John Lewis, Jeremy Paxman, James Dimbleby, Chris Evans, Jonathan Kay, Jon Harman, Mark Horton, Simon Lewis, John Smith, and David Woolley.\n2. John Lewis\n3. James Dimbleby\n4. Chris Evans\n5. Jonathan Kay\n6. Jon Harman\n7. Mark Horton\n8. Simon Lewis\n9. John Smith\n10. David Woolley\n11. David",
+    "Final Refined Answer": "\nBased on the verification questions and answers, the refined answer for the original question is:\n\n1. John Lewis\n2. James Dimbleby\n3. Chris Evans\n4. Jonathan Kay\n5. Jon Harman\n6. Mark Horton\n7. Simon Lewis\n8. John Smith\n9. David Woolley\n\nThe refined answer is a list of journalists who were born in London, as specified in the original question."
+  },
+  {
+    "Question": "Who are some photographers who were born in Paris?",
+    "Baseline Answer": "\n1. Henri Cartier-Bresson\n2. Diane Arbus\n3. Richard Avedon\n4. Brassai\n5. Man Ray\n6. Robert Capa\n7. Dorothea Lange\n8. Alfred Stieglitz\n9. Edward Weston\n10. Irving Penn",
+    "Verification Questions": "\n1. Where was Henri Cartier-Bresson born?\n2. Where was Diane Arbus born?\n3. Where was Richard Avedon born?\n4. Where was Brassai born?\n5. Where was Man Ray born?\n6. Where was Robert Capa born?\n7. Where was Dorothea Lange born?\n8. Where was Alfred Stieglitz born?\n9. Where was Edward Weston born?\n10. Where was Irving Penn born?\n",
+    "Execute Plan": "\n1. Henri Cartier-Bresson was born in Troyes, France.\n2. Diane Arbus was born in New York City, United States.\n3. Richard Avedon was born in New York City, United States.\n4. Brassai was born in Greece.\n5. Man Ray was born in Baltimore, Maryland, United States.\n6. Robert Capa was born in Budapest, Hungary.\n7. Dorothea Lange",
+    "Final Refined Answer": "\nThere are no refined answer for this context."
+  },
+  {
+    "Question": "Who are some photographers who were born in NY, New York?",
+    "Baseline Answer": "\n1. Diane Arbus\n2. Annie Leibovitz\n3. Richard Avedon\n4. Irving Penn\n5. Cindy Sherman\n6. Walker Evans\n7. Dorothea Lange\n8. Robert Capa\n9. Alfred Stieglitz\n10. Edward Weston",
+    "Verification Questions": "\n1. Where was Diane Arbus born?\n2. Where was Annie Leibovitz born?\n3. Where was Richard Avedon born?\n4. Where was Irving Penn born?\n5. Where was Cindy Sherman born?\n6. Where was Walker Evans born?\n7. Where was Dorothea Lange born?\n8. Where was Robert Capa born?\n9. Where was Alfred Stieglitz born?\n10. Where was Edward Weston born?\n",
+    "Execute Plan": "\n1. Diane Arbus was born in New York City, New York.\n2. Annie Leibovitz was born in Oakland, California.\n3. Richard Avedon was born in St. Paul, Minnesota.\n4. Irving Penn was born in New York City, New York.\n5. Cindy Sherman was born in Astoria, Oregon.\n6. Walker Evans was born in St. Louis, Missouri.\n7. Dorothea",
+    "Final Refined Answer": "\nDorothea Lange was born in San Francisco, California."
+  },
+  {
+    "Question": "Who are some photographers who were born in Prague?",
+    "Baseline Answer": "\n1. Josef Koudelka\n2. Dmitry Morozov\n3. Petr Hodíšek\n4. Karel Černý\n5. Martin Šimák\n6. Petr Sýkora\n7. Martin Polák\n8. Petr Vodička\n9. Jiří Štráhl\n10. Franti",
+    "Verification Questions": "\n1. Where was Josef Koudelka born?\n2. Where was Dmitry Morozov born?\n3. Where was Petr Hodíšek born?\n4. Where was Karel Černý born?\n5. Where was Martin Šimák born?\n6. Where was Petr Sýkora born?\n7. Where was Martin Polák born?\n8. Where was Petr Vodička born?\n9. Where was Jiří Štráhl born?",
+    "Execute Plan": "\n1. Josef Koudelka was born in Brno, Czech Republic.\n2. Dmitry Morozov was born in Krasnodar, Russia.\n3. Petr Hodíšek was born in Prague, Czech Republic.\n4. Karel Černý was born in Bratislava, Slovakia.\n5. Martin Šimák was born in Bratislava, Slovakia.\n6. Petr Sý",
+    "Final Refined Answer": "\nI am sorry, I could not find any verification questions and answers for the provided context. Could you please provide more information or a different context?"
+  },
+  {
+    "Question": "Who are some photographers who were born in Berlin?",
+    "Baseline Answer": "\n1. Annie Leibovitz\n2. Dorothea Lange\n3. Alfred Stieglitz\n4. Robert Capa\n5. Edward Weston\n6. Richard Avedon\n7. Irving Penn\n8. Walker Evans\n9. Diane Arbus\n10. Sally Mann",
+    "Verification Questions": "\n1. Where was Annie Leibovitz born?\n2. Where was Dorothea Lange born?\n3. Where was Alfred Stieglitz born?\n4. Where was Robert Capa born?\n5. Where was Edward Weston born?\n6. Where was Richard Avedon born?\n7. Where was Irving Penn born?\n8. Where was Walker Evans born?\n9. Where was Diane Arbus born?\n10. Where was Sally Mann born?",
+    "Execute Plan": "\n1. New York City, New York\n2. San Francisco, California\n3. Hoboken, New Jersey\n4. Budapest, Hungary\n5. Portland, Oregon\n6. St. Paul, Minnesota\n7. New York City, New York\n8. Budapest, Hungary\n9. New York City, New York\n10. Lexington, Virginia",
+    "Final Refined Answer": "\nBased on the verification questions and answers, the refined answer is: 1. Irving Penn."
+  },
+  {
+    "Question": "Who are some photographers who were born in Amsterdam?",
+    "Baseline Answer": "\n1. Ansel Adams\n2. Rembrandt van Rijn\n3. Johannes Vermeer\n4. Vincent van Gogh\n5. Pieter Bruegel the Elder\n6. Jan van Eyck\n7. Hendrik de Vries\n8. Jacob van Ruisdael\n9. Jan van Hoecke\n10. Pieter de",
+    "Verification Questions": "\n1. Who are some photographers who were born in Amsterdam?\n2. Where was Ansel Adams born?\n3. Where was Rembrandt van Rijn born?\n4. Where was Johannes Vermeer born?\n5. Where was Vincent van Gogh born?\n6. Where was Pieter Bruegel the Elder born?\n7. Where was Jan van Eyck born?\n8. Where was Hendrik de Vries born?\n9. Where was Jacob van Ruisdael born",
+    "Execute Plan": "\n1. Ansel Adams, Pieter Bruegel the Elder, Rembrandt van Rijn, Johannes Vermeer, Vincent van Gogh, and Hendrik de Vries were all born in Amsterdam.\n2. Ansel Adams was born in San Francisco, California.\n3. Rembrandt van Rijn was born in Leiden, Netherlands.\n4. Johannes Vermeer was born in Gouda, Netherlands.\n5. Vincent van Gogh",
+    "Final Refined Answer": "\nBased on the verification questions and answers provided, the refined answer would be:\n1. Ansel Adams\n2. Rembrandt van Rijn\n3. Johannes Vermeer\n4. Vincent van Gogh\n5. Pieter Bruegel the Elder\n6. Jan van Eyck\n7. Hendrik de Vries\n\nTherefore, the refined answer would be: 1. Ansel Adams, 2. Rembrandt van R"
+  },
+  {
+    "Question": "Who are some film directors who were born in Moscow?",
+    "Baseline Answer": "\n\n1. Sergei Eisenstein\n2. Andrei Tarkovsky\n3. Aleksandr Sokurov\n4. Elem Klimov\n5. Fedor Bondarchuk\n6. Karen Shachnikov\n7. Sergei Korolev\n8. Andrei Rublev\n9. Sergei Parajanov\n10. Sergei",
+    "Verification Questions": "\n1. Who are some film directors who were born in Moscow?\n2. Where was Sergei Eisenstein born?\n3. Where was Andrei Tarkovsky born?\n4. Where was Aleksandr Sokurov born?\n5. Where was Elem Klimov born?\n6. Where was Fedor Bondarchuk born?\n7. Where was Karen Shachnikov born?\n8. Where was Sergei Korolev born?\n9. Where was Andrei Rublev born?",
+    "Execute Plan": "\n1. Some film directors who were born in Moscow include Andrei Tarkovsky, Sergei Eisenstein, and Elem Klimov.\n2. Sergei Eisenstein was born in Votkinsk, Russia.\n3. Andrei Tarkovsky was born in Kolomna, Russia.\n4. Aleksandr Sokurov was born in Moscow, Russia.\n5. Elem Klimov was born in Moscow, Russia.\n6.",
+    "Final Refined Answer": "\nGiven the original question \"Who are some film directors who were born in Moscow?\" and the baseline answer \"1. Sergei Eisenstein 2. Andrei Tarkovsky 3. Aleksandr Sokurov 4. Elem Klimov 5. Fedor Bondarchuk 6. Karen Shachnikov 7. Sergei Korolev 8. Andrei Rublev 9. Sergei Parajanov 10. Serge"
+  },
+  {
+    "Question": "Who are some film directors who were born in Los Angeles?",
+    "Baseline Answer": "\n1. Quentin Tarantino\n2. Steven Spielberg\n3. David Fincher\n4. Clint Eastwood\n5. Francis Ford Coppola\n6. Martin Scorsese\n7. Tim Burton\n8. Guillermo del Toro\n9. Gore Verbinski\n10. Peter Jackson\n\nNote: The answer should be limited to",
+    "Verification Questions": "\n1. Who are some film directors who were born in Los Angeles?\n2. What is the name of the film director who was born in Los Angeles?\n3. Who are the film directors who were born in Los Angeles?\n4. What are the names of the film directors who were born in Los Angeles?\n5. What is the name of the film director born in Los Angeles?\n6. Who are the film directors born in Los Angeles?\n7. Who are the film directors who were born in Los Angeles?\n",
+    "Execute Plan": "\n1. Some film directors who were born in Los Angeles include Francis Ford Coppola, Quentin Tarantino, and Steven Spielberg.\n2. The name of the film director who was born in Los Angeles is Steven Spielberg.\n3. The film directors who were born in Los Angeles are Francis Ford Coppola, Quentin Tarantino, and Steven Spielberg.\n4. The names of the film directors who were born in Los Angeles are Francis Ford Coppola",
+    "Final Refined Answer": "\nThe refined answer is:\n\n1. Francis Ford Coppola\n2. Quentin Tarantino\n3. Steven Spielberg"
+  },
+  {
+    "Question": "Who are some film directors who were born in Rome?",
+    "Baseline Answer": "\n1. Federico Fellini\n2. Giuseppe Tornatore\n3. Luchino Visconti\n4. Franco Zeffirelli\n5. Sergio Leone\n6. Roberto Rossellini\n7. Vittorio De Sica\n8. Bernardo Bertolucci\n9. Michelangelo Antonioni\n10. John Woo\n",
+    "Verification Questions": "\nTo create verification questions based on the provided question, the verification question template and baseline response, follow the steps below:\n\n1. Extract the ANSWER_ENTITY and QUESTION_ENTITY from the provided question.\n2. Substitute the ANSWER_ENTITY values from the baseline response into the verification question template.\n3. Generate the verification questions by replacing the QUESTION_ENTITY values from the template with the ANSWER_ENTITY values from the baseline response.\n\nFor example",
+    "Execute Plan": "\nAnswer the following questions. Think step by step and answer each question concisely.\nExampl Questions: 1. Where was Matt Damon born?\n2. Where was Chirs Evans born?\n3. Where was Mark Wahlberg born?\nExample Answers: 1. Cambridge, Massachusetts\n2. Sudbury, Massachusetts\n3. Boston, Massachusetts\n\nActual Questions:\nTo create verification questions based on the provided question, the verification question template and",
+    "Final Refined Answer": "\nI can assist you with your query. Please provide the original question and the baseline answer."
+  },
+  {
+    "Question": "Who are some film directors who were born in NY, New York?",
+    "Baseline Answer": "\n1. Martin Scorsese\n2. Woody Allen\n3. Francis Ford Coppola\n4. Stanley Kubrick\n5. John Lasseter\n6. Alan Parker\n7. Paul Thomas Anderson\n8. David Fincher\n9. Steven Spielberg\n10. Quentin Tarantino",
+    "Verification Questions": "\n1. Where was Martin Scorsese born?\n2. Where was Woody Allen born?\n3. Where was Francis Ford Coppola born?\n4. Where was Stanley Kubrick born?\n5. Where was John Lasseter born?\n6. Where was Alan Parker born?\n7. Where was Paul Thomas Anderson born?\n8. Where was David Fincher born?\n9. Where was Steven Spielberg born?\n10. Where was Quentin Tarantino born?\n\nExplan",
+    "Execute Plan": "\n1. Martin Scorsese was born in New York City, New York.\n2. Woody Allen was born in Brooklyn, New York.\n3. Francis Ford Coppola was born in Concord, California.\n4. Stanley Kubrick was born in Philadelphia, Pennsylvania.\n5. John Lasseter was born in Huntington Beach, California.\n6. Alan Parker was born in London, England.\n7. Paul Thomas Anderson was born in Indianapolis",
+    "Final Refined Answer": "\nI'm sorry, but I cannot provide the final refined answer as I don't have access to the verification questions and answers. Please provide me with the verification questions and answers so that I can analyze them and provide the final refined answer."
+  },
+  {
+    "Question": "Who are some film directors who were born in Budapest?",
+    "Baseline Answer": "\n1. Bela Tarr\n2. Kornel Mundruczo\n3. Szabolcs Huszar\n4. Attila Balogh\n5. Gabor Tornyei\n6. Zoltan Kodaly\n7. Miklos Szilardy\n8. Ferenc Kofa\n9. Kornel Mundruczo",
+    "Verification Questions": "\n1. Where was Bela Tarr born?\n2. Where was Kornel Mundruczo born?\n3. Where was Szabolcs Huszar born?\n4. Where was Attila Balogh born?\n5. Where was Gabor Tornyei born?\n6. Where was Zoltan Kodaly born?\n7. Where was Miklos Szilardy born?\n8. Where was Ferenc Kofa born?\n9. Where was Kornel M",
+    "Execute Plan": "\n1. Bela Tarr was born in Hungary.\n2. Kornel Mundruczo was born in Hungary.\n3. Szabolcs Huszar was born in Hungary.\n4. Attila Balogh was born in Hungary.\n5. Gabor Tornyei was born in Hungary.\n6. Zoltan Kodaly was born in Hungary.\n7. Miklos Szilardy was born in",
+    "Final Refined Answer": "\nGiven the below `Original Question` and `Baseline Answer`, analyze the `Verification Questions & Answers` to finally filter the refined answer. NO ADDITIONAL DETAILS.\nProvide the answer as a numbered list of persons.\nExample Context:\n\nExample Original Question: Who are some movie actors who were born in Boston?\nExample Baseline Answer: 1. Matt Damon\n2. Chris Evans\n3. Mark Wahlberg\n"
+  },
+  {
+    "Question": "Who are some university teachers who were born in Budapest?",
+    "Baseline Answer": "\n1. John Nash\n2. Paul Erdos\n3. Laszlo Szekely\n4. Bela Bartok\n5. Ferenc Kodaly\n6. Zoltan Kodaly\n7. Gyula Halasz\n8. Jeno Hajnal\n9. Pal Teleki\n10. Karoly Polanyi",
+    "Verification Questions": "\n1. Where was John Nash born?\n2. Where was Paul Erdos born?\n3. Where was Laszlo Szekely born?\n4. Where was Bela Bartok born?\n5. Where was Ferenc Kodaly born?\n6. Where was Zoltan Kodaly born?\n7. Where was Gyula Halasz born?\n8. Where was Jeno Hajnal born?\n9. Where was Pal Teleki born?\n10. Where was Karoly Pol",
+    "Execute Plan": "\n1. Nash was born in Nash, Tennessee, USA.\n2. Erdos was born in Budapest, Hungary.\n3. Szekely was born in Szeghéd, Hungary.\n4. Bartok was born in Nagyszentmiklós, Hungary.\n5. Kodaly was born in Kodaly, Hungary.\n6. Kodaly was born in Kodaly, Hungary.\n7. Halasz was",
+    "Final Refined Answer": "\nGiven the below `Original Question` and `Baseline Answer`, analyze the `Verification Questions & Answers` to finally filter the refined answer. NO ADDITIONAL DETAILS.\nProvide the answer as a numbered list of persons.\nExample Context:\n\nExample Original Question: Who are some movie actors who were born in Boston?\nExample Baseline Answer: 1. Matt Damon\n2. Chris Evans\n3. Mark Wahlberg\n"
+  },
+  {
+    "Question": "Who are some university teachers who were born in Hamburg?",
+    "Baseline Answer": "\n1. Heike Kamerlingh Onnes\n2. Werner Heisenberg\n3. Erwin Schrödinger\n4. Max Planck\n5. Albert Einstein\n6. Niels Bohr\n7. Werner Heisenberg\n8. Erwin Schrödinger\n9. Max Planck\n10. Albert Einstein",
+    "Verification Questions": "\n1. Who are some university teachers who were born in Hamburg?\n2. Where was Heike Kamerlingh Onnes born?\n3. Where was Werner Heisenberg born?\n4. Where was Erwin Schrödinger born?\n5. Where was Max Planck born?\n6. Where was Albert Einstein born?\n7. Where was Niels Bohr born?\n8. Where was Werner Heisenberg born?\n9. Where was Erwin Schrödinger born?",
+    "Execute Plan": "\n1. Some university teachers who were born in Hamburg include Werner Heisenberg, Erwin Schrödinger, and Max Planck.\n2. Heike Kamerlingh Onnes was born in Rotterdam, Netherlands.\n3. Werner Heisenberg was born in Munich, Germany.\n4. Erwin Schrödinger was born in Vienna, Austria.\n5. Max Planck was born in Berlin, Germany.\n6. Albert",
+    "Final Refined Answer": "\nThe final refined answer is: 1. Werner Heisenberg, 2. Erwin Schrödinger, and 3. Max Planck."
+  },
+  {
+    "Question": "Who are some university teachers who were born in Vienna?",
+    "Baseline Answer": "\n1. Albert Einstein\n2. Sigmund Freud\n3. Ludwig Wittgenstein\n4. Joseph Haydn\n5. Wolfgang Amadeus Mozart\n6. Richard Feynman\n7. Niels Bohr\n8. Oskar Kohler\n9. Robert Schumann\n10. Franz Schubert",
+    "Verification Questions": "\n1. Who are some university teachers who were born in Vienna?\n2. Where was Albert Einstein born?\n3. Where was Sigmund Freud born?\n4. Where was Ludwig Wittgenstein born?\n5. Where was Joseph Haydn born?\n6. Where was Wolfgang Amadeus Mozart born?\n7. Where was Richard Feynman born?\n8. Where was Niels Bohr born?\n9. Where was Oskar Kohler born?\n10. Where was",
+    "Execute Plan": "\n1. Some university teachers who were born in Vienna are:\n* Joseph Haydn (composer, musician, and teacher)\n* Wolfgang Amadeus Mozart (composer and musician)\n* Ludwig Wittgenstein (philosopher and professor)\n* Oskar Kohler (philosopher and professor)\n1. Albert Einstein was born in Ulm, Württemberg, Germany.\n2. Sigmund Freud was born",
+    "Final Refined Answer": "\nThe final refined answer is: 1. Joseph Haydn (composer, musician, and teacher), 2. Wolfgang Amadeus Mozart (composer and musician), 3. Ludwig Wittgenstein (philosopher and professor), 4. Oskar Kohler (philosopher and professor)."
+  },
+  {
+    "Question": "Who are some university teachers who were born in Berlin?",
+    "Baseline Answer": "\n1. Friedrich Nietzsche\n2. Albert Einstein\n3. Max Weber\n4. Hermann Hesse\n5. Walter Benjamin\n6. Theodor Adorno\n7. Ernst Bloch\n8. Martin Heidegger\n9. Friedrich Engels\n10. Karl Marx",
+    "Verification Questions": "\n1. Where was Friedrich Nietzsche born?\n2. Where was Albert Einstein born?\n3. Where was Max Weber born?\n4. Where was Hermann Hesse born?\n5. Where was Walter Benjamin born?\n6. Where was Theodor Adorno born?\n7. Where was Ernst Bloch born?\n8. Where was Martin Heidegger born?\n9. Where was Friedrich Engels born?\n10. Where was Karl Marx born?\n\nExplanation: In",
+    "Execute Plan": "\n1. Friedrich Nietzsche was born in Rockhausen, Prussia, which is now known as Pforzheim, Germany.\n2. Albert Einstein was born in Ulm, Württemberg, Germany.\n3. Max Weber was born in Erfurt, Thuringia, Germany.\n4. Hermann Hesse was born in Calw, Württemberg, Germany.\n5. Walter Benjamin was born in Berlin, Germany.\n6",
+    "Final Refined Answer": "\nThe refined answer is 1. Mark Wahlberg."
+  },
+  {
+    "Question": "Who are some university teachers who were born in Rome?",
+    "Baseline Answer": "\nThere are no university teachers who were born in Rome.",
+    "Verification Questions": "\nBased on the provided baseline response, here are the verification questions:\n\n1. Who are some university teachers who were born in Rome?\n2. Is it true that there are no university teachers who were born in Rome?\n3. Can you provide any evidence to support the statement that there are no university teachers who were born in Rome?\n4. What are some possible reasons why there might be no university teachers who were born in Rome?\n5. Have you conducted any research or analysis to determine if there are any university teachers who",
+    "Execute Plan": "\n1. I don't have access to that specific information. However, I can search for it and provide you with the results.\n2. No, it is not true that there are no university teachers who were born in Rome.\n3. There are many university teachers who were born in Rome. One example is Professor Maria Grazia Calabrese, who is a professor of Mathematics at Sapienza University of Rome.\n4. There could be many possible reasons",
+    "Final Refined Answer": "\nI apologize, but I cannot provide a final refined answer for this task as there is no baseline answer provided. Could you please provide a baseline answer for me to analyze and generate verification questions and answers for?"
+  },
+  {
+    "Question": "Who are some screenwriter who were born in Los Angeles?",
+    "Baseline Answer": "\nAnswer: 1. Shonda Rhimes\n2. J.J. Abrams\n3. Ryan Murphy\n4. Aaron Sorkin\n5. Seth MacFarlane\n6. David Fincher\n7. Christopher Nolan\n8. Steven Spielberg\n9. Quentin Tarantino\n10. George Lucas\n\n<|im_sep|",
+    "Verification Questions": "\n1. Who is a screenwriter who was born in Los Angeles?\n2. What is the name of a screenwriter born in Los Angeles?\n3. Can you name a screenwriter who was born in Los Angeles?\n4. What is the birthplace of Shonda Rhimes?\n5. What is the birthplace of J.J. Abrams?\n6. What is the birthplace of Ryan Murphy?\n7. What is the birthplace of Aaron Sorkin?\n8. What is the birth",
+    "Execute Plan": "\n1. Quentin Tarantino\n2. Quentin Tarantino\n3. Quentin Tarantino\n4. Shonda Rhimes was born in Chicago, Illinois.\n5. J.J. Abrams was born in Highland Park, Illinois.\n6. Ryan Murphy was born in Beverly Hills, California.\n7. Aaron Sorkin was born in New York City, New York.\n8. The birthplace of Quentin Tarantino is",
+    "Final Refined Answer": "\nBased on the verification questions and answers, the refined answer for the original question would be:\n\n1. Shonda Rhimes\n2. J.J. Abrams\n3. Ryan Murphy\n4. Aaron Sorkin\n\nTherefore, the refined answer is:\n\n1. Shonda Rhimes\n2. J.J. Abrams\n3. Ryan Murphy\n4. Aaron Sorkin"
+  },
+  {
+    "Question": "Who are some screenwriter who were born in London?",
+    "Baseline Answer": "\n\n1. Neil Gaiman\n2. J.K. Rowling\n3. Rian Johnson\n4. Charlie Kaufman\n5. David Fincher\n6. Martin Amis\n7. Andrew Garfield\n8. Benedict Cumberbatch\n9. Tom Hardy\n10. Emma Watson",
+    "Verification Questions": "\n1. Where was Neil Gaiman born?\n2. Where was J.K. Rowling born?\n3. Where was Rian Johnson born?\n4. Where was Charlie Kaufman born?\n5. Where was David Fincher born?\n6. Where was Martin Amis born?\n7. Where was Andrew Garfield born?\n8. Where was Benedict Cumberbatch born?\n9. Where was Tom Hardy born?\n10. Where was Emma Watson born?",
+    "Execute Plan": "\n1. Portsmouth, England\n2. Glasgow, Scotland\n3. Baltimore, Maryland\n4. New York City, New York\n5. Oak Park, Illinois\n6. Enfield, England\n7. Los Angeles, California\n8. South Shields, England\n9. London, England\n10. Bromley, England",
+    "Final Refined Answer": "\n1. David Fincher\n2. Neil Gaiman\n3. J.K. Rowling\n4. Rian Johnson\n5. Andrew Garfield\n6. Benedict Cumberbatch\n7. Emma Watson\n8. Martin Amis\n9. Tom Hardy\n10. Charlie Kaufman"
+  },
+  {
+    "Question": "Who are some screenwriter who were born in Moscow?",
+    "Baseline Answer": "\nThere are no screenwriters who were born in Moscow. However, some well-known screenwriters are:\n\n1. William Goldman - born in New York City, USA\n2. Francis Lawrence - born in Louisville, Kentucky, USA\n3. David Mamet - born in New York City, USA\n4. Quentin Tarantino - born in Los Angeles,",
+    "Verification Questions": "\n1. Where was William Goldman born?\n2. Where was Francis Lawrence born?\n3. Where was David Mamet born?\n4. Where was Quentin Tarantino born?\n\nExplanation: In the above verification questions, the ANSWER_ENTITY is screenwriter and QUESTION_ENTITY is birth place. The values are substituted from the baseline response.",
+    "Execute Plan": "\n1. William Goldman was born in Los Angeles, California.\n2. Francis Lawrence was born in Louisville, Kentucky.\n3. David Mamet was born in Chicago, Illinois.\n4. Quentin Tarantino was born in New York City, New York.",
+    "Final Refined Answer": "\n\nThe final refined answer is:\n\nThere are no screenwriters who were born in Moscow. However, some well-known screenwriters are:\n\n1. William Goldman - born in New York City, USA\n2. Francis Lawrence - born in Louisville, Kentucky, USA\n3. David Mamet - born in New York City, USA\n4. Quentin Tarantino - born in Los Angeles, California."
+  },
+  {
+    "Question": "Who are some screenwriter who were born in Paris?",
+    "Baseline Answer": "\n\n1. Woody Allen\n2. Jean-Luc Godard\n3. Ingmar Bergman\n4. François Truffaut\n5. Éric Rohmer\n6. Claude Lelouch\n7. Jacques Drouin\n8. Jean-Jacques Annaud\n9. Pierre Salinger\n10. Jacques Audiard\n\nNote: This is a",
+    "Verification Questions": "\nTo generate verification questions for the given question \"Who are some screenwriter who were born in Paris?\" and the provided baseline response, we need to follow the same process as shown in the previous example.\n\n1. Identify the ANSWER_ENTITY (screenwriter) and QUESTION_ENTITY (birth place) based on the question.\n2. Substitute the entity values from the baseline response into the verification question template.\n3. Generate the verification questions.\n\nVerification Questions:\n\n1",
+    "Execute Plan": "\nI will now generate the verification questions for the given question \"Who are some screenwriter who were born in Paris?\" and the provided baseline response.\n\n1. What is the ANSWER_ENTITY (screenwriter)?\n2. What is the QUESTION_ENTITY (birth place)?\n3. What is the ANSWER_ENTITY (birth place)?\n4. What is the QUESTION_ENTITY (screenwriter)?\n5. What",
+    "Final Refined Answer": "\nBased on the given question \"Who are some screenwriter who were born in Paris?\" and the provided baseline response, the refined answer is:\n\n1. Pierre Salinger\n2. Jacques Audiard\n\nThe refined answer is based on the verification questions and answers provided. The answers to the verification questions are as follows:\n\n1. ANSWER_ENTITY (screenwriter) = screenwriter\n2. QUESTION_ENTITY (birth place)"
+  },
+  {
+    "Question": "Who are some screenwriter who were born in Rome?",
+    "Baseline Answer": "\n1. Federico Fellini\n2. Gianni Schicchi\n3. Luchino Visconti\n4. Luigi Pirandello\n5. Vittorio Gassman\n6. Alessandro Varisco\n7. Pier Paolo Pasolini\n8. Maurizio Sciarpello\n9. Paolo Sorrentino\n10. Michelangel",
+    "Verification Questions": "\n1. Who are some screenwriters who were born in Rome?\n2. Where was Federico Fellini born?\n3. Where was Gianni Schicchi born?\n4. Where was Luchino Visconti born?\n5. Where was Luigi Pirandello born?\n6. Where was Vittorio Gassman born?\n7. Where was Alessandro Varisco born?\n8. Where was Pier Paolo Pasolini born?\n9. Where was Maurizio Sciarp",
+    "Execute Plan": "\n1. Some screenwriters who were born in Rome are Federico Fellini, Luchino Visconti, and Luigi Pirandello.\n2. Federico Fellini was born in Ravenna, not Rome.\n3. Gianni Schicchi was born in Florence, not Rome.\n4. Luchino Visconti was born in Modena, not Rome.\n5. Luigi Pirandello was born in Naples, not Rome",
+    "Final Refined Answer": "\n1. Federico Fellini\n2. Gianni Schicchi\n3. Luchino Visconti\n\nFinal Answer: 1. Federico Fellini, 2. Gianni Schicchi, 3. Luchino Visconti"
+  }
+]
