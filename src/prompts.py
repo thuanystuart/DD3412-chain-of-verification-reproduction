@@ -1,6 +1,6 @@
-BASELINE_PROMPT_WIKI = """Answer the below question which is asking for a list of persons. Output should be a numbered list of maximum 10 persons and only contains the relevant & concise enitites as answer. NO ADDITIONAL DETAILS.
+BASELINE_PROMPT_WIKI = """Answer the question below which is asking for a list of persons. Output should be a numbered list of maximum 10 persons and only contains the relevant & concise enitites as answer. NO ADDITIONAL DETAILS.
 
-Example Question: Whoe are some movie actors who were born in Boston?
+Example Question: Who are some movie actors who were born in Boston?
 Example Answer: 1. Matt Damon
 2. Chris Evans
 3. Mark Wahlberg
@@ -26,7 +26,7 @@ Answer:"""
 ############################### TWO STEP MULTI QA PROMPT #########################################
 PLAN_VERIFICATION_TWO_STEP_PROMPT_MULTI_QA = """Your task is to create a series of verification questions based on the below original question. The verification questions are meant for verifying the factual acuracy in the baseline response.
 
-Example Question: Whoe invented the first printing press and in what year?
+Example Question: Who invented the first printing press and in what year?
 Example Baseline Response: Johannes Gutenberg, 1450.
 Example Verification Questions: 1. Did Johannes Gutenberg invent the first printing press?
 2. Did Johannes Gutenberg invent the first printing press in 1450?
@@ -49,7 +49,7 @@ Answers:"""
 FINAL_VERIFIED_TWO_STEP_PROMPT_MULTI_QA = """Given the below `Original Question` and `Baseline Answer`, analyze the `Verification Questions & Answer Pairs` to finally filter the refined answer. NO ADDITIONAL DETAILS.
 Example Context:
 
-Example Original Question: Whoe invented the first printing press and in what year?
+Example Original Question: Who invented the first printing press and in what year?
 Example Baseline Answer: Johannes Gutenberg, 1450.
 Example Verification Questions & Answer Pairs From another source:
 1. Did Johannes Gutenberg invent the first printing press?
