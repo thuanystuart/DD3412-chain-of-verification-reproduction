@@ -1,5 +1,4 @@
-from src import cov_chains, prompts, utils
-from src.cov_chains import WikiDataChainofVerificationTwoStep, WikiDataChainofVerificationJoint, ChainofVerification
+from src.cov_chains import ChainofVerification
 from data.data_processor import read_json_file, questions_from_wiki, read_questions_from_multi_qa_dataset
 
 mistral_id = "mistral"

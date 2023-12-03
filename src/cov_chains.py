@@ -1,6 +1,3 @@
-import torch
-import data
-from transformers import AutoTokenizer, AutoModelForCausalLM, BitsAndBytesConfig
 import json
 import time 
 from src.utils import import_model_and_tokenizer
