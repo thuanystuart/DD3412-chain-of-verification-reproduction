@@ -8,3 +8,5 @@ trl
 safetensors
 wandb
 sparqlwrapper
+langchain
+openai
