@@ -1,21 +1,24 @@
-BASELINE_PROMPT_WIKI = """Answer the question below which is asking for a list of persons. Output should be a numbered list of maximum 10 persons and only contains the relevant & concise enitites as answer. NO ADDITIONAL DETAILS.
+BASELINE_PROMPT_WIKI = """Answer the below question which is asking for a list of persons. Output should be a numbered list of maximum 10 persons and only contains the relevant & concise enitites as answer. NO ADDITIONAL DETAILS.
 
 Example Question: Who are some movie actors who were born in Boston?
-Example Answer: 1. Matt Damon
+Example Answer: 1. Donnie Wahlberg
 2. Chris Evans
 3. Mark Wahlberg
+4. Ben Affleck
+5. Uma Thurman
 Example Question: Who are some football players who were born in Madrid?
 Example Answer: 1. Sergio Ramos
-2. Iker Casillas
-3. Fernando Torres
+2. Marcos Alonso
+3. David De Gea
+4. Fernando Torres
+
 Example Question: Who are some politicians who were born in Washington?
 Example Answer: 1. Barack Obama
 2. Bill Clinton
-3. George Washington
+3. Bil Sheffield
+4. George Washington
 
-Actual Question: {original_question}
-
-Answer:"""
+Actual Question: {original_question}"""
 
 BASELINE_PROMPT_MULTI_QA = """Answer the below question correctly and in a concise manner without much details. Only answer what the question is asked. NO ADDITIONAL DETAILS.
 
@@ -32,9 +35,7 @@ Example Verification Questions: 1. Did Johannes Gutenberg invent the first print
 2. Did Johannes Gutenberg invent the first printing press in 1450?
 
 Actual Question: {original_question}
-Baseline Response: {baseline_response}
-
-Final Verification Questions:"""
+Baseline Response: {baseline_response}"""
 
 EXECUTE_VERIFICATION_TWO_STEP_PROMPT_MULTI_QA = """Answer the following questions.
 Exampl Questions: 1. Did Johannes Gutenberg invent the first printing press?
@@ -42,9 +43,7 @@ Exampl Questions: 1. Did Johannes Gutenberg invent the first printing press?
 Example Answers: 1. Yes
 2. Yes
 
-Actual Questions: {verification_questions}
-
-Answers:"""
+Actual Questions: {verification_questions}"""
 
 FINAL_VERIFIED_TWO_STEP_PROMPT_MULTI_QA = """Given the below `Original Question` and `Baseline Answer`, analyze the `Verification Questions & Answer Pairs` to finally filter the refined answer. NO ADDITIONAL DETAILS.
 Example Context:
@@ -66,7 +65,7 @@ Actual Original Question: {original_question}
 Baseline Answer: {baseline_response}
 
 Verification Questions & Answer Pairs From another source:
-{verification_questions_and_answers} 
+{verification_questions}
 
 Final Refined Answer:"""
 ############################### TWO STEP WIKI PROMPT #########################################
@@ -74,49 +73,85 @@ Final Refined Answer:"""
 PLAN_VERIFICATION_TWO_STEP_PROMPT_WIKI = """Your task is to create a series of verification questions based on the below question, the verfication question template and baseline response.
 Example Question: Who are some movie actors who were born in Boston?
 Example Verification Question Template: Where Was [movie actor] born?
-Example Baseline Response: 1. Matt Damon 
-2. Chris Evans 
+Example Baseline Response: 1. Donnie Wahlberg
+2. Chris Evans
 3. Mark Wahlberg
-Verification questions: 1. Where was Matt Damon born?
-2. Where was Chirs Evans born?
+4. Ben Affleck
+5. Uma Thurman
+Verification questions: 1. Where was Donnie Wahlberg born?
+2. Where was Chris Evans born?
 3. Where was Mark Wahlberg born?
+4. Where was Ben Affleck born?
+5. Where was Uma Thurman born?
 
 Explanation: In the above example the verification questions focused only on the ANSWER_ENTITY (name of the movie actor) and QUESTION_ENTITY (birth place) based on the template and substitutes entity values from the baseline response.
 Similarly you need to focus on the ANSWER_ENTITY and QUESTION_ENTITY from the actual question and substitute the entity values from the baseline response to generate verification questions.
 
 Actual Question: {original_question}
-Baseline Response: {baseline_response}
-Verification Questions:"""
+Baseline Response: {baseline_response}"""
 
 EXECUTE_VERIFICATION_TWO_STEP_PROMPT_WIKI = """Answer the following questions. Think step by step and answer each question concisely.
-Exampl Questions: 1. Where was Matt Damon born?
+Exampl Questions: 1. Where was Donnie Wahlberg born?
 2. Where was Chirs Evans born?
 3. Where was Mark Wahlberg born?
-Example Answers: 1. Cambridge, Massachusetts
-2. Sudbury, Massachusetts
+4. Where was Ben Affleck born?
+5. Where was Uma Thurman born?
+Example Answers: 1. Boston, Massachusetts
+2. Boston, Massachusetts
 3. Boston, Massachusetts
+4. Berkeley, California
+5. Boston, Massachusetts
 
-Actual Questions: {verification_questions}
-
-Answers:"""
+Actual Questions: {verification_questions}"""
 
 FINAL_VERIFIED_TWO_STEP_PROMPT_WIKI = """Given the below `Original Question` and `Baseline Answer`, analyze the `Verification Questions & Answer Pairs` to finally filter the refined answer. NO ADDITIONAL DETAILS.
 Provide the answer as a numbered list of persons.
 Example Context: 
 
 Example Original Question: Who are some movie actors who were born in Boston?
-Example Baseline Answer: 1. Matt Damon
+Example Baseline Answer: 1. Donnie Wahlberg
 2. Chris Evans
 3. Mark Wahlberg
+4. Ben Affleck
+5. Uma Thurman
 Example Verification Questions & Answer Pairs From another source: 
-1. Where was Matt Damon born?
+1. Where was Donnie Wahlberg born?
 2. Where was Chirs Evans born?
 3. Where was Mark Wahlberg born?
+4. Where was Ben Affleck born?
+5. Where was Uma Thurman born?
 &
-1. Cambridge, Massachusetts
-2. Sudbury, Massachusetts
+1. Boston, Massachusetts
+2. Boston, Massachusetts
 3. Boston, Massachusetts
-Example Final Refined Answer: 1. Mark Wahlberg
+4. Berkeley, California
+5. Boston, Massachusetts
+Example Final Refined Answer: 1. Donnie Wahlberg 
+2. Chris Evans
+3. Mark Wahlberg
+4. Uma Thurman
+
+Example Explanation: Based on the verification questions and answers, only Donnie Wahlberg, Chris Evans, Mark Wahlberg and Uma Thurman were born in Boston. Ben Affleck was born in Berkeley, California. 
+
+
+Example Original Question: Who are some football players who were born in Madrid?
+Example Baseline Answer: 1. Sergio Ramos
+2. Marcos Alonso
+3. David De Gea
+4. Fernando Torres
+Example Verification Questions & Answer Pairs From another source:
+1. Where was Sergio Ramos born?
+2. Where was Marcos Alonso born?
+3. Where was David De Gea born?
+4. Where was Fernando Torres born?
+&
+1. Camas, Spain
+2. Madrid, Spain
+3. Madrid, Spain
+4. Fuenlabrada, Spain
+Example Final Refined Answer: 1. Marcos Alonso, 2. David De Gea
+
+Example Explanation: Based on the verification questions and answers, only Marcos Alonso and David De Gea were born in Madrid. Sergio Ramos was born in Camas, Spain and Fernando Torres was born in Fuenlabrada, Spain.
 
 Context:
 
@@ -124,9 +159,7 @@ Actual Original Question: {original_question}
 Baseline Answer: {baseline_response}
 
 Verification Questions & Answer Pairs From another source:
-{verification_questions} & {verification_answers}
-
-Final Refined Answer:"""
+{verification_questions} & {verification_answers}"""
 
 ############################### JOINT WIKI PROMPT #########################################
 
@@ -170,5 +203,100 @@ Verification Questions & Answer Pairs From another source:
 
 Final Refined Answer:"""
 
+############################### Two Step Wiki Category Prompt #########################################
+BASELINE_PROMPT_WIKI_CATEGORY = """Answer the below question which is asking for a list of entities (names, places, locations etc). Output should be a numbered list and only contains the relevant & concise enitites as answer. NO ADDITIONAL DETAILS.
+
+Example Question: Name some movies directed by Steven Spielberg.
+Example Answer: 1. Jaws
+2. Jurassic Park
+3. Indiana Jones
+4. E.T.
+5. TENET
+
+Example Question: Name some football stadiums from the Premier League.
+Example Answer: 1. Old Trafford
+2. Anfield
+3. Stamford Bridge
+4. Santiago Bernabeu
+
+Question: {original_question}"""
+
+PLAN_VERIFICATION_TWO_STEP_PROMPT_WIKI_CATEGORY = """Your task is to create a series of verification questions based on the below question, and baseline response.
+
+Example Question: Name some movies directed by Steven Spielberg.
+Example Verification Question Template: Is [movie] directed by [Steven Spielberg]?
+Example Baseline Response: 1. Jaws
+2. Jurassic Park
+3. Indiana Jones
+4. E.T.
+5. TENET
+Example Verification Questions: 1. Is Jaws directed by Steven Spielberg?
+2. Is Jurassic Park directed by Steven Spielberg?
+3. Is Indiana Jones directed by Steven Spielberg?
+4. Is E.T. directed by Steven Spielberg?
+5. Is TENET directed by Steven Spielberg?
+
+Example Explanation: In the above example the verification questions focused only on the ANSWER_ENTITY (name of the movie) and QUESTION_ENTITY (director) based on the template and substitutes entity values from the baseline response.
+
+Example question: Name some football stadiums from the Premier League.
+Example Verification Question: Is [stadium] a football stadium from the [Premier League]?
+Example Baseline Response: 1. Old Trafford
+2. Anfield
+3. Stamford Bridge
+4. Santiago Bernabeu
+Example Verification Questions: 1. Is Old Trafford a football stadium from the Premier League?
+2. Is Anfield a football stadium from the Premier League?
+3. Is Stamford Bridge a football stadium from the Premier League?
+4. Is Santiago Bernabeu a football stadium from the Premier League?
+
+Example Explanation: In the above example the verification questions focused only on the ANSWER_ENTITY (name of the stadium) and QUESTION_ENTITY (premier league) based on the template and substitutes entity values from the baseline response.
+
+Actual Question: {original_question}
+Baseline Response: {baseline_response}"""
 
 
+
+EXECUTE_VERIFICATION_TWO_STEP_PROMPT_WIKI_CATEGORY = """Answer the following questions. Think step by step and answer each question concisely.
+
+Example Questions: 1. Is Jaws directed by Steven Spielberg?
+2. Is Jurassic Park directed by Steven Spielberg?
+3. Is Indiana Jones directed by Steven Spielberg?
+4. Is E.T. directed by Steven Spielberg?
+5. Is TENET directed by Steven Spielberg?
+Example Answers: 1. Yes
+2. Yes, Jaws is directed by Steven Spielberg.
+3. Yes, Indiana Jones is directed by Steven Spielberg.
+4. Yes, E.T. is directed by Steven Spielberg.
+5. No, TENET is directed by Christopher Nolan.
+
+Actual Questions: {verification_questions}"""
+
+FINAL_VERIFIED_TWO_STEP_PROMPT_WIKI_CATEGORY = """Given the below `Original Question` and `Baseline Answer`, analyze the `Verification Questions & Answer Pairs` to finally filter the refined answer. NO ADDITIONAL DETAILS.
+
+Example Context:
+Example Original Question: Name some movies directed by Steven Spielberg.
+Example Baseline Answer: 1. Jaws
+2. Jurassic Park
+3. Indiana Jones
+4. E.T.
+5. TENET
+Example Verification Questions & Answer Pairs From another source:
+1. Is Jaws directed by Steven Spielberg? Yes, Jaws is directed by Steven Spielberg.
+2. Is Jurassic Park directed by Steven Spielberg? Yes, Jurassic Park is directed by Steven Spielberg.
+3. Is Indiana Jones directed by Steven Spielberg? Yes, Indiana Jones is directed by Steven Spielberg.
+4. Is E.T. directed by Steven Spielberg? Yes, E.T. is directed by Steven Spielberg.
+5. Is TENET directed by Steven Spielberg? No, TENET is directed by Christopher Nolan.
+Example Final Refined Answer: 1. Jaws
+2. Jurassic Park
+3. Indiana Jones
+4. E.T.
+
+Example Explanation: Based on the verification questions and answers, only Jaws, Jurassic Park, Indiana Jones and E.T. are directed by Steven Spielberg. TENET is directed by Christopher Nolan.
+
+Context:
+
+Actual Original Question: {original_question}
+Baseline Answer: {baseline_response}
+
+Verification Questions & Answer Pairs From another source:
+{verification_questions} & {verification_answers}"""

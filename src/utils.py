@@ -7,6 +7,8 @@ def import_model_and_tokenizer(model_id, access_token=None):
     mistral_model_id = "mistralai/Mistral-7B-Instruct-v0.1"
     llama2_model_id = "meta-llama/Llama-2-13b-chat-hf"
     zephyr_model_id = "HuggingFaceH4/zephyr-7b-beta"
+    llama2_70b_model_id = "meta-llama/Llama-2-70b-chat-hf"
+    llama_model_id = "huggyllama/llama-65b"
     bnb_config = BitsAndBytesConfig(
     load_in_4bit=True,
     bnb_4bit_use_double_quant=True, 
@@ -19,6 +21,10 @@ def import_model_and_tokenizer(model_id, access_token=None):
         model_id = llama2_model_id
     elif model_id == "zephyr":
         model_id = zephyr_model_id
+    elif model_id == "llama2_70b":
+        model_id = llama2_70b_model_id
+    elif model_id == "llama-65b":
+        model_id = llama_model_id
     else:
         print("Invalid Model ID. Please write either 'mistral', 'llama2' or 'zephyr'.")
         sys.exit()
