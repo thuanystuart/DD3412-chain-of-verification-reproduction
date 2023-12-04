@@ -172,3 +172,9 @@ Final Refined Answer:"""
 
 
 
+############################### Two-Step WIKI PROMPT #########################################
+EXECUTE_PLAN_PROMPT_SELF_LLM_TWO_STEP = """Answer the following questions correctly.
+
+Questions: {verification_questions}
+
+Answers:"""

@@ -1,0 +1,718 @@
+[
+    {
+        "question": "Name some Animals that can only be found in Oman",
+        "answer": [
+            "Arabian toad",
+            "Asaccus gallagheri",
+            "Asaccus platyrhynchus",
+            "Acanthodactylus masirae",
+            "Hemidactylus luqueorum",
+            "Asaccus arnoldi",
+            "Dhofar toad",
+            "Hemidactylus masirahensis",
+            "Asaccus margaritae"
+        ]
+    },
+    {
+        "question": "Name some Novels by Ernst Jünger",
+        "answer": [
+            "The Glass Bees",
+            "Eumeswil",
+            "Heliopolis (Jünger novel)",
+            "Sturm (novella)",
+            "On the Marble Cliffs",
+            "Aladdin's Problem",
+            "Visit to Godenholm",
+            "A Dangerous Encounter"
+        ]
+    },
+    {
+        "question": "Name some movies based on works by Alexander Ostrovsky",
+        "answer": [
+            "Balzaminov's Marriage",
+            "Wolves and Sheep (film)",
+            "An Ardent Heart (film)",
+            "The Snow Maiden (1952 film)",
+            "The Storm (1933 film)",
+            "The Last Victim (1975 film)",
+            "Without a Dowry (film)",
+            "A Cruel Romance"
+        ]
+    },
+    {
+        "question": "Name some Dave Eggers books",
+        "answer": [
+            "Zeitoun (book)",
+            "You Shall Know Our Velocity",
+            "The Circle (Eggers novel)",
+            "What Is the What",
+            "A Heartbreaking Work of Staggering Genius",
+            "The Wild Things",
+            "A Hologram for the King",
+            "The Every"
+        ]
+    },
+    {
+        "question": "Name some Novels by Aleksey Pisemsky",
+        "answer": [
+            "In the Vortex",
+            "An Old Man's Sin",
+            "The Simpleton",
+            "Boyarshchina",
+            "The Philistines (Pisemsky novel)",
+            "Masons (novel)"
+        ]
+    },
+    {
+        "question": "Name some Horror films from Serbia",
+        "answer": [
+            "T.T. Syndrome",
+            "The Life and Death of a Porno Gang",
+            "Zone of the Dead",
+            "Strangler vs. Strangler",
+            "Reflections (1987 film)",
+            "Leptirica",
+            "You Won't Be Alone",
+            "A Serbian Film"
+        ]
+    },
+    {
+        "question": "Name some Afghanistan's insects",
+        "answer": [
+            "Parnassius actius",
+            "Xylocopa violacea",
+            "Saga pedo",
+            "Vespa tropica",
+            "Chrysochares asiaticus",
+            "Bandar pascoei",
+            "Melanargia galathea",
+            "Parnassius jacquemontii",
+            "Parnassius stoliczkanus",
+            "Xylocopa valga"
+        ]
+    },
+    {
+        "question": "Name some Mammals from Lesotho",
+        "answer": [
+            "Black wildebeest",
+            "Bontebok",
+            "Woodland dormouse",
+            "Grey rhebok",
+            "Chacma baboon",
+            "Cape ground squirrel",
+            "Mountain reedbuck",
+            "Burchell's zebra",
+            "Common eland",
+            "Cape gray mongoose"
+        ]
+    },
+    {
+        "question": "Name some Insects from the late Cretaceous period",
+        "answer": [
+            "Chronomyrmex",
+            "Afropone",
+            "Cretomicrophorus",
+            "Manipulator (insect)",
+            "Cretorhyssalus",
+            "Afromyrma",
+            "Archichrysotus",
+            "Cretapsyche",
+            "Retinitus",
+            "Chrysidoidea"
+        ]
+    },
+    {
+        "question": "Name some Volleyball films",
+        "answer": [
+            "All You've Got",
+            "Air Bud: Spikes Back",
+            "The Miracle Season",
+            "One Win",
+            "Spiker (film)",
+            "The Iron Ladies",
+            "Beach Spike",
+            "Leap (film)",
+            "Side Out"
+        ]
+    },
+    {
+        "question": "Name some Flora from Antarctica",
+        "answer": [
+            "Bryum argenteum",
+            "Hennediella heimii",
+            "Colobanthus quitensis",
+            "Deschampsia antarctica",
+            "Glossopteris",
+            "Chorisodontium aciphyllum",
+            "Grimmia antarctici"
+        ]
+    },
+    {
+        "question": "Name some Animals from Aruba",
+        "answer": [
+            "Arubolana imula",
+            "Crotalus durissus",
+            "Crotalus unicolor",
+            "Cnemidophorus arubensis",
+            "Anolis lineatus",
+            "Tretioscincus bifasciatus"
+        ]
+    },
+    {
+        "question": "Name some South America Crocodilians",
+        "answer": [
+            "Yacare caiman",
+            "Broad-snouted caiman",
+            "Smooth-fronted caiman",
+            "Orinoco crocodile",
+            "Black caiman",
+            "Cuvier's dwarf caiman",
+            "Protocaiman",
+            "American crocodile",
+            "Spectacled caiman"
+        ]
+    },
+    {
+        "question": "Name some Argentinian marsupials",
+        "answer": [
+            "Long-nosed caenolestid",
+            "Patagonian opossum",
+            "Argentine fat-tailed mouse opossum",
+            "White-bellied woolly mouse opossum",
+            "Monito del monte",
+            "Buff-bellied fat-tailed mouse opossum",
+            "Chacoan gracile opossum",
+            "Chacoan pygmy opossum",
+            "Common fat-tailed mouse opossum"
+        ]
+    },
+    {
+        "question": "Name some Mahatma Gandhi books",
+        "answer": [
+            "The Story of My Experiments with Truth",
+            "Gandhi Under Cross Examination",
+            "Makers of Modern India",
+            "Gandhi as a Political Strategist",
+            "Gandhi's Truth",
+            "Gandhi: Behind the Mask of Divinity",
+            "The Death and Afterlife of Mahatma Gandhi",
+            "Gandhi: The Years That Changed the World",
+            "Gandhi the Man",
+            "Great Soul: Mahatma Gandhi and His Struggle with India"
+        ]
+    },
+    {
+        "question": "Name some Books from Terrance Dicks",
+        "answer": [
+            "Players (Dicks novel)",
+            "Made of Steel (novella)",
+            "Mean Streets (Dicks novel)",
+            "Warmonger (novel)",
+            "Deadly Reunion",
+            "World Game (novel)",
+            "Catastrophea",
+            "Blood Harvest (Dicks novel)",
+            "Revenge of the Judoon",
+            "The Eight Doctors"
+        ]
+    },
+    {
+        "question": "Name some Tahir Shah books",
+        "answer": [
+            "Timbuctoo (novel)",
+            "In Arabian Nights",
+            "In Search of King Solomon's Mines",
+            "Sorcerer's Apprentice (Shah book)",
+            "Trail of Feathers",
+            "Beyond the Devil's Teeth",
+            "The Caliph's House",
+            "House of the Tiger King",
+            "The Middle East Bedside Book",
+            "Scorpion Soup"
+        ]
+    },
+    {
+        "question": "Name some Endemic flora of Western New Guinea",
+        "answer": [
+            "Nepenthes lamii",
+            "Nepenthes klossii",
+            "Nepenthes insignis",
+            "Nepenthes papuana",
+            "Nothofagus stylosa",
+            "Nepenthes monticola",
+            "Nothofagus womersleyi",
+            "Wallaceodoxa"
+        ]
+    },
+    {
+        "question": "Name some Endemic fauna from Saint Lucia",
+        "answer": [
+            "Erythrolamprus ornatus",
+            "Semper's warbler",
+            "St. Lucia threadsnake",
+            "Saint Lucia lancehead",
+            "Saint Lucia whiptail",
+            "Anolis luciae",
+            "Saint Lucia black finch"
+        ]
+    },
+    {
+        "question": "Name some microorganisms that grow at low water activity levels.",
+        "answer": [
+            "Tardigrade",
+            "Ramazzottius",
+            "Aspergillus conicus",
+            "White-toothed woodrat",
+            "Eutardigrade",
+            "Debaryomyces hansenii",
+            "Pseudobiotus",
+            "White-throated woodrat",
+            "Ramajendas"
+        ]
+    },
+    {
+        "question": "Name some Middle Jurassic plesiosaurs of Europe",
+        "answer": [
+            "Cryptoclidus",
+            "Eardasaurus",
+            "Colymbosaurus",
+            "Tricleidus",
+            "Muraenosaurus",
+            "Simolestes",
+            "Liopleurodon",
+            "Picrocleidus",
+            "Peloneustes"
+        ]
+    },
+    {
+        "question": "Name some Ivory coast Endemic flora",
+        "answer": [
+            "Gymnostemon",
+            "Zanthoxylum atchoum",
+            "Cassia fikifiki",
+            "Teclea carpopunctifera",
+            "Turraea adjanohounii",
+            "Byttneria ivorensis",
+            "Salacia miegei",
+            "Strychnos millepunctata"
+        ]
+    },
+    {
+        "question": "Name some 1856 novels",
+        "answer": [
+            "Rudin",
+            "Tit for Tat (novel)",
+            "Five Minutes (novel)",
+            "White Acre vs. Black Acre",
+            "Aurora Leigh",
+            "Hertha (novel)",
+            "It Is Never Too Late to Mend (novel)",
+            "The Shaving of Shagpat",
+            "Dred: A Tale of the Great Dismal Swamp"
+        ]
+    },
+    {
+        "question": "Name some romance films from New Zealand",
+        "answer": [
+            "My Wedding and Other Secrets",
+            "The Piano",
+            "The Breaker Upperers",
+            "Eagle vs Shark",
+            "The Light Between Oceans (film)",
+            "Bonjour Timothy",
+            "A Soldier's Tale"
+        ]
+    },
+    {
+        "question": "Name some books from Cuba",
+        "answer": [
+            "Cecilia Valdés",
+            "Tres tristes tigres (novel)",
+            "Farewell to the Sea",
+            "Explosion in a Cathedral",
+            "Sab (novel)",
+            "The Island of Eternal Love",
+            "Before Night Falls",
+            "Paradiso (novel)",
+            "The Harp and the Shadow",
+            "Palace of the White Skunks"
+        ]
+    },
+    {
+        "question": "Name some Croatian Endemic Flora",
+        "answer": [
+            "Edraianthus dalmaticus",
+            "Degenia",
+            "Iris croatica",
+            "Campanula tommasiniana",
+            "Iris adriatica",
+            "Iris pallida"
+        ]
+    },
+    {
+        "question": "Name some animals from the early Ordovician period",
+        "answer": [
+            "Iapetognathus fluctivagus",
+            "Phyllograptus",
+            "Paracordylodus",
+            "Iapetonudus",
+            "Iapetognathus",
+            "Rossodus"
+        ]
+    },
+    {
+        "question": "Name some common fish names",
+        "answer": [
+            "Anchovy",
+            "Grouper",
+            "Tetra",
+            "Hawaiian flagtail",
+            "Long-finned pike",
+            "Flagtail pipefish",
+            "Haplochromine"
+        ]
+    },
+    {
+        "question": "Name some Fish found in the Sea of Azov",
+        "answer": [
+            "Syngnathus schmidti",
+            "Pontic shad",
+            "Marbled goby",
+            "Alosa maeotica",
+            "Donets ruffe",
+            "Alosa tanaica",
+            "Chameleon goby",
+            "Longtail dwarf goby",
+            "Narrow-snouted pipefish"
+        ]
+    },
+    {
+        "question": "Name some Novels written by Val McDermid",
+        "answer": [
+            "Fever of the Bone",
+            "Out of Bounds (McDermid novel)",
+            "The Torment of Others",
+            "Beneath the Bleeding",
+            "Blue Genes",
+            "The Mermaids Singing",
+            "The Last Temptation (novel)"
+        ]
+    },
+    {
+        "question": "Name some books from 1704",
+        "answer": [
+            "The Battle of the Books",
+            "New Essays on Human Understanding",
+            "The Storm (Daniel Defoe)",
+            "Opticks",
+            "Lexicon Technicum",
+            "A Tale of a Tub"
+        ]
+    },
+    {
+        "question": "Name some Birds described in 2004",
+        "answer": [
+            "Mees's nightjar",
+            "Calayan rail",
+            "Togian boobook",
+            "Rubeho akalat",
+            "Acre antshrike",
+            "Serendib scops owl",
+            "Tanimbar corella"
+        ]
+    },
+    {
+        "question": "Name some Uncle Vanya films",
+        "answer": [
+            "Country Life (film)",
+            "Vanya on 42nd Street",
+            "Uncle Vanya (1970 film)",
+            "Uncle Vanya (1963 film)",
+            "Uncle Vanya (1957 film)",
+            "August (1996 film)"
+        ]
+    },
+    {
+        "question": "Name some Cephalopods of North America from the Late Cretaceous period",
+        "answer": [
+            "Calycoceras",
+            "Algericeras",
+            "Niobrarateuthis",
+            "Belemnitella",
+            "Baculites",
+            "Enchoteuthis"
+        ]
+    },
+    {
+        "question": "Name some Jonathan Kellerman novels",
+        "answer": [
+            "Monster (Kellerman novel)",
+            "Flesh and Blood (Kellerman novel)",
+            "The Murder Book",
+            "Blood Test (novel)",
+            "When the Bough Breaks (Kellerman novel)",
+            "Survival of the Fittest (novel)",
+            "Therapy (Kellerman novel)"
+        ]
+    },
+    {
+        "question": "Name some buddy films set in South Korea",
+        "answer": [
+            "Two Cops",
+            "The Classified File",
+            "The Accidental Detective",
+            "Midnight Runners",
+            "Miss & Mrs. Cops",
+            "The Priests (film)",
+            "Seo Bok",
+            "Sunny (2011 film)",
+            "Jail Breakers",
+            "The Accidental Detective 2: In Action"
+        ]
+    },
+    {
+        "question": "Name some Biographical Italian bandits films",
+        "answer": [
+            "Li chiamarono... briganti!",
+            "The Sicilian (film)",
+            "The Tough and the Mighty",
+            "Angel of Evil",
+            "The Bandit of Tacca Del Lupo",
+            "Romanzo Criminale",
+            "Bullet for Stefano",
+            "La banda Casaroli",
+            "Salvatore Giuliano (film)"
+        ]
+    },
+    {
+        "question": "Name some genus of large, broad-bodied, dramatic hover-flies",
+        "answer": [
+            "Volucella pellucens",
+            "Volucella inanis",
+            "Volucella zonaria",
+            "Volucella",
+            "Volucella evecta",
+            "Volucella bombylans",
+            "Volucella inflata"
+        ]
+    },
+    {
+        "question": "Name some Costa Rica Endemic flora",
+        "answer": [
+            "Malvaviscus palmanus",
+            "Lepanthes machogaffensis",
+            "Paphinia subclausa",
+            "Anthurium scherzerianum",
+            "Dracontium pittieri",
+            "Monstera epipremnoides",
+            "Erythrochiton gymnanthus",
+            "Puya dasylirioides",
+            "Jatropha costaricensis",
+            "Westoniella"
+        ]
+    },
+    {
+        "question": "Name some plant life of Aguascalientes",
+        "answer": [
+            "Isocoma hartwegii",
+            "Mammillaria bombycina",
+            "Dasylirion acrotrichum",
+            "Solidago macvaughii",
+            "Sporobolus wrightii",
+            "Agave vilmoriniana",
+            "Pinus lumholtzii",
+            "Sagittaria demersa"
+        ]
+    },
+    {
+        "question": "Name some Military books in Latin",
+        "answer": [
+            "De re militari",
+            "Commentarii de Bello Civili",
+            "De Munitionibus Castrorum",
+            "Strategemata",
+            "De rebus bellicis",
+            "Commentarii de Bello Gallico",
+            "De architectura"
+        ]
+    },
+    {
+        "question": "Name some sci-fi novels from 1929",
+        "answer": [
+            "Hoity Toity (novel)",
+            "The Maracot Deep",
+            "The Planet of Peril",
+            "The Bridge of Light",
+            "The Monster Men",
+            "The Air Seller",
+            "The World Below"
+        ]
+    },
+    {
+        "question": "Name some Armenia's Endemic flora",
+        "answer": [
+            "Astragalus coelestis",
+            "Astragalus bylowae",
+            "Acantholimon vedicum",
+            "Acantholimon gabrieljaniae",
+            "Allium vasilevskajae",
+            "Allochrusa takhtajanii",
+            "Allium struzlianum"
+        ]
+    },
+    {
+        "question": "Name some multilingual Philippine films",
+        "answer": [
+            "Sarah... Ang Munting Prinsesa",
+            "You're My Boss",
+            "The Evil Within (1970 film)",
+            "A Moment in Time (film)",
+            "TNT Jackson",
+            "Magkasangga 2000",
+            "You're Still the One (film)",
+            "Suddenly It's Magic",
+            "Lethal Panther 2",
+            "Blood in Dispute"
+        ]
+    },
+    {
+        "question": "Name some graphic novels from 2011",
+        "answer": [
+            "The Death-Ray",
+            "Paying for It",
+            "Malignant Man",
+            "Anya's Ghost",
+            "Influencing Machine (book)",
+            "Citizen Rex",
+            "The Harappa Files"
+        ]
+    },
+    {
+        "question": "Name some Whaling books",
+        "answer": [
+            "Blood & Guts",
+            "Shallows",
+            "Bringing Whales Ashore",
+            "Omoo",
+            "In the Heart of the Sea",
+            "The Cruise of the Cachalot",
+            "The Narrative of Arthur Gordon Pym of Nantucket",
+            "The Last Whale"
+        ]
+    },
+    {
+        "question": "Name some films from 1934 that are horror",
+        "answer": [
+            "The Tell-Tale Heart (1934 film)",
+            "The Ghost Walks",
+            "Maniac (1934 film)",
+            "The Unholy Quest",
+            "El fantasma del convento",
+            "Double Door (film)",
+            "Black Moon (1934 film)",
+            "The Black Cat (1934 film)",
+            "The Beast of Borneo"
+        ]
+    },
+    {
+        "question": "Name some Debut novels from 1957",
+        "answer": [
+            "The Temple of Gold",
+            "The Mystic Masseur (novel)",
+            "The Divine and the Decay",
+            "The Wapshot Chronicle",
+            "The Black Cloud",
+            "The Comforters",
+            "The Green Odyssey"
+        ]
+    },
+    {
+        "question": "Name some Australian travel books",
+        "answer": [
+            "Through Darkest Pondelayo",
+            "San Sombrèro",
+            "The Great Trek (book)",
+            "30 Days in Sydney",
+            "Molvanîa",
+            "Local Colour: Travels in the Other Australia",
+            "Phaic Tăn",
+            "Down Under (book)"
+        ]
+    },
+    {
+        "question": "Name some Independent films of 1964",
+        "answer": [
+            "Batman Dracula",
+            "Santa Claus Conquers the Martians",
+            "Teen-Age Strangler",
+            "The Last Man on Earth (1964 film)",
+            "The Thrill Killers",
+            "To Be Alive!",
+            "The Magic Christmas Tree",
+            "Lorna (film)",
+            "The Incredibly Strange Creatures Who Stopped Living and Became Mixed-Up Zombies"
+        ]
+    },
+    {
+        "question": "Name some Battle of the Somme films",
+        "answer": [
+            "The Lost City of Z (film)",
+            "War As It Really Is",
+            "The Trench (film)",
+            "The Somme (film)",
+            "The Battle of the Somme (film)",
+            "The Somme – From Defeat to Victory"
+        ]
+    },
+    {
+        "question": "Name some 2004 German novels",
+        "answer": [
+            "Gezeitenwelt",
+            "The Swarm (Schätzing novel)",
+            "The City of Dreaming Books",
+            "Gaming Instinct",
+            "Night Train to Lisbon",
+            "Daniel Half Human",
+            "Endstufe (novel)",
+            "When Santa Fell to Earth"
+        ]
+    },
+    {
+        "question": "Name some Europe's late Jurassic plesiosaurs",
+        "answer": [
+            "Anguanax",
+            "Colymbosaurus",
+            "Simolestes",
+            "Bathyspondylus",
+            "Kimmerosaurus",
+            "Liopleurodon",
+            "Spitrasaurus",
+            "Pliosaurus",
+            "Djupedalia"
+        ]
+    },
+    {
+        "question": "Name some Adventure films from 1944",
+        "answer": [
+            "Gypsy Wildcat",
+            "Alaska (1944 film)",
+            "The Tiger Woman (1944 film)",
+            "Ali Baba and the Forty Thieves (1944 film)",
+            "El corsario negro",
+            "Haunted Harbor",
+            "Nabonga",
+            "Call of the Jungle"
+        ]
+    },
+    {
+        "question": "Name some Ion Idriess novels",
+        "answer": [
+            "Forty Fathoms Deep",
+            "The Wild White Man of Badu",
+            "The Red Chief",
+            "Madman's Island",
+            "Drums of Mer",
+            "Isles of Despair"
+        ]
+    }
+]
