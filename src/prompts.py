@@ -255,7 +255,6 @@ Actual Question: {original_question}
 Baseline Response: {baseline_response}"""
 
 
-
 EXECUTE_VERIFICATION_TWO_STEP_PROMPT_WIKI_CATEGORY = """Answer the following questions. Think step by step and answer each question concisely.
 
 Example Questions: 1. Is Jaws directed by Steven Spielberg?
@@ -300,3 +299,7 @@ Baseline Answer: {baseline_response}
 
 Verification Questions & Answer Pairs From another source:
 {verification_questions} & {verification_answers}"""
+
+
+PLAN_AND_EXECUTION_JOINT_PROMPT_WIKI_CATEGORY=""
+FINAL_VERIFIED_JOINT_PROMPT_WIKI_CATEGORY=""
