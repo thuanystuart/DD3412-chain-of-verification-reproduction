@@ -1,1 +1,1 @@
-from .data_processor import read_json_file, questions_from_wiki, read_questions_from_multi_qa_dataset
+from .data_processor import read_json, get_questions_from_dict, get_questions_from_list

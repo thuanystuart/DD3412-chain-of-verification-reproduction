@@ -1,23 +1,22 @@
 import json
+from typing import Dict, List
 
-def read_json_file(path):
+def read_jsonlines(path: str):
     records = []
-    with open(path, 'r') as f:
+    with open(path, 'r', encoding="utf-8") as f:
         for line in f:
             record = json.loads(line)
             records.append(record)
     return records
 
-def questions_from_wiki(data):
-    questions = []
-    for record in data:
-        for i in range (0, len(record)):
-            question = list(record.keys())[i]
-            questions.append(question)
-    return questions
-
-def read_questions_from_multi_qa_dataset(path):
-    with open(path, 'r') as file:
+def read_json(path: str):
+    with open(path, 'r', encoding="utf-8") as file:
         data = json.load(file)
+    return data
+
+def get_questions_from_dict(data: Dict[str, str]):
+    return list(data.keys())
+
+def get_questions_from_list(data: List[Dict[str, str]]):
     questions = [entry['question'] for entry in data]
     return questions
