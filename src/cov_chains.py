@@ -21,19 +21,19 @@ class ChainofVerification():
         self.setting = setting
         
     def generate_response(self, prompt, max_tokens):
-        if self.model_id == "llama2" or self.model_id == "llama2_70b" or self.model_id == "llama-65b":
+        if self.model_id in ["llama2", "llama2_70b", "llama-65b"]:
             #prompt = f"""<s>[INST] <<SYS>>{prompt_tmpl}\n<</SYS>>\nAnswer: [/INST]"""
             input_ids = self.tokenizer(prompt, return_tensors="pt", truncation=True).input_ids.cuda()
             outputs = self.model.generate(input_ids=input_ids, max_new_tokens=max_tokens, do_sample=True, top_p=self.top_p,temperature=self.temperature)
             #tokens = self.tokenizer.batch_decode(outputs.detach().cpu().numpy(), skip_special_tokens=True)[0][len(prompt_tmpl):]
             tokens = self.tokenizer.batch_decode(outputs.detach().cpu().numpy(), skip_special_tokens=True)[0][0:]
             tokens = tokens.split("[/INST]")[1] #comment for multiqa
-        else:
-            prompt = f"<|system|>\n</s>\n<|user|>\n{prompt_tmpl}</s>\n<|assistant|>\n"
-            input_ids = self.tokenizer(prompt, return_tensors="pt", truncation=True).input_ids.cuda()
-            outputs = self.model.generate(input_ids=input_ids, max_new_tokens=max_tokens, do_sample=True, top_p=self.top_p,temperature=self.temperature)
-            tokens = self.tokenizer.batch_decode(outputs.detach().cpu().numpy(), skip_special_tokens=True)[0][len(prompt_tmpl):]
-            tokens = tokens.split("<|assistant|>")[1]
+        # else:
+        #     prompt = f"<|system|>\n</s>\n<|user|>\n{prompt_tmpl}</s>\n<|assistant|>\n"
+        #     input_ids = self.tokenizer(prompt, return_tensors="pt", truncation=True).input_ids.cuda()
+        #     outputs = self.model.generate(input_ids=input_ids, max_new_tokens=max_tokens, do_sample=True, top_p=self.top_p,temperature=self.temperature)
+        #     tokens = self.tokenizer.batch_decode(outputs.detach().cpu().numpy(), skip_special_tokens=True)[0][len(prompt_tmpl):]
+        #     tokens = tokens.split("<|assistant|>")[1]
         return tokens
     
     def run_verification_chain(self, original_question):

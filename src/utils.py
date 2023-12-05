@@ -29,7 +29,7 @@ def import_model_and_tokenizer(model_id, access_token=None):
         print("Invalid Model ID. Please write either 'mistral', 'llama2' or 'zephyr'.")
         sys.exit()
     
-    if model_id == llama2_model_id:
+    if model_id in [llama2_model_id, llama2_70b_model_id] and access_token is not None:
         login(token = access_token)
         model = AutoModelForCausalLM.from_pretrained(model_id,
                                                  quantization_config=bnb_config,

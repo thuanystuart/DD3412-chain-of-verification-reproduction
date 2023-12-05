@@ -18,7 +18,7 @@ multi_qa_dataset = "multi_qa"
 wikidata_category_dataset = "wikidata_category"
 access_token = "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"
 
-dataset = wikidata_category_dataset
+task = wikidata_category_dataset
 
 valid_combinations = {
             ("llama2", "wikidata", "two_step"),
@@ -40,13 +40,13 @@ valid_combinations = {
         }
 
 
-if dataset == wikidata_dataset:
+if task == wikidata_dataset:
     data= read_json_file(file_path)
     questions = questions_from_wiki(data)
-elif dataset == multi_qa_dataset:
+elif task == multi_qa_dataset:
     questions = read_questions_from_multi_qa_dataset(file_path_multi)
-elif dataset == wikidata_category_dataset:
+elif task == wikidata_category_dataset:
     questions = read_questions_from_multi_qa_dataset(file_path_wikidata_categories)
 
-chain = ChainofVerification(model_id=llama2_id, top_p=0.9, temperature=0.07, dataset=dataset, setting="two_step", questions=questions, access_token=access_token)
+chain = ChainofVerification(model_id=llama2_id, top_p=0.9, temperature=0.07, task=task, setting="two_step", questions=questions, access_token=access_token)
 chain.run_and_store_results()
