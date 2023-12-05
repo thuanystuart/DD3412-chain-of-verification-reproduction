@@ -1,5 +1,6 @@
 import json
-from src.utils import import_model_and_tokenizer
+import sys
+from src.utils import import_model_and_tokenizer, MODEL_MAPPING, Model
 from src.prompts import (
     BASELINE_PROMPT_WIKI,
     PLAN_VERIFICATION_TWO_STEP_PROMPT_WIKI,
@@ -25,18 +26,24 @@ class ChainofVerification:
         self, model_id, top_p, temperature, task, setting, questions, access_token
     ):
         self.model_id = model_id
+        self.model: Model = MODEL_MAPPING[model_id]
+        if self.model is None:
+            print("Invalid Model ID. Please write either 'mistral', 'llama2' or 'zephyr'.")
+            sys.exit()
+
         self.access_token = access_token
-        self.model, self.tokenizer = import_model_and_tokenizer(
-            model_id, access_token=self.access_token
-        )
         self.questions = questions
         self.top_p = top_p
         self.temperature = temperature
         self.task = task
         self.setting = setting
 
+        self.model, self.tokenizer = import_model_and_tokenizer(
+            self.model, access_token=self.access_token
+        )
+
     def generate_response(self, prompt, max_tokens):
-        if self.model_id in ["llama2", "llama2_70b", "llama-65b"]:
+        if self.model.is_llama:
             # prompt = f"""<s>[INST] <<SYS>>{prompt_tmpl}\n<</SYS>>\nAnswer: [/INST]"""
             input_ids = self.tokenizer(
                 prompt, return_tensors="pt", truncation=True

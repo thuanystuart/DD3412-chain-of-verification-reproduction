@@ -1,23 +1,24 @@
-import sys
+import dataclasses
 import torch
 from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
 from huggingface_hub import login
 
+@dataclasses.dataclass
+class Model():
+    id: str
+    is_llama: bool = False
+    is_protected: bool = False
 
-def import_model_and_tokenizer(model_name, access_token=None):
-    model_mapping = {
-        "mistral": {"id": "mistralai/Mistral-7B-Instruct-v0.1", "is_llama": False},
-        "llama2": {"id": "meta-llama/Llama-2-13b-chat-hf", "is_llama": True},
-        "zephyr": {"id": "HuggingFaceH4/zephyr-7b-beta", "is_llama": False},
-        "llama2_70b": {"id": "meta-llama/Llama-2-70b-chat-hf", "is_llama": True},
-        "llama": {"id": "huggyllama/llama-65b", "is_llama": False},
-    }
+MODEL_MAPPING = {
+    "mistral": Model(id="mistralai/Mistral-7B-Instruct-v0.1", is_llama=False, is_protected=False),
+    "llama2": Model(id="meta-llama/Llama-2-13b-chat-hf", is_llama=True, is_protected=True),
+    "zephyr": Model(id="HuggingFaceH4/zephyr-7b-beta", is_llama=False, is_protected=False),
+    "llama2_70b": Model(id="meta-llama/Llama-2-70b-chat-hf", is_llama=True, is_protected=True),
+    "llama": Model(id="huggyllama/llama-65b", is_llama=True, is_protected=False),
+}
 
-    model = model_mapping.get(model_name, None)
-    if model is None:
-        print("Invalid Model ID. Please write either 'mistral', 'llama2' or 'zephyr'.")
-        sys.exit()
 
+def import_model_and_tokenizer(model: Model, access_token: str = None):
     bnb_config = BitsAndBytesConfig(
         load_in_4bit=True,
         bnb_4bit_use_double_quant=True,
@@ -25,7 +26,7 @@ def import_model_and_tokenizer(model_name, access_token=None):
         bnb_4bit_compute_dtype=torch.bfloat16,
     )
 
-    if model.is_llama and access_token is not None:
+    if model.is_protected and access_token is not None:
         login(token=access_token)
         model = AutoModelForCausalLM.from_pretrained(
             model.id,
