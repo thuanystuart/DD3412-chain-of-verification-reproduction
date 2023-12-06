@@ -164,7 +164,7 @@ def import_model_and_tokenizer(model: ModelConfig, access_token: str = None):
 
     if model.is_protected and access_token is not None:
         login(token=access_token)
-        model = AutoModelForCausalLM.from_pretrained(
+        language_model = AutoModelForCausalLM.from_pretrained(
             model.id,
             quantization_config=bnb_config,
             use_cache=True,
@@ -172,7 +172,7 @@ def import_model_and_tokenizer(model: ModelConfig, access_token: str = None):
             token=access_token,
         )
     else:
-        model = AutoModelForCausalLM.from_pretrained(
+        language_model = AutoModelForCausalLM.from_pretrained(
             model.id, quantization_config=bnb_config, use_cache=True, device_map="auto"
         )
 
@@ -180,4 +180,4 @@ def import_model_and_tokenizer(model: ModelConfig, access_token: str = None):
     tokenizer.pad_token = tokenizer.eos_token
     tokenizer.padding_side = "right"
 
-    return model, tokenizer
+    return language_model, tokenizer
