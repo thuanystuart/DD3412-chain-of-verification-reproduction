@@ -62,15 +62,19 @@ class ChainOfVerification:
             tokens = self.tokenizer.batch_decode(
                 outputs.detach().cpu().numpy(), skip_special_tokens=True
             )[0][0:]
-            if self.task_config.id != "multi_qa":
-                tokens = tokens.split("[/INST]")[1]
-        # else:
+            #if self.task_config.id != "multi_qa":
+            tokens = tokens.split("[/INST]")[1]
+        # TODO: Fix this for othe LLMs
+        # else: 
         #     prompt = f"<|system|>\n</s>\n<|user|>\n{prompt_tmpl}</s>\n<|assistant|>\n"
         #     input_ids = self.tokenizer(prompt, return_tensors="pt", truncation=True).input_ids.cuda()
         #     outputs = self.model.generate(input_ids=input_ids, max_new_tokens=max_tokens, do_sample=True, top_p=self.top_p,temperature=self.temperature)
         #     tokens = self.tokenizer.batch_decode(outputs.detach().cpu().numpy(), skip_special_tokens=True)[0][len(prompt_tmpl):]
         #     tokens = tokens.split("<|assistant|>")[1]
-        return tokens.split("\n\n")[1]
+        if len(tokens.split("\n\n")) > 1 and tokens.split("\n\n")[1] is not None:
+            return tokens.split("\n\n")[1]
+        else:
+            return tokens
 
     def get_baseline_tokens(self, question: str) -> str:
         baseline_prompt = self.task_config.baseline_prompt.format(
