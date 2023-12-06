@@ -196,7 +196,7 @@ class ChainOfVerification:
                 all_results.append(result)
 
         result_file_path = (
-            f"./results/{self.model_id}_{self.task}_{self.setting}_results.json"
+            f"./result/{self.model_id}_{self.task}_{self.setting}_results.json"
         )
         with open(result_file_path, "w", encoding="utf-8") as json_file:
             json.dump(all_results, json_file, indent=2, ensure_ascii=False)
