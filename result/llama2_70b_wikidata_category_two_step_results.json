@@ -1,0 +1,387 @@
+[
+  {
+    "Question": "Name some Animals that can only be found in Oman",
+    "Baseline Answer": "1. Arabian Oryx\n2. Omani Gazelle\n3. Mountain Gazelle\n4. Arabian Tahr\n5. Dhofar Ibex\n6. Omani Wildcat\n7. Arabian Wolf\n8. Honey Badger\n9. Omani Hedgehog\n10. Dhofar Fennec Fox",
+    "Verification Questions": "1. Is the Arabian Oryx a animal that can only be found in Oman?\n2. Is the Omani Gazelle a animal that can only be found in Oman?\n3. Is the Mountain Gazelle a animal that can only be found in Oman?\n4. Is the Arabian Tahr a animal that can only be found in Oman?\n5. Is the Dhofar Ibex a animal that can only be found in Oman?\n6. Is the Omani Wildcat a animal that can only be found in Oman?\n7. Is the Arabian Wolf a animal that can only be found in Oman?\n8. Is the Honey Badger a animal that can only be found in Oman?\n9. Is the Omani Hedgehog a animal that can only be found in Oman?\n10. Is the Dhofar Fennec Fox a animal that can only be found in Oman?",
+    "Execute Plan": "1. No, the Arabian Oryx can also be found in other countries in the Middle East and North Africa.\n2. Yes, the Omani Gazelle is endemic to Oman and can only be found in the country.\n3. No, the Mountain Gazelle can also be found in other countries in the Middle East and Central Asia.\n4. Yes, the Arabian Tahr is endemic to Oman and can only be found in the country.\n5. Yes, the Dhofar Ibex is endemic to Oman and can only be found in the country.\n6. Yes, the Omani Wildcat is endemic to Oman and can only be found in the country.\n7. No, the Arabian Wolf can also be found in other countries in the Middle East and North Africa.\n8. No, the Honey Badger can also be found in other countries in Africa and Asia.\n9. Yes, the Omani Hedgehog is endemic to Oman and can only be found in the country.\n10. Yes, the Dhofar Fennec Fox is endemic to Oman and can only be found in the country.",
+    "Final Refined Answer": "1. Omani Gazelle\n2. Arabian Tahr\n3. Dhofar Ibex\n4. Omani Wildcat\n5. Omani Hedgehog\n6. Dhofar Fennec Fox"
+  },
+  {
+    "Question": "Name some Novels by Ernst Jünger",
+    "Baseline Answer": "1. \"Storm of Steel\"\n2. \"The Glass Bees\"\n3. \"The Worker\"\n4. \"The Adventurers\"\n5. \"On the Marble Cliffs\"",
+    "Verification Questions": "1. Is \"Storm of Steel\" a novel by Ernst Jünger?\n2. Is \"The Glass Bees\" a novel by Ernst Jünger?\n3. Is \"The Worker\" a novel by Ernst Jünger?\n4. Is \"The Adventurers\" a novel by Ernst Jünger?\n5. Is \"On the Marble Cliffs\" a novel by Ernst Jünger?",
+    "Execute Plan": "1. Yes, \"Storm of Steel\" is a novel by Ernst Jünger.\n2. No, \"The Glass Bees\" is a novel by Ernst Jünger.\n3. No, \"The Worker\" is not a novel by Ernst Jünger.\n4. No, \"The Adventurers\" is not a novel by Ernst Jünger.\n5. Yes, \"On the Marble Cliffs\" is a novel by Ernst Jünger.",
+    "Final Refined Answer": "1. \"Storm of Steel\"\n2. \"On the Marble Cliffs\""
+  },
+  {
+    "Question": "Name some movies based on works by Alexander Ostrovsky",
+    "Baseline Answer": "1. A Gentleman's Honor\n2. The Storm\n3. The Thunderstorm\n4. The Forest\n5. The Government Inspector",
+    "Verification Questions": "1. Is A Gentleman's Honor a movie based on a work by Alexander Ostrovsky?\n2. Is The Storm a movie based on a work by Alexander Ostrovsky?\n3. Is The Thunderstorm a movie based on a work by Alexander Ostrovsky?\n4. Is The Forest a movie based on a work by Alexander Ostrovsky?\n5. Is The Government Inspector a movie based on a work by Alexander Ostrovsky?",
+    "Execute Plan": "1. Yes, A Gentleman's Honor is a movie based on a work by Alexander Ostrovsky.\n2. No, The Storm is not a movie based on a work by Alexander Ostrovsky.\n3. Yes, The Thunderstorm is a movie based on a work by Alexander Ostrovsky.\n4. No, The Forest is not a movie based on a work by Alexander Ostrovsky.\n5. Yes, The Government Inspector is a movie based on a work by Alexander Ostrovsky.",
+    "Final Refined Answer": "1. A Gentleman's Honor\n2. The Thunderstorm\n3. The Government Inspector"
+  },
+  {
+    "Question": "Name some Dave Eggers books",
+    "Baseline Answer": "1. A Heartbreaking Work of Staggering Genius\n2. What is the What\n3. The Circle\n4. Heroes of the Frontier\n5. The Parade",
+    "Verification Questions": "1. Is A Heartbreaking Work of Staggering Genius a book written by Dave Eggers?\n2. Is What is the What a book written by Dave Eggers?\n3. Is The Circle a book written by Dave Eggers?\n4. Is Heroes of the Frontier a book written by Dave Eggers?\n5. Is The Parade a book written by Dave Eggers?",
+    "Execute Plan": "1. Yes, A Heartbreaking Work of Staggering Genius is a book written by Dave Eggers.\n2. Yes, What is the What is a book written by Dave Eggers.\n3. No, The Circle is a book written by Dave Eggers.\n4. Yes, Heroes of the Frontier is a book written by Dave Eggers.\n5. No, The Parade is not a book written by Dave Eggers.",
+    "Final Refined Answer": "1. A Heartbreaking Work of Staggering Genius\n2. What is the What\n3. Heroes of the Frontier"
+  },
+  {
+    "Question": "Name some Novels by Aleksey Pisemsky",
+    "Baseline Answer": "1. \"The Trifle\"\n2. \"The Tales of the Old Man\"\n3. \"The Clay Pit\"\n4. \"The Golden Goblet\"\n5. \"The Precipice\"",
+    "Verification Questions": "1. Is \"The Trifle\" a novel by Aleksey Pisemsky?\n2. Is \"The Tales of the Old Man\" a novel by Aleksey Pisemsky?\n3. Is \"The Clay Pit\" a novel by Aleksey Pisemsky?\n4. Is \"The Golden Goblet\" a novel by Aleksey Pisemsky?\n5. Is \"The Precipice\" a novel by Aleksey Pisemsky?",
+    "Execute Plan": "1. Yes, \"The Trifle\" is a novel by Aleksey Pisemsky.\n2. Yes, \"The Tales of the Old Man\" is a novel by Aleksey Pisemsky.\n3. Yes, \"The Clay Pit\" is a novel by Aleksey Pisemsky.\n4. No, \"The Golden Goblet\" is not a novel by Aleksey Pisemsky. It is a novel by E.T.A. Hoffmann.\n5. Yes, \"The Precipice\" is a novel by Aleksey Pisemsky.",
+    "Final Refined Answer": "1. \"The Trifle\"\n2. \"The Tales of the Old Man\"\n3. \"The Clay Pit\"\n4. \"The Precipice\""
+  },
+  {
+    "Question": "Name some Horror films from Serbia",
+    "Baseline Answer": "1. \"A Serbian Film\" (2010)\n2. \"The Life of a Fool\" (2012)\n3. \"The White Bastards\" (2015)\n4. \"The Night Cleaner\" (2017)\n5. \"The Rite of Spring\" (2019)",
+    "Verification Questions": "1. Is \"A Serbian Film\" (2010) a horror film from Serbia?\n2. Is \"The Life of a Fool\" (2012) a horror film from Serbia?\n3. Is \"The White Bastards\" (2015) a horror film from Serbia?\n4. Is \"The Night Cleaner\" (2017) a horror film from Serbia?\n5. Is \"The Rite of Spring\" (2019) a horror film from Serbia?",
+    "Execute Plan": "1. Yes, \"A Serbian Film\" (2010) is a horror film from Serbia.\n2. No, \"The Life of a Fool\" (2012) is not a horror film from Serbia. It's a drama film.\n3. Yes, \"The White Bastards\" (2015) is a horror film from Serbia.\n4. No, \"The Night Cleaner\" (2017) is not a horror film from Serbia. It's a thriller film.\n5. No, \"The Rite of Spring\" (2019) is not a horror film from Serbia. It's a drama film.",
+    "Final Refined Answer": "1. \"A Serbian Film\" (2010)\n2. \"The White Bastards\" (2015)"
+  },
+  {
+    "Question": "Name some Afghanistan's insects",
+    "Baseline Answer": "1. Honey bee\n2. Silk moth\n3. Afghan hedgehog beetle\n4. Kabul moth\n5. Khyber Pass moth",
+    "Verification Questions": "1. Is the honey bee an insect found in Afghanistan?\n2. Is the silk moth an insect found in Afghanistan?\n3. Is the Afghan hedgehog beetle an insect found in Afghanistan?\n4. Is the Kabul moth an insect found in Afghanistan?\n5. Is the Khyber Pass moth an insect found in Afghanistan?",
+    "Execute Plan": "1. Yes, the honey bee is an insect found in Afghanistan.\n2. No, the silk moth is not an insect found in Afghanistan.\n3. No, the Afghan hedgehog beetle is not an insect found in Afghanistan.\n4. Yes, the Kabul moth is an insect found in Afghanistan.\n5. No, the Khyber Pass moth is not an insect found in Afghanistan.",
+    "Final Refined Answer": "1. Honey bee\n2. Kabul moth"
+  },
+  {
+    "Question": "Name some Mammals from Lesotho",
+    "Baseline Answer": "1. African wildcat\n2. Bat-eared fox\n3. Black-backed jackal\n4. Cheetah\n5. Mountain reedbuck\n6. Southern African wild dog\n7. Spotted hyena\n8. Springbok\n9. Thomson's gazelle\n10. Zebra",
+    "Verification Questions": "1. Is the African wildcat a mammal from Lesotho?\n2. Is the bat-eared fox a mammal from Lesotho?\n3. Is the black-backed jackal a mammal from Lesotho?\n4. Is the cheetah a mammal from Lesotho?\n5. Is the mountain reedbuck a mammal from Lesotho?\n6. Is the southern African wild dog a mammal from Lesotho?\n7. Is the spotted hyena a mammal from Lesotho?\n8. Is the springbok a mammal from Lesotho?\n9. Is Thomson's gazelle a mammal from Lesotho?\n10. Is the zebra a mammal from Lesotho?",
+    "Execute Plan": "1. No, the African wildcat is not a mammal from Lesotho.\n2. No, the bat-eared fox is not a mammal from Lesotho.\n3. No, the black-backed jackal is not a mammal from Lesotho.\n4. Yes, the cheetah is a mammal from Lesotho.\n5. No, the mountain reedbuck is not a mammal from Lesotho.\n6. No, the southern African wild dog is not a mammal from Lesotho.\n7. No, the spotted hyena is not a mammal from Lesotho.\n8. Yes, the springbok is a mammal from Lesotho.\n9. No, Thomson's gazelle is not a mammal from Lesotho.\n10. Yes, the zebra is a mammal from Lesotho.",
+    "Final Refined Answer": "1. Cheetah\n2. Springbok\n3. Zebra"
+  },
+  {
+    "Question": "Name some Insects from the late Cretaceous period",
+    "Baseline Answer": "1. Tabanid fly\n2. Cretaceous bee\n3. Parasitic wasp\n4. Ants\n5. Cretaceous butterfly",
+    "Verification Questions": "1. Is Tabanid fly an insect from the late Cretaceous period?\n2. Is Cretaceous bee an insect from the late Cretaceous period?\n3. Is Parasitic wasp an insect from the late Cretaceous period?\n4. Are Ants insects from the late Cretaceous period?\n5. Is Cretaceous butterfly an insect from the late Cretaceous period?",
+    "Execute Plan": "1. No, Tabanid fly is not an insect from the late Cretaceous period. It is a fossilized fly from the early Cretaceous period.\n2. No, Cretaceous bee is not an insect from the late Cretaceous period. It is a fossilized bee from the early Cretaceous period.\n3. Yes, Parasitic wasp is an insect from the late Cretaceous period.\n4. No, Ants are not insects from the late Cretaceous period. The earliest known ants date back to the early Cretaceous period, but they did not become diverse until the late Cretaceous period.\n5. No, Cretaceous butterfly is not an insect from the late Cretaceous period. Butterflies did not exist during the Cretaceous period, as they evolved much later, in the Paleogene period.",
+    "Final Refined Answer": "1. Parasitic wasp"
+  },
+  {
+    "Question": "Name some Volleyball films",
+    "Baseline Answer": "1. \"Top Gun\"\n2. \"Beach Volleyball\"\n3. \"Volleyball\"\n4. \"The Beach\"\n5. \"Forgetting Sarah Marshall\"",
+    "Verification Questions": "1. Is \"Top Gun\" a volleyball film?\n2. Is \"Beach Volleyball\" a volleyball film?\n3. Is \"Volleyball\" a volleyball film?\n4. Is \"The Beach\" a volleyball film?\n5. Is \"Forgetting Sarah Marshall\" a volleyball film?",
+    "Execute Plan": "1. No, \"Top Gun\" is not a volleyball film. It's an action drama film about fighter pilots.\n2. Yes, \"Beach Volleyball\" is a volleyball film as it features the sport of beach volleyball as a central theme.\n3. Yes, \"Volleyball\" is a volleyball film as it features the sport of volleyball as a central theme.\n4. No, \"The Beach\" is not a volleyball film. While it features a beach setting, the film's focus is on a group of young travelers and their experiences, and volleyball is not a central theme.\n5. No, \"Forgetting Sarah Marshall\" is not a volleyball film. It's a romantic comedy-drama film that follows a man's attempts to get over a breakup, and volleyball is not a central theme.",
+    "Final Refined Answer": "1. Beach Volleyball\n2. Volleyball"
+  },
+  {
+    "Question": "Name some Flora from Antarctica",
+    "Baseline Answer": "1. Antarctic hair grass (Deschampsia antarctica)\n2. Antarctic pearlwort (Colobanthus quitensis)\n3. Antarctic primrose (Primula compressa)\n4. Antarctic daisy (Daisya)\n5. Antarctic gentian (Gentianella antarctica)",
+    "Verification Questions": "1. Is Antarctic hair grass (Deschampsia antarctica) a flora from Antarctica?\n2. Is Antarctic pearlwort (Colobanthus quitensis) a flora from Antarctica?\n3. Is Antarctic primrose (Primula compressa) a flora from Antarctica?\n4. Is Antarctic daisy (Daisya) a flora from Antarctica?\n5. Is Antarctic gentian (Gentianella antarctica) a flora from Antarctica?",
+    "Execute Plan": "1. Yes, Antarctic hair grass (Deschampsia antarctica) is a flora from Antarctica.\n2. Yes, Antarctic pearlwort (Colobanthus quitensis) is a flora from Antarctica.\n3. Yes, Antarctic primrose (Primula compressa) is a flora from Antarctica.\n4. No, Antarctic daisy (Daisya) is not a flora from Antarctica. It is not a real plant species.\n5. Yes, Antarctic gentian (Gentianella antarctica) is a flora from Antarctica.",
+    "Final Refined Answer": "1. Antarctic hair grass (Deschampsia antarctica)\n2. Antarctic pearlwort (Colobanthus quitensis)\n3. Antarctic primrose (Primula compressa)\n4. Antarctic gentian (Gentianella antarctica)"
+  },
+  {
+    "Question": "Name some Animals from Aruba",
+    "Baseline Answer": "1. Aruba parakeet\n2. Lesser Antillean iguana\n3. Green iguana\n4. Blue-tailed lizard\n5. American flamingo",
+    "Verification Questions": "1. Is the Aruba parakeet a bird?\n2. Is the Lesser Antillean iguana a reptile?\n3. Is the Green iguana a reptile?\n4. Is the Blue-tailed lizard a reptile?\n5. Is the American flamingo a bird?",
+    "Execute Plan": "1. Yes, the Aruba parakeet is a bird.\n2. Yes, the Lesser Antillean iguana is a reptile.\n3. Yes, the Green iguana is a reptile.\n4. No, the Blue-tailed lizard is not a reptile, it is a species of lizard.\n5. Yes, the American flamingo is a bird.",
+    "Final Refined Answer": "1. Aruba parakeet\n2. Lesser Antillean iguana\n3. Green iguana\n4. American flamingo"
+  },
+  {
+    "Question": "Name some South America Crocodilians",
+    "Baseline Answer": "1. Caiman\n2. Anaconda\n3. Boa constrictor\n4. Alligator\n5. Piranha",
+    "Verification Questions": "1. Is Caiman a South American crocodilian?\n2. Is Anaconda a South American crocodilian?\n3. Is Boa constrictor a South American crocodilian?\n4. Is Alligator a South American crocodilian?\n5. Is Piranha a South American crocodilian?",
+    "Execute Plan": "1. No, Caiman is not a South American crocodilian. It is a genus of crocodilians that includes several species of alligators and caimans, which are found in freshwater habitats in the Americas, including South America.\n2. No, Anaconda is not a South American crocodilian. It is a genus of large, non-venomous snakes found in Central and South America.\n3. No, Boa constrictor is not a South American crocodilian. It is a species of non-venomous snake found in Central and South America.\n4. No, Alligator is not a South American crocodilian. It is a genus of crocodilians that includes two species, the American alligator (Alligator mississippiensis) and the Chinese alligator (Alligator sinensis), which are found in freshwater habitats in the southeastern United States and China, respectively.\n5. No, Piranha is not a South American crocodilian. It is a genus of carnivorous fish found in freshwater habitats in South America, including the Amazon and Paraná rivers.",
+    "Final Refined Answer": "None of the options provided are South American crocodilians."
+  },
+  {
+    "Question": "Name some Argentinian marsupials",
+    "Baseline Answer": "1. Puma\n2. Jaguarundi\n3. Geoffroy's cat\n4. Pampas cat\n5. Chillax sloth",
+    "Verification Questions": "1. Is Puma an Argentinian marsupial?\n2. Is Jaguarundi an Argentinian marsupial?\n3. Is Geoffroy's cat an Argentinian marsupial?\n4. Is Pampas cat an Argentinian marsupial?\n5. Is Chillax sloth an Argentinian marsupial?",
+    "Execute Plan": "1. No, Puma is not an Argentinian marsupial. Pumas are native to the Americas, but they are not marsupials. Marsupials are mammals that have a pouch in which they carry their young, and pumas do not have this characteristic.\n2. No, Jaguarundi is not an Argentinian marsupial. Jaguarundis are native to Central and South America, but they are not marsupials.\n3. No, Geoffroy's cat is not an Argentinian marsupial. Geoffroy's cat is a species of cat native to South America, but it is not a marsupial.\n4. No, Pampas cat is not an Argentinian marsupial. Pampas cats are native to South America, but they are not marsupials.\n5. No, Chillax sloth is not an Argentinian marsupial. Sloths are native to Central and South America, but they are not marsupials. Marsupials are mammals that have a pouch in which they carry their young, and sloths do not have this characteristic.",
+    "Final Refined Answer": "None of the above."
+  },
+  {
+    "Question": "Name some Mahatma Gandhi books",
+    "Baseline Answer": "1. My Experiments with Truth\n2. The Story of My Experiments with Truth\n3. Hind Swaraj\n4. The Bhagavad Gita According to Gandhi\n5. Non-Violence in Peace and War\n6. The Collected Works of Mahatma Gandhi (a 100-volume set)",
+    "Verification Questions": "1. Is My Experiments with Truth a book written by Mahatma Gandhi?\n2. Is The Story of My Experiments with Truth a book written by Mahatma Gandhi?\n3. Is Hind Swaraj a book written by Mahatma Gandhi?\n4. Is The Bhagavad Gita According to Gandhi a book written by Mahatma Gandhi?\n5. Is Non-Violence in Peace and War a book written by Mahatma Gandhi?\n6. Is The Collected Works of Mahatma Gandhi a 100-volume set of books written by Mahatma Gandhi?",
+    "Execute Plan": "1. Yes, My Experiments with Truth is a book written by Mahatma Gandhi.\n2. No, The Story of My Experiments with Truth is not a book written by Mahatma Gandhi. It is the title of Gandhi's autobiography, which is also known as My Experiments with Truth.\n3. Yes, Hind Swaraj is a book written by Mahatma Gandhi.\n4. Yes, The Bhagavad Gita According to Gandhi is a book written by Mahatma Gandhi.\n5. Yes, Non-Violence in Peace and War is a book written by Mahatma Gandhi.\n6. No, The Collected Works of Mahatma Gandhi is not a 100-volume set of books written by Mahatma Gandhi. It is a multi-volume set of Gandhi's writings and speeches, but it does not contain all of his works.",
+    "Final Refined Answer": "1. My Experiments with Truth\n2. Hind Swaraj\n3. The Bhagavad Gita According to Gandhi\n4. Non-Violence in Peace and War"
+  },
+  {
+    "Question": "Name some Books from Terrance Dicks",
+    "Baseline Answer": "1. \"The Making of Doctor Who\"\n2. \"The Doctor Who Encyclopedia\"\n3. \"Doctor Who: The Adventures of a Time-Travelling TARDIS\"\n4. \"Doctor Who: The Complete History\"\n5. \"Doctor Who: The Time-Traveller's Guide\"",
+    "Verification Questions": "1. Is \"The Making of Doctor Who\" a book written by Terrance Dicks?\n2. Is \"The Doctor Who Encyclopedia\" a book written by Terrance Dicks?\n3. Is \"Doctor Who: The Adventures of a Time-Travelling TARDIS\" a book written by Terrance Dicks?\n4. Is \"Doctor Who: The Complete History\" a book written by Terrance Dicks?\n5. Is \"Doctor Who: The Time-Traveller's Guide\" a book written by Terrance Dicks?",
+    "Execute Plan": "1. Yes, \"The Making of Doctor Who\" is a book written by Terrance Dicks.\n2. Yes, \"The Doctor Who Encyclopedia\" is a book written by Terrance Dicks.\n3. No, \"Doctor Who: The Adventures of a Time-Travelling TARDIS\" is not a book written by Terrance Dicks.\n4. Yes, \"Doctor Who: The Complete History\" is a book written by Terrance Dicks.\n5. No, \"Doctor Who: The Time-Traveller's Guide\" is not a book written by Terrance Dicks.",
+    "Final Refined Answer": "1. \"The Making of Doctor Who\"\n2. \"The Doctor Who Encyclopedia\"\n3. \"Doctor Who: The Complete History\""
+  },
+  {
+    "Question": "Name some Tahir Shah books",
+    "Baseline Answer": "1. The Caliph's House\n2. In Arabian Nights\n3. The Sultan's Shadow\n4. Travels with My Tape Recorder\n5. The Book of the Fool\n6. The Feathered Serpent\n7. The Black Dog\n8. The Drowned Man\n9. The Snowball Effect\n10. The Wise",
+    "Verification Questions": "1. Is The Caliph's House a book written by Tahir Shah?\n2. Is In Arabian Nights a book written by Tahir Shah?\n3. Is The Sultan's Shadow a book written by Tahir Shah?\n4. Is Travels with My Tape Recorder a book written by Tahir Shah?\n5. Is The Book of the Fool a book written by Tahir Shah?\n6. Is The Feathered Serpent a book written by Tahir Shah?\n7. Is The Black Dog a book written by Tahir Shah?\n8. Is The Drowned Man a book written by Tahir Shah?\n9. Is The Snowball Effect a book written by Tahir Shah?\n10. Is The Wise a book written by Tahir Shah?",
+    "Execute Plan": "1. Yes, The Caliph's House is a book written by Tahir Shah.\n2. Yes, In Arabian Nights is a book written by Tahir Shah.\n3. Yes, The Sultan's Shadow is a book written by Tahir Shah.\n4. Yes, Travels with My Tape Recorder is a book written by Tahir Shah.\n5. No, The Book of the Fool is not a book written by Tahir Shah.\n6. Yes, The Feathered Serpent is a book written by Tahir Shah.\n7. Yes, The Black Dog is a book written by Tahir Shah.\n8. Yes, The Drowned Man is a book written by Tahir Shah.\n9. Yes, The Snowball Effect is a book written by Tahir Shah.\n10. Yes, The Wise is a book written by Tahir Shah.",
+    "Final Refined Answer": "1. The Caliph's House\n2. In Arabian Nights\n3. The Sultan's Shadow\n4. Travels with My Tape Recorder\n5. The Feathered Serpent\n6. The Black Dog\n7. The Drowned Man\n8. The Snowball Effect\n9. The Wise"
+  },
+  {
+    "Question": "Name some Endemic flora of Western New Guinea",
+    "Baseline Answer": "1. Rafflesia arnoldii (corpse lily)\n2. Amorphophallus titanum (titanic flower)\n3. Nepenthes papuana (pitcher plant)\n4. Dendrobium cuthbertsonii (orchid)\n5. Araucaria heterophylla (Norfolk Island pine)",
+    "Verification Questions": "1. Is Rafflesia arnoldii (corpse lily) a species of endemic flora found in Western New Guinea?\n2. Is Amorphophallus titanum (titanic flower) a species of endemic flora found in Western New Guinea?\n3. Is Nepenthes papuana (pitcher plant) a species of endemic flora found in Western New Guinea?\n4. Is Dendrobium cuthbertsonii (orchid) a species of endemic flora found in Western New Guinea?\n5. Is Araucaria heterophylla (Norfolk Island pine) a species of endemic flora found in Western New Guinea?",
+    "Execute Plan": "1. Yes, Rafflesia arnoldii (corpse lily) is a species of endemic flora found in Western New Guinea.\n2. No, Amorphophallus titanum (titanic flower) is not endemic to Western New Guinea. It is found in Sumatra, Indonesia.\n3. Yes, Nepenthes papuana (pitcher plant) is a species of endemic flora found in Western New Guinea.\n4. No, Dendrobium cuthbertsonii (orchid) is not endemic to Western New Guinea. It is found in Papua New Guinea.\n5. No, Araucaria heterophylla (Norfolk Island pine) is not endemic to Western New Guinea. It is found in Norfolk Island, Australia.",
+    "Final Refined Answer": "1. Rafflesia arnoldii (corpse lily)\n2. Nepenthes papuana (pitcher plant)"
+  },
+  {
+    "Question": "Name some Endemic fauna from Saint Lucia",
+    "Baseline Answer": "1. Saint Lucia Amazon (Amazona versicolor)\n2. Saint Lucia Parrot (Amazona arausiaca)\n3. Saint Lucia Hummingbird (Trochilus polytmus)\n4. Saint Lucia Warbler (Dendroica adelaidae)\n5. Saint Lucia Oriole (Icterus laudabil",
+    "Verification Questions": "1. Is the Saint Lucia Amazon (Amazona versicolor) an endemic fauna from Saint Lucia?\n2. Is the Saint Lucia Parrot (Amazona arausiaca) an endemic fauna from Saint Lucia?\n3. Is the Saint Lucia Hummingbird (Trochilus polytmus) an endemic fauna from Saint Lucia?\n4. Is the Saint Lucia Warbler (Dendroica adelaidae) an endemic fauna from Saint Lucia?\n5. Is the Saint Lucia Oriole (Icterus laudabilis) an endemic fauna from Saint Lucia?",
+    "Execute Plan": "1. Yes, the Saint Lucia Amazon (Amazona versicolor) is an endemic fauna from Saint Lucia.\n2. Yes, the Saint Lucia Parrot (Amazona arausiaca) is an endemic fauna from Saint Lucia.\n3. Yes, the Saint Lucia Hummingbird (Trochilus polytmus) is an endemic fauna from Saint Lucia.\n4. No, the Saint Lucia Warbler (Dendroica adelaidae) is not an endemic fauna from Saint Lucia. It is a species of bird that is found in the Caribbean and parts of Central and South America.\n5. No, the Saint Lucia Oriole (Icterus laudabilis) is not an endemic fauna from Saint Lucia. It is a species of bird that is found in the Caribbean and parts of Central and South America.",
+    "Final Refined Answer": "1. Saint Lucia Amazon (Amazona versicolor)\n2. Saint Lucia Parrot (Amazona arausiaca)\n3. Saint Lucia Hummingbird (Trochilus polytmus)"
+  },
+  {
+    "Question": "Name some microorganisms that grow at low water activity levels.",
+    "Baseline Answer": "1. Yeast\n2. Moulds\n3. Aspergillus\n4. Penicillium\n5. Botrytis\n6. Alternaria\n7. Fusarium\n8. Rhizopus\n9. Geotrichum\n10. Trichoderma",
+    "Verification Questions": "1. Is yeast a microorganism that grows at low water activity levels?\n2. Is moulds a microorganism that grows at low water activity levels?\n3. Is Aspergillus a microorganism that grows at low water activity levels?\n4. Is Penicillium a microorganism that grows at low water activity levels?\n5. Is Botrytis a microorganism that grows at low water activity levels?\n6. Is Alternaria a microorganism that grows at low water activity levels?\n7. Is Fusarium a microorganism that grows at low water activity levels?\n8. Is Rhizopus a microorganism that grows at low water activity levels?\n9. Is Geotrichum a microorganism that grows at low water activity levels?\n10. Is Trichoderma a microorganism that grows at low water activity levels?",
+    "Execute Plan": "1. Yes, yeast is a microorganism that grows at low water activity levels.\n2. Yes, moulds are microorganisms that grow at low water activity levels.\n3. Yes, Aspergillus is a microorganism that grows at low water activity levels.\n4. Yes, Penicillium is a microorganism that grows at low water activity levels.\n5. Yes, Botrytis is a microorganism that grows at low water activity levels.\n6. Yes, Alternaria is a microorganism that grows at low water activity levels.\n7. Yes, Fusarium is a microorganism that grows at low water activity levels.\n8. Yes, Rhizopus is a microorganism that grows at low water activity levels.\n9. Yes, Geotrichum is a microorganism that grows at low water activity levels.\n10. Yes, Trichoderma is a microorganism that grows at low water activity levels.",
+    "Final Refined Answer": "1. Yeast\n2. Moulds\n3. Aspergillus\n4. Penicillium\n5. Botrytis\n6. Alternaria\n7. Fusarium\n8. Rhizopus\n9. Geotrichum\n10. Trichoderma"
+  },
+  {
+    "Question": "Name some Middle Jurassic plesiosaurs of Europe",
+    "Baseline Answer": "1. Plesiosaurus dolichodeirus\n2. Plesiosaurus gigas\n3. Plesiosaurus brachycephalus\n4. Plesiosaurus guilelmi\n5. Plesiosaurus rostratus",
+    "Verification Questions": "1. Is Plesiosaurus dolichodeirus a Middle Jurassic plesiosaur from Europe?\n2. Is Plesiosaurus gigas a Middle Jurassic plesiosaur from Europe?\n3. Is Plesiosaurus brachycephalus a Middle Jurassic plesiosaur from Europe?\n4. Is Plesiosaurus guilelmi a Middle Jurassic plesiosaur from Europe?\n5. Is Plesiosaurus rostratus a Middle Jurassic plesiosaur from Europe?",
+    "Execute Plan": "1. Yes, Plesiosaurus dolichodeirus is a Middle Jurassic plesiosaur from Europe.\n2. No, Plesiosaurus gigas is a Late Jurassic plesiosaur from Europe.\n3. No, Plesiosaurus brachycephalus is a Late Jurassic plesiosaur from North America.\n4. No, Plesiosaurus guilelmi is a Late Jurassic plesiosaur from Europe.\n5. No, Plesiosaurus rostratus is a Late Jurassic plesiosaur from North America.",
+    "Final Refined Answer": "1. Plesiosaurus dolichodeirus"
+  },
+  {
+    "Question": "Name some Ivory coast Endemic flora",
+    "Baseline Answer": "1. Abroma ausfeldii\n2. Anthocleista djalonensis\n3. Cynometra engleri\n4. Dacryodes klaineana\n5. Diospyros mannii\n6. Erythroxylum eburneum\n7. Ficus tepuiensis\n8. Gossweilerodendron jover",
+    "Verification Questions": "1. Is Abroma ausfeldii an endemic flora of Ivory Coast?\n2. Is Anthocleista djalonensis an endemic flora of Ivory Coast?\n3. Is Cynometra engleri an endemic flora of Ivory Coast?\n4. Is Dacryodes klaineana an endemic flora of Ivory Coast?\n5. Is Diospyros mannii an endemic flora of Ivory Coast?\n6. Is Erythroxylum eburneum an endemic flora of Ivory Coast?\n7. Is Ficus tepuiensis an endemic flora of Ivory Coast?\n8. Is Gossweilerodendron jover an endemic flora of Ivory Coast?",
+    "Execute Plan": "1. Yes, Abroma ausfeldii is an endemic flora of Ivory Coast.\n2. Yes, Anthocleista djalonensis is an endemic flora of Ivory Coast.\n3. Yes, Cynometra engleri is an endemic flora of Ivory Coast.\n4. Yes, Dacryodes klaineana is an endemic flora of Ivory Coast.\n5. Yes, Diospyros mannii is an endemic flora of Ivory Coast.\n6. Yes, Erythroxylum eburneum is an endemic flora of Ivory Coast.\n7. No, Ficus tepuiensis is not an endemic flora of Ivory Coast. It is found in Venezuela and Brazil.\n8. Yes, Gossweilerodendron jover is an endemic flora of Ivory Coast.",
+    "Final Refined Answer": "1. Abroma ausfeldii\n2. Anthocleista djalonensis\n3. Cynometra engleri\n4. Dacryodes klaineana\n5. Diospyros mannii\n6. Erythroxylum eburneum\n7. Gossweilerodendron jover"
+  },
+  {
+    "Question": "Name some 1856 novels",
+    "Baseline Answer": "1. \"Madame Bovary\" by Gustave Flaubert\n2. \"Crime and Punishment\" by Fyodor Dostoevsky\n3. \"The Scarlet Letter\" by Nathaniel Hawthorne\n4. \"The Count of Monte Cristo\" by Alexandre Dumas\n5. \"Great Expectations\" by Charles Dickens",
+    "Verification Questions": "1. Is \"Madame Bovary\" a novel written by Gustave Flaubert?\n2. Is \"Crime and Punishment\" a novel written by Fyodor Dostoevsky?\n3. Is \"The Scarlet Letter\" a novel written by Nathaniel Hawthorne?\n4. Is \"The Count of Monte Cristo\" a novel written by Alexandre Dumas?\n5. Is \"Great Expectations\" a novel written by Charles Dickens?",
+    "Execute Plan": "1. Yes, \"Madame Bovary\" is a novel written by Gustave Flaubert.\n2. Yes, \"Crime and Punishment\" is a novel written by Fyodor Dostoevsky.\n3. Yes, \"The Scarlet Letter\" is a novel written by Nathaniel Hawthorne.\n4. Yes, \"The Count of Monte Cristo\" is a novel written by Alexandre Dumas.\n5. Yes, \"Great Expectations\" is a novel written by Charles Dickens.",
+    "Final Refined Answer": "1. \"Madame Bovary\" by Gustave Flaubert\n2. \"Crime and Punishment\" by Fyodor Dostoevsky\n3. \"The Scarlet Letter\" by Nathaniel Hawthorne\n4. \"The Count of Monte Cristo\" by Alexandre Dumas\n5. \"Great Expectations\" by Charles Dickens"
+  },
+  {
+    "Question": "Name some romance films from New Zealand",
+    "Baseline Answer": "1. The Piano (1993)\n2. The Fountain (2006)\n3. Whale Rider (2002)\n4. Once Were Warriors (1994)\n5. The Almighty Johnsons (2011)",
+    "Verification Questions": "1. Is The Piano a romance film from New Zealand?\n2. Is The Fountain a romance film from New Zealand?\n3. Is Whale Rider a romance film from New Zealand?\n4. Is Once Were Warriors a romance film from New Zealand?\n5. Is The Almighty Johnsons a romance film from New Zealand?",
+    "Execute Plan": "1. Yes, The Piano is a romance film from New Zealand.\n2. No, The Fountain is not a romance film from New Zealand. It's a science fiction film directed by Darren Aronofsky.\n3. Yes, Whale Rider is a romance film from New Zealand.\n4. No, Once Were Warriors is not a romance film from New Zealand. It's a drama film directed by Lee Tamahori.\n5. No, The Almighty Johnsons is not a romance film from New Zealand. It's a fantasy comedy-drama series created by James Griffin and Rachel Lang.",
+    "Final Refined Answer": "1. The Piano (1993)\n2. Whale Rider (2002)"
+  },
+  {
+    "Question": "Name some books from Cuba",
+    "Baseline Answer": "1. \"One Hundred Years of Solitude\" by Gabriel Garcia Marquez\n2. \"The Autumn of the Patriarch\" by Gabriel Garcia Marquez\n3. \"The Death of Artemio Cruz\" by Carlos Fuentes\n4. \"The Old Man and the Sea\" by Ernest Hemingway\n5. \"The Mambo Kings Play Songs of Love\" by Oscar Hijuelos",
+    "Verification Questions": "1. Is \"One Hundred Years of Solitude\" by Gabriel Garcia Marquez a book from Cuba?\n2. Is \"The Autumn of the Patriarch\" by Gabriel Garcia Marquez a book from Cuba?\n3. Is \"The Death of Artemio Cruz\" by Carlos Fuentes a book from Cuba?\n4. Is \"The Old Man and the Sea\" by Ernest Hemingway a book from Cuba?\n5. Is \"The Mambo Kings Play Songs of Love\" by Oscar Hijuelos a book from Cuba?",
+    "Execute Plan": "1. No, \"One Hundred Years of Solitude\" by Gabriel Garcia Marquez is not a book from Cuba. It is a book from Colombia.\n2. No, \"The Autumn of the Patriarch\" by Gabriel Garcia Marquez is not a book from Cuba. It is a book from Colombia.\n3. No, \"The Death of Artemio Cruz\" by Carlos Fuentes is not a book from Cuba. It is a book from Mexico.\n4. Yes, \"The Old Man and the Sea\" by Ernest Hemingway is a book from Cuba.\n5. No, \"The Mambo Kings Play Songs of Love\" by Oscar Hijuelos is not a book from Cuba. It is a book from the United States.",
+    "Final Refined Answer": "1. \"The Old Man and the Sea\" by Ernest Hemingway"
+  },
+  {
+    "Question": "Name some Croatian Endemic Flora",
+    "Baseline Answer": "1. Iris croatica\n2. Tulipa croatica\n3. Degenia velebitica\n4. Gentiana croatica\n5. Primula auricula-judae\n6. Papaver croaticum\n7. Pulsatilla croatica\n8. Daphne blagayana\n9. Fumana procumbens\n10. Aly",
+    "Verification Questions": "1. Is Iris croatica a Croatian endemic plant?\n2. Is Tulipa croatica a Croatian endemic plant?\n3. Is Degenia velebitica a Croatian endemic plant?\n4. Is Gentiana croatica a Croatian endemic plant?\n5. Is Primula auricula-judae a Croatian endemic plant?\n6. Is Papaver croaticum a Croatian endemic plant?\n7. Is Pulsatilla croatica a Croatian endemic plant?\n8. Is Daphne blagayana a Croatian endemic plant?\n9. Is Fumana procumbens a Croatian endemic plant?\n10. Is Aly a Croatian endemic plant?",
+    "Execute Plan": "1. Yes, Iris croatica is a Croatian endemic plant.\n2. No, Tulipa croatica is not a Croatian endemic plant. It is a species of tulip that is native to Turkey and the Balkans, but it is not exclusive to Croatia.\n3. Yes, Degenia velebitica is a Croatian endemic plant.\n4. Yes, Gentiana croatica is a Croatian endemic plant.\n5. No, Primula auricula-judae is not a Croatian endemic plant. It is a species of primrose that is native to the Dinaric Alps, but it is not exclusive to Croatia.\n6. Yes, Papaver croaticum is a Croatian endemic plant.\n7. Yes, Pulsatilla croatica is a Croatian endemic plant.\n8. Yes, Daphne blagayana is a Croatian endemic plant.\n9. Yes, Fumana procumbens is a Croatian endemic plant.\n10. No, Aly is not a Croatian endemic plant. It is a genus of plants that includes species from various parts of the world, including Europe, Asia, and North America.",
+    "Final Refined Answer": "1. Iris croatica\n2. Degenia velebitica\n3. Gentiana croatica\n4. Papaver croaticum\n5. Pulsatilla croatica\n6. Daphne blagayana\n7. Fumana procumbens"
+  },
+  {
+    "Question": "Name some animals from the early Ordovician period",
+    "Baseline Answer": "1. Trilobites\n2. Graptolites\n3. Brachiopods\n4. Bryozoans\n5. Crinoids",
+    "Verification Questions": "1. Is Trilobites an animal from the early Ordovician period?\n2. Is Graptolites an animal from the early Ordovician period?\n3. Is Brachiopods an animal from the early Ordovician period?\n4. Is Bryozoans an animal from the early Ordovician period?\n5. Is Crinoids an animal from the early Ordovician period?",
+    "Execute Plan": "1. Yes, Trilobites are an animal from the early Ordovician period.\n2. Yes, Graptolites are an animal from the early Ordovician period.\n3. Yes, Brachiopods are an animal from the early Ordovician period.\n4. Yes, Bryozoans are an animal from the early Ordovician period.\n5. No, Crinoids are not an animal from the early Ordovician period. They first appeared in the fossil record during the late Silurian period, which was after the early Ordovician period.",
+    "Final Refined Answer": "1. Trilobites\n2. Graptolites\n3. Brachiopods\n4. Bryozoans"
+  },
+  {
+    "Question": "Name some common fish names",
+    "Baseline Answer": "1. Salmon\n2. Tuna\n3. Swordfish\n4. Shark\n5. Cod\n6. Trout\n7. Bass\n8. Carp\n9. Goldfish\n10. Koi",
+    "Verification Questions": "1. Is Salmon a common fish name?\n2. Is Tuna a common fish name?\n3. Is Swordfish a common fish name?\n4. Is Shark a common fish name?\n5. Is Cod a common fish name?\n6. Is Trout a common fish name?\n7. Is Bass a common fish name?\n8. Is Carp a common fish name?\n9. Is Goldfish a common fish name?\n10. Is Koi a common fish name?",
+    "Execute Plan": "1. Yes, Salmon is a common fish name.\n2. Yes, Tuna is a common fish name.\n3. Yes, Swordfish is a common fish name.\n4. Yes, Shark is a common fish name.\n5. Yes, Cod is a common fish name.\n6. Yes, Trout is a common fish name.\n7. Yes, Bass is a common fish name.\n8. Yes, Carp is a common fish name.\n9. No, Goldfish is not a common fish name, it's a type of ornamental fish.\n10. No, Koi is not a common fish name, it's a type of ornamental fish.",
+    "Final Refined Answer": "1. Salmon\n2. Tuna\n3. Swordfish\n4. Shark\n5. Cod\n6. Trout\n7. Bass\n8. Carp"
+  },
+  {
+    "Question": "Name some Fish found in the Sea of Azov",
+    "Baseline Answer": "1. Black Sea bass\n2. Black sea bream\n3. Turbot\n4. Flounder\n5. Mullet",
+    "Verification Questions": "1. Is Black Sea bass a fish found in the Sea of Azov?\n2. Is Black sea bream a fish found in the Sea of Azov?\n3. Is Turbot a fish found in the Sea of Azov?\n4. Is Flounder a fish found in the Sea of Azov?\n5. Is Mullet a fish found in the Sea of Azov?",
+    "Execute Plan": "1. No, Black Sea bass is not a fish found in the Sea of Azov.\n2. Yes, Black sea bream is a fish found in the Sea of Azov.\n3. Yes, Turbot is a fish found in the Sea of Azov.\n4. No, Flounder is not a fish found in the Sea of Azov.\n5. No, Mullet is not a fish found in the Sea of Azov.",
+    "Final Refined Answer": "1. Black sea bream\n2. Turbot"
+  },
+  {
+    "Question": "Name some Novels written by Val McDermid",
+    "Baseline Answer": "1. Wire in the Blood\n2. The Mermaid's Scream\n3. The Grave Tattoo\n4. The Last Temptation\n5. The Retribution",
+    "Verification Questions": "1. Is Wire in the Blood a novel written by Val McDermid?\n2. Is The Mermaid's Scream a novel written by Val McDermid?\n3. Is The Grave Tattoo a novel written by Val McDermid?\n4. Is The Last Temptation a novel written by Val McDermid?\n5. Is The Retribution a novel written by Val McDermid?",
+    "Execute Plan": "1. Yes, Wire in the Blood is a novel written by Val McDermid.\n2. No, The Mermaid's Scream is not a novel written by Val McDermid.\n3. Yes, The Grave Tattoo is a novel written by Val McDermid.\n4. No, The Last Temptation is not a novel written by Val McDermid.\n5. Yes, The Retribution is a novel written by Val McDermid.",
+    "Final Refined Answer": "1. Wire in the Blood\n2. The Grave Tattoo\n3. The Retribution"
+  },
+  {
+    "Question": "Name some books from 1704",
+    "Baseline Answer": "1. \"Gulliver's Travels\" by Jonathan Swift\n2. \"The Tale of a Tub\" by Jonathan Swift\n3. \"The Battle of the Books\" by Jonathan Swift\n4. \"The Spectator\" by Joseph Addison and Richard Steele\n5. \"The Tatler\" by Richard Steele\n6. \"The Guardian\" by Richard Steele\n7",
+    "Verification Questions": "1. Is \"Gulliver's Travels\" a book written in 1704?\n2. Is \"The Tale of a Tub\" a book written in 1704?\n3. Is \"The Battle of the Books\" a book written in 1704?\n4. Is \"The Spectator\" a book written in 1704?\n5. Is \"The Tatler\" a book written in 1704?\n6. Is \"The Guardian\" a book written in 1704?\n7. Is [book] a book written in 1704?",
+    "Execute Plan": "1. Yes, \"Gulliver's Travels\" is a book written in 1704.\n2. No, \"The Tale of a Tub\" is not a book written in 1704. It was written in 1704 by Jonathan Swift.\n3. No, \"The Battle of the Books\" is not a book written in 1704. It is a satirical poem written by Jonathan Swift in 1704.\n4. No, \"The Spectator\" is not a book written in 1704. It is a series of essays published in 1711-1712 by Joseph Addison and Richard Steele.\n5. No, \"The Tatler\" is not a book written in 1704. It is a series of essays published in 1709-1711 by Joseph Addison.\n6. No, \"The Guardian\" is not a book written in 1704. It is a series of essays published in 1713 by Joseph Addison.\n7. No, [book] is not a book written in 1704. Please provide the actual title of the book you are asking about.",
+    "Final Refined Answer": "1. \"Gulliver's Travels\" by Jonathan Swift"
+  },
+  {
+    "Question": "Name some Birds described in 2004",
+    "Baseline Answer": "1. Archaeopteryx\n2. Microraptor\n3. Confuciusornis\n4. Sinornis\n5. Enantiornis",
+    "Verification Questions": "1. Is Archaeopteryx a bird described in 2004?\n2. Is Microraptor a bird described in 2004?\n3. Is Confuciusornis a bird described in 2004?\n4. Is Sinornis a bird described in 2004?\n5. Is Enantiornis a bird described in 2004?",
+    "Execute Plan": "1. No, Archaeopteryx was not described in 2004. It was first described in 1861 by Hermann von Meyer.\n2. No, Microraptor was not described in 2004. It was first described in 2000 by Xu et al.\n3. Yes, Confuciusornis was described in 2004 by Zhang et al.\n4. No, Sinornis was not described in 2004. It was first described in 1993 by Ji et al.\n5. No, Enantiornis was not described in 2004. It was first described in 1998 by Chiappe et al.",
+    "Final Refined Answer": "1. Confuciusornis"
+  },
+  {
+    "Question": "Name some Uncle Vanya films",
+    "Baseline Answer": "1. Uncle Vanya (1963)\n2. Uncle Vanya (1970)\n3. Uncle Vanya (1995)\n4. Uncle Vanya (2019)",
+    "Verification Questions": "1. Is Uncle Vanya (1963) a film directed by [Director's Name]?\n2. Is Uncle Vanya (1970) a film starring [Actor/Actress Name]?\n3. Is Uncle Vanya (1995) a film adaptation of the play by [Playwright's Name]?\n4. Is Uncle Vanya (2019) a film set in [Time Period/Location]?",
+    "Execute Plan": "1. Is Uncle Vanya (1963) a film directed by [Director's Name]?\nYes, Uncle Vanya (1963) is directed by Sidney Lumet.\n2. Is Uncle Vanya (1970) a film starring [Actor/Actress Name]?\nYes, Uncle Vanya (1970) stars Laurence Olivier and Michael Caine.\n3. Is Uncle Vanya (1995) a film adaptation of the play by [Playwright's Name]?\nYes, Uncle Vanya (1995) is an adaptation of the play by Anton Chekhov.\n4. Is Uncle Vanya (2019) a film set in [Time Period/Location]?\nYes, Uncle Vanya (2019) is set in the late 19th century in Russia.",
+    "Final Refined Answer": "1. Uncle Vanya (1963)\n2. Uncle Vanya (1970)\n3. Uncle Vanya (1995)"
+  },
+  {
+    "Question": "Name some Cephalopods of North America from the Late Cretaceous period",
+    "Baseline Answer": "1. Ammonites\n2. Belemnoids\n3. Nautiloids\n4. Plesiosaurs\n5. Ichthyosaurs",
+    "Verification Questions": "1. Is Ammonites a Cephalopod from the Late Cretaceous period?\n2. Is Belemnoids a Cephalopod from the Late Cretaceous period?\n3. Is Nautiloids a Cephalopod from the Late Cretaceous period?\n4. Is Plesiosaurs a Cephalopod from the Late Cretaceous period?\n5. Is Ichthyosaurs a Cephalopod from the Late Cretaceous period?",
+    "Execute Plan": "1. No, Ammonites is not a Cephalopod from the Late Cretaceous period. Ammonites is a genus of extinct cephalopods that lived during the Mesozoic era, but it is not from the Late Cretaceous period.\n2. No, Belemnoids is not a Cephalopod from the Late Cretaceous period. Belemnoids are a group of extinct cephalopods that lived during the Mesozoic era, but they are not from the Late Cretaceous period.\n3. No, Nautiloids is not a Cephalopod from the Late Cretaceous period. Nautiloids are a group of extinct cephalopods that lived during the Paleozoic and Mesozoic eras, but they are not from the Late Cretaceous period.\n4. No, Plesiosaurs is not a Cephalopod from the Late Cretaceous period. Plesiosaurs are a group of marine reptiles that lived during the Mesozoic era, but they are not cephalopods.\n5. No, Ichthyosaurs is not a Cephalopod from the Late Cretaceous period. Ichthyosaurs are a group of marine reptiles that",
+    "Final Refined Answer": "Explanation:"
+  },
+  {
+    "Question": "Name some Jonathan Kellerman novels",
+    "Baseline Answer": "1. When the Bough Breaks\n2. Blood Test\n3. The Butcher's Theater\n4. Survival of the Fittest\n5. Monster\n6. The Web\n7. The Clinic\n8. The Conspiracy Club\n9. The Murder Book\n10. Kiss the Girls",
+    "Verification Questions": "1. Is When the Bough Breaks a novel by Jonathan Kellerman?\n2. Is Blood Test a novel by Jonathan Kellerman?\n3. Is The Butcher's Theater a novel by Jonathan Kellerman?\n4. Is Survival of the Fittest a novel by Jonathan Kellerman?\n5. Is Monster a novel by Jonathan Kellerman?\n6. Is The Web a novel by Jonathan Kellerman?\n7. Is The Clinic a novel by Jonathan Kellerman?\n8. Is The Conspiracy Club a novel by Jonathan Kellerman?\n9. Is The Murder Book a novel by Jonathan Kellerman?\n10. Is Kiss the Girls a novel by Jonathan Kellerman?",
+    "Execute Plan": "1. Yes, When the Bough Breaks is a novel by Jonathan Kellerman.\n2. Yes, Blood Test is a novel by Jonathan Kellerman.\n3. Yes, The Butcher's Theater is a novel by Jonathan Kellerman.\n4. Yes, Survival of the Fittest is a novel by Jonathan Kellerman.\n5. No, Monster is not a novel by Jonathan Kellerman.\n6. Yes, The Web is a novel by Jonathan Kellerman.\n7. Yes, The Clinic is a novel by Jonathan Kellerman.\n8. Yes, The Conspiracy Club is a novel by Jonathan Kellerman.\n9. Yes, The Murder Book is a novel by Jonathan Kellerman.\n10. No, Kiss the Girls is not a novel by Jonathan Kellerman.",
+    "Final Refined Answer": "1. When the Bough Breaks\n2. Blood Test\n3. The Butcher's Theater\n4. Survival of the Fittest\n5. The Web\n6. The Clinic\n7. The Conspiracy Club\n8. The Murder Book"
+  },
+  {
+    "Question": "Name some buddy films set in South Korea",
+    "Baseline Answer": "1. Train to Busan\n2. The Host\n3. The Attorney\n4. A Taxi Driver\n5. The Beauty Inside",
+    "Verification Questions": "1. Is Train to Busan a buddy film set in South Korea?\n2. Is The Host a buddy film set in South Korea?\n3. Is The Attorney a buddy film set in South Korea?\n4. Is A Taxi Driver a buddy film set in South Korea?\n5. Is The Beauty Inside a buddy film set in South Korea?",
+    "Execute Plan": "1. Yes, Train to Busan is a buddy film set in South Korea.\n2. No, The Host is not a buddy film set in South Korea. It's a monster horror film set in South Korea.\n3. No, The Attorney is not a buddy film set in South Korea. It's a historical drama film set in South Korea.\n4. Yes, A Taxi Driver is a buddy film set in South Korea.\n5. No, The Beauty Inside is not a buddy film set in South Korea. It's a romantic comedy-drama film set in South Korea.",
+    "Final Refined Answer": "1. Train to Busan\n2. A Taxi Driver"
+  },
+  {
+    "Question": "Name some Biographical Italian bandits films",
+    "Baseline Answer": "1. The Godfather (1972)\n2. Goodfellas (1990)\n3. Gomorrah (2008)\n4. The Great Beauty (2013)\n5. The Bicycle Thieves (1948)",
+    "Verification Questions": "1. Is The Godfather (1972) a biographical Italian bandits film?\n2. Is Goodfellas (1990) a biographical Italian bandits film?\n3. Is Gomorrah (2008) a biographical Italian bandits film?\n4. Is The Great Beauty (2013) a biographical Italian bandits film?\n5. Is The Bicycle Thieves (1948) a biographical Italian bandits film?",
+    "Execute Plan": "1. No, The Godfather (1972) is a crime drama film directed by Francis Ford Coppola.\n2. No, Goodfellas (1990) is a crime drama film directed by Martin Scorsese.\n3. Yes, Gomorrah (2008) is a biographical Italian bandits film directed by Matteo Garrone.\n4. No, The Great Beauty (2013) is a romantic drama film directed by Paolo Sorrentino.\n5. Yes, The Bicycle Thieves (1948) is a biographical Italian bandits film directed by Vittorio De Sica.",
+    "Final Refined Answer": "1. Gomorrah (2008)\n2. The Bicycle Thieves (1948)"
+  },
+  {
+    "Question": "Name some genus of large, broad-bodied, dramatic hover-flies",
+    "Baseline Answer": "1. Episyrphus\n2. Syrphus\n3. Meliscaeva\n4. Helophilus\n5. Chrysotoxum",
+    "Verification Questions": "1. Is Episyrphus a genus of large, broad-bodied, dramatic hover-flies?\n2. Is Syrphus a genus of large, broad-bodied, dramatic hover-flies?\n3. Is Meliscaeva a genus of large, broad-bodied, dramatic hover-flies?\n4. Is Helophilus a genus of large, broad-bodied, dramatic hover-flies?\n5. Is Chrysotoxum a genus of large, broad-bodied, dramatic hover-flies?",
+    "Execute Plan": "1. Yes, Episyrphus is a genus of large, broad-bodied, dramatic hoverflies.\n2. No, Syrphus is not a genus of large, broad-bodied, dramatic hoverflies. It is a genus of flower flies (family Syrphidae).\n3. Yes, Meliscaeva is a genus of large, broad-bodied, dramatic hoverflies.\n4. Yes, Helophilus is a genus of large, broad-bodied, dramatic hoverflies.\n5. No, Chrysotoxum is not a genus of large, broad-bodied, dramatic hoverflies. It is a genus of hoverflies (family Syrphidae), but they are not typically described as \"large\" or \"dramatic\".",
+    "Final Refined Answer": "1. Episyrphus\n2. Meliscaeva\n3. Helophilus"
+  },
+  {
+    "Question": "Name some Costa Rica Endemic flora",
+    "Baseline Answer": "1. Guaria Morada (Guarianthe skinneri)\n2. Pipón (Nauclea luzoniensis)\n3. Flor Amarilla (Brunfelsia latifolia)\n4. Cattleya alliance (Cattleya spp.)\n5. Dracaena (Dracaena spp.)\n6. Palo",
+    "Verification Questions": "1. Is Guaria Morada (Guarianthe skinneri) a Costa Rican endemic flora?\n2. Is Pipón (Nauclea luzoniensis) a Costa Rican endemic flora?\n3. Is Flor Amarilla (Brunfelsia latifolia) a Costa Rican endemic flora?\n4. Are Cattleya alliance (Cattleya spp.) orchids native to Costa Rica?\n5. Is Dracaena (Dracaena spp.) a genus of plants native to Costa Rica?\n6. Is Palo a type of plant that is endemic to Costa Rica?",
+    "Execute Plan": "1. Yes, Guaria Morada (Guarianthe skinneri) is a Costa Rican endemic flora.\n2. Yes, Pipón (Nauclea luzoniensis) is a Costa Rican endemic flora.\n3. Yes, Flor Amarilla (Brunfelsia latifolia) is a Costa Rican endemic flora.\n4. Yes, Cattleya alliance (Cattleya spp.) orchids are native to Costa Rica.\n5. No, Dracaena (Dracaena spp.) is not a genus of plants native to Costa Rica.\n6. No, Palo is not a type of plant that is endemic to Costa Rica.",
+    "Final Refined Answer": "1. Guaria Morada (Guarianthe skinneri)\n2. Pipón (Nauclea luzoniensis)\n3. Flor Amarilla (Brunfelsia latifolia)\n4. Cattleya alliance (Cattleya spp.)"
+  },
+  {
+    "Question": "Name some plant life of Aguascalientes",
+    "Baseline Answer": "1. Agave\n2. Cacti\n3. Yucca\n4. Mesquite\n5. Prickly Pear",
+    "Verification Questions": "1. Is Agave a type of plant life found in Aguascalientes?\n2. Is Cacti a type of plant life found in Aguascalientes?\n3. Is Yucca a type of plant life found in Aguascalientes?\n4. Is Mesquite a type of plant life found in Aguascalientes?\n5. Is Prickly Pear a type of plant life found in Aguascalientes?",
+    "Execute Plan": "1. Yes, Agave is a type of plant life found in Aguascalientes.\n2. Yes, Cacti is a type of plant life found in Aguascalientes.\n3. Yes, Yucca is a type of plant life found in Aguascalientes.\n4. Yes, Mesquite is a type of plant life found in Aguascalientes.\n5. Yes, Prickly Pear is a type of plant life found in Aguascalientes.",
+    "Final Refined Answer": "1. Agave\n2. Cacti\n3. Yucca\n4. Mesquite\n5. Prickly Pear"
+  },
+  {
+    "Question": "Name some Military books in Latin",
+    "Baseline Answer": "1. \"De Re Militari\" by Vegetius\n2. \"Commentarii de Bello Gallico\" by Julius Caesar\n3. \"Commentarii de Bello Civili\" by Julius Caesar\n4. \"De Bello Alexandrino\" by Quintus Curtius Rufus\n5. \"De Bello Africano\" by Scipio Africanus\n6. \"De",
+    "Verification Questions": "1. Is \"De Re Militari\" by Vegetius a military book in Latin?\n2. Is \"Commentarii de Bello Gallico\" by Julius Caesar a military book in Latin?\n3. Is \"Commentarii de Bello Civili\" by Julius Caesar a military book in Latin?\n4. Is \"De Bello Alexandrino\" by Quintus Curtius Rufus a military book in Latin?\n5. Is \"De Bello Africano\" by Scipio Africanus a military book in Latin?\n6. Is \"De Bellis Macedonicis\" by Titus Livy a military book in Latin?",
+    "Execute Plan": "1. Yes, \"De Re Militari\" by Vegetius is a military book in Latin.\n2. Yes, \"Commentarii de Bello Gallico\" by Julius Caesar is a military book in Latin.\n3. No, \"Commentarii de Bello Civili\" by Julius Caesar is not a military book in Latin. It is a commentary on the Civil War in Latin.\n4. Yes, \"De Bello Alexandrino\" by Quintus Curtius Rufus is a military book in Latin.\n5. No, \"De Bello Africano\" by Scipio Africanus is not a military book in Latin. It is a lost work, and only a few fragments have survived.\n6. Yes, \"De Bellis Macedonicis\" by Titus Livy is a military book in Latin.",
+    "Final Refined Answer": "1. \"De Re Militari\" by Vegetius\n2. \"Commentarii de Bello Gallico\" by Julius Caesar\n3. \"De Bello Alexandrino\" by Quintus Curtius Rufus\n4. \"De Bellis Macedonicis\" by Titus Livy"
+  },
+  {
+    "Question": "Name some sci-fi novels from 1929",
+    "Baseline Answer": "1. \"The Skylark of Space\" by E. E. Smith\n2. \"The Time Machine\" by H.G. Wells\n3. \"The War of the Worlds\" by H.G. Wells\n4. \"The First Men in the Moon\" by H.G. Wells\n5. \"The Sands of Mars\" by Arthur Con",
+    "Verification Questions": "1. Is \"The Skylark of Space\" by E. E. Smith a sci-fi novel from 1929?\n2. Is \"The Time Machine\" by H.G. Wells a sci-fi novel from 1929?\n3. Is \"The War of the Worlds\" by H.G. Wells a sci-fi novel from 1929?\n4. Is \"The First Men in the Moon\" by H.G. Wells a sci-fi novel from 1929?\n5. Is \"The Sands of Mars\" by Arthur Con a sci-fi novel from 1929?",
+    "Execute Plan": "1. No, \"The Skylark of Space\" by E. E. Smith is not a sci-fi novel from 1929. It was published in 1928.\n2. Yes, \"The Time Machine\" by H.G. Wells is a sci-fi novel from 1895, not 1929.\n3. Yes, \"The War of the Worlds\" by H.G. Wells is a sci-fi novel from 1898, not 1929.\n4. Yes, \"The First Men in the Moon\" by H.G. Wells is a sci-fi novel from 1901, not 1929.\n5. No, \"The Sands of Mars\" by Arthur Conan Doyle is not a sci-fi novel from 1929. It was published in 1912.",
+    "Final Refined Answer": "1. None of the above."
+  },
+  {
+    "Question": "Name some Armenia's Endemic flora",
+    "Baseline Answer": "1. Armenian apricot (Prunus armeniaca)\n2. Armenian pine (Pinus armeniaca)\n3. Caucasian fir (Abies nordmanniana)\n4. Caucasian spruce (Picea orientalis)\n5. Yerevan lily (Lilium yerevanicum)\n6. Armenian",
+    "Verification Questions": "1. Is Armenian apricot (Prunus armeniaca) a type of endemic flora in Armenia?\n2. Is Armenian pine (Pinus armeniaca) a type of endemic flora in Armenia?\n3. Is Caucasian fir (Abies nordmanniana) a type of endemic flora in Armenia?\n4. Is Caucasian spruce (Picea orientalis) a type of endemic flora in Armenia?\n5. Is Yerevan lily (Lilium yerevanicum) a type of endemic flora in Armenia?\n6. Is Armenian anemone (Anemone armeniaca) a type of endemic flora in Armenia?",
+    "Execute Plan": "1. Yes, Armenian apricot (Prunus armeniaca) is a type of endemic flora in Armenia.\n2. No, Armenian pine (Pinus armeniaca) is not a type of endemic flora in Armenia. It is a species of pine tree that is native to the Caucasus region, but it is not exclusive to Armenia.\n3. Yes, Caucasian fir (Abies nordmanniana) is a type of endemic flora in Armenia.\n4. Yes, Caucasian spruce (Picea orientalis) is a type of endemic flora in Armenia.\n5. No, Yerevan lily (Lilium yerevanicum) is not a type of endemic flora in Armenia. It is a species of lily that is native to the Caucasus region, but it is not exclusive to Armenia.\n6. Yes, Armenian anemone (Anemone armeniaca) is a type of endemic flora in Armenia.",
+    "Final Refined Answer": "1. Armenian apricot (Prunus armeniaca)\n2. Caucasian fir (Abies nordmanniana)\n3. Caucasian spruce (Picea orientalis)\n4. Armenian anemone (Anemone armeniaca)"
+  },
+  {
+    "Question": "Name some multilingual Philippine films",
+    "Baseline Answer": "1. \"Himala\" (1982)\n2. \"Oro, Plata, Mata\" (1982)\n3. \"Kisapmata\" (1991)\n4. \"The Debut\" (2001)\n5. \"RPG: Metanoia\" (2010)\n6. \"Ang Bab",
+    "Verification Questions": "1. Is \"Himala\" (1982) a multilingual Philippine film?\n2. Is \"Oro, Plata, Mata\" (1982) a multilingual Philippine film?\n3. Is \"Kisapmata\" (1991) a multilingual Philippine film?\n4. Is \"The Debut\" (2001) a multilingual Philippine film?\n5. Is \"RPG: Metanoia\" (2010) a multilingual Philippine film?\n6. Is \"Ang Babae sa Breakdancing\" (2010) a multilingual Philippine film?",
+    "Execute Plan": "1. Yes, \"Himala\" (1982) is a multilingual Philippine film.\n2. Yes, \"Oro, Plata, Mata\" (1982) is a multilingual Philippine film.\n3. No, \"Kisapmata\" (1991) is not a multilingual Philippine film.\n4. Yes, \"The Debut\" (2001) is a multilingual Philippine film.\n5. No, \"RPG: Metanoia\" (2010) is not a multilingual Philippine film.\n6. No, \"Ang Babae sa Breakdancing\" (2010) is not a multilingual Philippine film.",
+    "Final Refined Answer": "1. \"Himala\" (1982)\n2. \"Oro, Plata, Mata\" (1982)\n3. \"The Debut\" (2001)"
+  },
+  {
+    "Question": "Name some graphic novels from 2011",
+    "Baseline Answer": "1. \"The Dark Knight\" by Frank Miller\n2. \"Watchmen\" by Alan Moore and Dave Gibbons\n3. \"The Walking Dead, Vol. 1\" by Robert Kirkman and Tony Moore\n4. \"Saga, Vol. 1\" by Brian K. Vaughan and Fiona Staples\n5. \"Maus\" by Art Sp",
+    "Verification Questions": "1. Is \"The Dark Knight\" by Frank Miller a graphic novel from 2011?\n2. Is \"Watchmen\" by Alan Moore and Dave Gibbons a graphic novel from 2011?\n3. Is \"The Walking Dead, Vol. 1\" by Robert Kirkman and Tony Moore a graphic novel from 2011?\n4. Is \"Saga, Vol. 1\" by Brian K. Vaughan and Fiona Staples a graphic novel from 2011?\n5. Is \"Maus\" by Art Sp a graphic novel from 2011?",
+    "Execute Plan": "1. No, \"The Dark Knight\" by Frank Miller is a graphic novel from 1986.\n2. No, \"Watchmen\" by Alan Moore and Dave Gibbons is a graphic novel from 1987.\n3. No, \"The Walking Dead, Vol. 1\" by Robert Kirkman and Tony Moore is a graphic novel from 2003.\n4. No, \"Saga, Vol. 1\" by Brian K. Vaughan and Fiona Staples is a graphic novel from 2012.\n5. No, \"Maus\" by Art Spiegelman is a graphic novel from 1980.",
+    "Final Refined Answer": "None of the graphic novels listed in the baseline response are from 2011. The correct answer is empty."
+  },
+  {
+    "Question": "Name some Whaling books",
+    "Baseline Answer": "1. Moby-Dick by Herman Melville\n2. The Old Man and the Sea by Ernest Hemingway\n3. In the Heart of the Sea by Nathaniel Philbrick\n4. The Whale Ship by Herman Melville\n5. The Whale Watcher's Handbook by Mark Carwardine",
+    "Verification Questions": "1. Is Moby-Dick by Herman Melville a whaling book?\n2. Is The Old Man and the Sea by Ernest Hemingway a whaling book?\n3. Is In the Heart of the Sea by Nathaniel Philbrick a whaling book?\n4. Is The Whale Ship by Herman Melville a whaling book?\n5. Is The Whale Watcher's Handbook by Mark Carwardine a whaling book?",
+    "Execute Plan": "1. Yes, Moby-Dick by Herman Melville is a whaling book.\n2. Yes, The Old Man and the Sea by Ernest Hemingway is a whaling book.\n3. Yes, In the Heart of the Sea by Nathaniel Philbrick is a whaling book.\n4. No, The Whale Ship by Herman Melville is not a whaling book. It is a novel about the slave trade.\n5. No, The Whale Watcher's Handbook by Mark Carwardine is not a whaling book. It is a guidebook for watching and identifying whales.",
+    "Final Refined Answer": "1. Moby-Dick by Herman Melville\n2. The Old Man and the Sea by Ernest Hemingway\n3. In the Heart of the Sea by Nathaniel Philbrick"
+  },
+  {
+    "Question": "Name some films from 1934 that are horror",
+    "Baseline Answer": "1. \"The Black Cat\"\n2. \"The Mummy\"\n3. \"Frankenstein\"\n4. \"Dracula\"\n5. \"The Invisible Man\"",
+    "Verification Questions": "1. Is \"The Black Cat\" a film from 1934 that is horror?\n2. Is \"The Mummy\" a film from 1934 that is horror?\n3. Is \"Frankenstein\" a film from 1934 that is horror?\n4. Is \"Dracula\" a film from 1934 that is horror?\n5. Is \"The Invisible Man\" a film from 1934 that is horror?",
+    "Execute Plan": "1. Yes, \"The Black Cat\" is a horror film released in 1934.\n2. Yes, \"The Mummy\" is a horror film released in 1934.\n3. Yes, \"Frankenstein\" is a horror film released in 1934.\n4. Yes, \"Dracula\" is a horror film released in 1934.\n5. Yes, \"The Invisible Man\" is a horror film released in 1934.",
+    "Final Refined Answer": "1. \"The Black Cat\"\n2. \"The Mummy\"\n3. \"Frankenstein\"\n4. \"Dracula\"\n5. \"The Invisible Man\""
+  },
+  {
+    "Question": "Name some Debut novels from 1957",
+    "Baseline Answer": "1. \"The Catcher in the Rye\" by J.D. Salinger\n2. \"On the Road\" by Jack Kerouac\n3. \"The Bell Jar\" by Sylvia Plath\n4. \"The Sun Also Rises\" by Ernest Hemingway\n5. \"The Sound and the Fury\" by William Faulkner",
+    "Verification Questions": "1. Is \"The Catcher in the Rye\" a debut novel from 1957?\n2. Is \"On the Road\" a debut novel from 1957?\n3. Is \"The Bell Jar\" a debut novel from 1957?\n4. Is \"The Sun Also Rises\" a debut novel from 1957?\n5. Is \"The Sound and the Fury\" a debut novel from 1957?",
+    "Execute Plan": "1. Yes, \"The Catcher in the Rye\" is a debut novel from 1957.\n2. No, \"On the Road\" is not a debut novel from 1957. It was published in 1957, but it was not the author's debut novel.\n3. Yes, \"The Bell Jar\" is a debut novel from 1957.\n4. No, \"The Sun Also Rises\" is not a debut novel from 1957. It was published in 1926.\n5. No, \"The Sound and the Fury\" is not a debut novel from 1957. It was published in 1929.",
+    "Final Refined Answer": "1. \"The Catcher in the Rye\" by J.D. Salinger\n2. \"The Bell Jar\" by Sylvia Plath"
+  },
+  {
+    "Question": "Name some Australian travel books",
+    "Baseline Answer": "1. \"The Songlines\" by Bruce Chatwin\n2. \"In Patagonia\" by Bruce Chatwin\n3. \"The Great Barrier Reef: A Visual Guide\" by Reader's Digest\n4. \"Lonely Planet Australia\" by Lonely Planet\n5. \"The Best of Australia\" by Australian Geographic\n6. \"The Australia Book\" by Eyewit",
+    "Verification Questions": "1. Is \"The Songlines\" by Bruce Chatwin an Australian travel book?\n2. Is \"In Patagonia\" by Bruce Chatwin an Australian travel book?\n3. Is \"The Great Barrier Reef: A Visual Guide\" by Reader's Digest an Australian travel book?\n4. Is \"Lonely Planet Australia\" by Lonely Planet an Australian travel book?\n5. Is \"The Best of Australia\" by Australian Geographic an Australian travel book?\n6. Is \"The Australia Book\" by Eyewit an Australian travel book?",
+    "Execute Plan": "1. No, \"The Songlines\" by Bruce Chatwin is not an Australian travel book. It's a novel that explores the Aboriginal mythology and culture of Australia.\n2. Yes, \"In Patagonia\" by Bruce Chatwin is an Australian travel book. It's a travelogue that describes Chatwin's journey through Patagonia, a region located in the southern end of South America, which includes parts of Argentina and Chile.\n3. No, \"The Great Barrier Reef: A Visual Guide\" by Reader's Digest is not an Australian travel book. It's a guidebook that focuses on the natural history and wildlife of the Great Barrier Reef, which is located in Australia.\n4. Yes, \"Lonely Planet Australia\" by Lonely Planet is an Australian travel book. It's a guidebook that provides information and recommendations for travelers visiting Australia.\n5. No, \"The Best of Australia\" by Australian Geographic is not an Australian travel book. It's a collection of photographs and stories that showcase the natural beauty and cultural heritage of Australia.\n6. Yes, \"The Australia Book\" by Eyewit is an Australian travel book. It's a guidebook that provides information and recommendations for travelers visiting Australia,",
+    "Final Refined Answer": "1. \"In Patagonia\" by Bruce Chatwin\n2. \"Lonely Planet Australia\" by Lonely Planet\n3. \"The Australia Book\" by Eyewit"
+  },
+  {
+    "Question": "Name some Independent films of 1964",
+    "Baseline Answer": "1. \"The 400 Blows\"\n2. \"Breathless\"\n3. \"The Man with a Movie Camera\"\n4. \"The Thin Red Line\"\n5. \"The Pawnbroker\"\n6. \"The Cool World\"\n7. \"The World of Henry Orient\"\n8. \"The Trip\"\n9. \"The",
+    "Verification Questions": "1. Is \"The 400 Blows\" an independent film released in 1964?\n2. Is \"Breathless\" an independent film released in 1964?\n3. Is \"The Man with a Movie Camera\" an independent film released in 1964?\n4. Is \"The Thin Red Line\" an independent film released in 1964?\n5. Is \"The Pawnbroker\" an independent film released in 1964?\n6. Is \"The Cool World\" an independent film released in 1964?\n7. Is \"The World of Henry Orient\" an independent film released in 1964?\n8. Is \"The Trip\" an independent film released in 1964?\n9. Is \"The Killing of Sister George\" an independent film released in 1964?",
+    "Execute Plan": "1. Yes, \"The 400 Blows\" is an independent film released in 1964.\n2. Yes, \"Breathless\" is an independent film released in 1964.\n3. No, \"The Man with a Movie Camera\" is not an independent film. It was released in 1929 and was directed by Dziga Vertov.\n4. No, \"The Thin Red Line\" is not an independent film. It was released in 1998 and was directed by Terrence Malick.\n5. Yes, \"The Pawnbroker\" is an independent film released in 1964.\n6. No, \"The Cool World\" is not an independent film. It was released in 1963 and was directed by Shirley Clarke.\n7. Yes, \"The World of Henry Orient\" is an independent film released in 1964.\n8. Yes, \"The Trip\" is an independent film released in 1964.\n9. Yes, \"The Killing of Sister George\" is an independent film released in 1964.",
+    "Final Refined Answer": "1. \"The 400 Blows\"\n2. \"Breathless\"\n3. \"The Pawnbroker\"\n4. \"The World of Henry Orient\"\n5. \"The Trip\"\n6. \"The Killing of Sister George\""
+  },
+  {
+    "Question": "Name some Battle of the Somme films",
+    "Baseline Answer": "1. \"The Battle of the Somme\" (1916)\n2. \"The Somme\" (2005)\n3. \"Somme\" (2016)\n4. \"1916: The Battle of the Somme\" (2016)\n5. \"Battlefield 1: The Somme\" (2016",
+    "Verification Questions": "1. Is \"The Battle of the Somme\" (1916) a film about the Battle of the Somme?\n2. Is \"The Somme\" (2005) a film about the Battle of the Somme?\n3. Is \"Somme\" (2016) a film about the Battle of the Somme?\n4. Is \"1916: The Battle of the Somme\" (2016) a film about the Battle of the Somme?\n5. Is \"Battlefield 1: The Somme\" (2016) a film about the Battle of the Somme?",
+    "Execute Plan": "1. Yes, \"The Battle of the Somme\" (1916) is a film about the Battle of the Somme.\n2. Yes, \"The Somme\" (2005) is a film about the Battle of the Somme.\n3. Yes, \"Somme\" (2016) is a film about the Battle of the Somme.\n4. Yes, \"1916: The Battle of the Somme\" (2016) is a film about the Battle of the Somme.\n5. No, \"Battlefield 1: The Somme\" (2016) is a video game, not a film, and it is not specifically about the Battle of the Somme, but it does include a depiction of the battle as one of its multiplayer modes.",
+    "Final Refined Answer": "1. \"The Battle of the Somme\" (1916)\n2. \"The Somme\" (2005)\n3. \"Somme\" (2016)\n4. \"1916: The Battle of the Somme\" (2016)"
+  },
+  {
+    "Question": "Name some 2004 German novels",
+    "Baseline Answer": "1. \"The Elementary Particles\" by Michel Houellebecq\n2. \"The Reader\" by Bernhard Schlink\n3. \"Perfume: The Story of a Murderer\" by Patrick Süskind\n4. \"The Lost Honour of Katharina Blum\" by Heinrich Böll\n5. \"The Magic Mountain\" by Thomas Mann",
+    "Verification Questions": "1. Is \"The Elementary Particles\" a novel written by Michel Houellebecq?\n2. Is \"The Reader\" a novel written by Bernhard Schlink?\n3. Is \"Perfume: The Story of a Murderer\" a novel written by Patrick Süskind?\n4. Is \"The Lost Honour of Katharina Blum\" a novel written by Heinrich Böll?\n5. Is \"The Magic Mountain\" a novel written by Thomas Mann?",
+    "Execute Plan": "1. Yes, \"The Elementary Particles\" is a novel written by Michel Houellebecq.\n2. Yes, \"The Reader\" is a novel written by Bernhard Schlink.\n3. Yes, \"Perfume: The Story of a Murderer\" is a novel written by Patrick Süskind.\n4. Yes, \"The Lost Honour of Katharina Blum\" is a novel written by Heinrich Böll.\n5. Yes, \"The Magic Mountain\" is a novel written by Thomas Mann.",
+    "Final Refined Answer": "1. \"The Elementary Particles\" by Michel Houellebecq\n2. \"The Reader\" by Bernhard Schlink\n3. \"Perfume: The Story of a Murderer\" by Patrick Süskind\n4. \"The Lost Honour of Katharina Blum\" by Heinrich Böll"
+  },
+  {
+    "Question": "Name some Europe's late Jurassic plesiosaurs",
+    "Baseline Answer": "1. Liopleurodon\n2. Plesiosaurus\n3. Ichthyosaurus\n4. Sauropterygia\n5. Elasmosaurus",
+    "Verification Questions": "1. Is Liopleurodon a late Jurassic plesiosaur?\n2. Is Plesiosaurus a late Jurassic plesiosaur?\n3. Is Ichthyosaurus a late Jurassic plesiosaur?\n4. Is Sauropterygia a late Jurassic plesiosaur?\n5. Is Elasmosaurus a late Jurassic plesiosaur?",
+    "Execute Plan": "1. No, Liopleurodon is not a late Jurassic plesiosaur. It is a genus of extinct aquatic reptiles that lived during the late Jurassic period, but it is not a plesiosaur.\n2. Yes, Plesiosaurus is a late Jurassic plesiosaur.\n3. No, Ichthyosaurus is not a late Jurassic plesiosaur. It is a genus of extinct aquatic reptiles that lived during the early to middle Jurassic period, but it is not a plesiosaur.\n4. No, Sauropterygia is not a late Jurassic plesiosaur. It is a clade of extinct aquatic reptiles that includes plesiosaurs and other related groups, but it is not a specific genus of plesiosaur.\n5. Yes, Elasmosaurus is a late Jurassic plesiosaur.",
+    "Final Refined Answer": "1. Plesiosaurus\n2. Elasmosaurus"
+  },
+  {
+    "Question": "Name some Adventure films from 1944",
+    "Baseline Answer": "1. \"The Adventures of Tarzan\"\n2. \"The Mask of Zorro\"\n3. \"The Treasure of the Sierra Madre\"\n4. \"The Jungle Book\"\n5. \"The Three Musketeers\"",
+    "Verification Questions": "1. Is \"The Adventures of Tarzan\" an adventure film from 1944?\n2. Is \"The Mask of Zorro\" an adventure film from 1944?\n3. Is \"The Treasure of the Sierra Madre\" an adventure film from 1944?\n4. Is \"The Jungle Book\" an adventure film from 1944?\n5. Is \"The Three Musketeers\" an adventure film from 1944?",
+    "Execute Plan": "1. No, \"The Adventures of Tarzan\" is not an adventure film from 1944. It is a serial film released in 1935.\n2. No, \"The Mask of Zorro\" is not an adventure film from 1944. It is a swashbuckler film released in 1940.\n3. Yes, \"The Treasure of the Sierra Madre\" is an adventure film released in 1948.\n4. No, \"The Jungle Book\" is not an adventure film from 1944. It is an animated film released in 1967.\n5. No, \"The Three Musketeers\" is not an adventure film from 1944. It is a swashbuckler film released in 1948.",
+    "Final Refined Answer": "1. \"The Treasure of the Sierra Madre\" (1948)"
+  },
+  {
+    "Question": "Name some Ion Idriess novels",
+    "Baseline Answer": "1. \"The Silver Sword\"\n2. \"The Shiralee\"\n3. \"The Ragged, Rough and Rascals\"\n4. \"The Flying Years\"\n5. \"The Drifters\"",
+    "Verification Questions": "1. Is \"The Silver Sword\" a novel written by Ion Idriess?\n2. Is \"The Shiralee\" a novel written by Ion Idriess?\n3. Is \"The Ragged, Rough and Rascals\" a novel written by Ion Idriess?\n4. Is \"The Flying Years\" a novel written by Ion Idriess?\n5. Is \"The Drifters\" a novel written by Ion Idriess?",
+    "Execute Plan": "1. Yes, \"The Silver Sword\" is a novel written by Ion Idriess.\n2. Yes, \"The Shiralee\" is a novel written by Ion Idriess.\n3. No, \"The Ragged, Rough and Rascals\" is not a novel written by Ion Idriess.\n4. Yes, \"The Flying Years\" is a novel written by Ion Idriess.\n5. No, \"The Drifters\" is not a novel written by Ion Idriess.",
+    "Final Refined Answer": "1. \"The Silver Sword\"\n2. \"The Shiralee\"\n3. \"The Flying Years\""
+  }
+]
