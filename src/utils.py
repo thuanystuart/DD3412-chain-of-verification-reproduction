@@ -31,6 +31,9 @@ class TwoStepConfig:
     plan_prompt: str
     execute_prompt: str
     verify_prompt: str
+    plan_command: str = "Verification Questions: "
+    execute_command: str = "Answers: "
+    verify_command: str = "Final Refined Answer: "
 
 @dataclasses.dataclass
 class JointConfig:
@@ -38,6 +41,8 @@ class JointConfig:
     max_tokens_verify: int
     plan_and_execute_prompt: str
     verify_prompt: str
+    plan_and_execute_command: str = "Verification Questions and Answers: "
+    verify_command: str = "Final Refined Answer: "
 
 @dataclasses.dataclass
 class TaskConfig:
@@ -46,6 +51,7 @@ class TaskConfig:
     baseline_prompt: str
     two_step: TwoStepConfig
     joint: JointConfig
+    baseline_command: str = "Answer: "
 
 
 TASK_MAPPING = {
@@ -111,10 +117,9 @@ class ModelConfig:
     is_llama: bool = False
     is_protected: bool = False
 
-
 STD_PROMPT_FORMAT = """{prompt}"""
 LLAMA_PROMPT_FORMAT = (
-    """<s>[INST] <<SYS>>{prompt}\n<</SYS>>\nAnswer: [/INST]"""
+    """<s>[INST] <<SYS>>{prompt}\n<</SYS>>\n{command}: [/INST]"""
 )
 MODEL_MAPPING = {
     "mistral": ModelConfig(

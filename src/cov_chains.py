@@ -47,7 +47,6 @@ class ChainOfVerification:
         )
 
     def generate_response(self, prompt: str, max_tokens: int) -> str:
-        self.model_config.prompt_format.format(prompt=prompt)
         if self.model_config.is_llama:
             input_ids = self.tokenizer(
                 prompt, return_tensors="pt", truncation=True
@@ -77,6 +76,9 @@ class ChainOfVerification:
         baseline_prompt = self.task_config.baseline_prompt.format(
             original_question=question
         )
+        baseline_prompt = self.model_config.prompt_format.format(
+            prompt=baseline_prompt, command=self.task_config.baseline_command
+        )
         return self.generate_response(baseline_prompt, self.task_config.max_tokens)
 
     def run_two_step_chain(self, question: str, baseline_response: str):
@@ -84,12 +86,18 @@ class ChainOfVerification:
             original_question=question,
             baseline_response=baseline_response,
         )
+        plan_prompt = self.model_config.prompt_format.format(
+            prompt=plan_prompt, command=self.task_config.two_step.plan_command
+        )
         plan_response = self.generate_response(
             plan_prompt, self.task_config.two_step.max_tokens_plan
         )
 
         execute_prompt = self.task_config.two_step.execute_prompt.format(
             verification_questions=plan_response
+        )
+        execute_prompt = self.model_config.prompt_format.format(
+            prompt=execute_prompt, command=self.task_config.two_step.execute_command
         )
         execute_response = self.generate_response(
             execute_prompt, self.task_config.two_step.max_tokens_execute
@@ -100,6 +108,9 @@ class ChainOfVerification:
             baseline_response=baseline_response,
             verification_questions=plan_response,
             verification_answers=execute_response,
+        )
+        verify_prompt = self.model_config.prompt_format.format(
+            prompt=verify_prompt, command=self.task_config.two_step.verify_command
         )
         verify_response = self.generate_response(
             verify_prompt, self.task_config.two_step.max_tokens_verify
@@ -118,6 +129,10 @@ class ChainOfVerification:
                 baseline_response=baseline_response,
             )
         )
+        plan_and_execution_prompt = self.model_config.prompt_format.format(
+            prompt=plan_and_execution_prompt,
+            command=self.task_config.joint.plan_and_execute_command,
+        )
         plan_and_execution_response = self.generate_response(
             plan_and_execution_prompt,
             self.task_config.joint.max_tokens_plan_and_execute,
@@ -127,6 +142,9 @@ class ChainOfVerification:
             original_question=question,
             baseline_response=baseline_response,
             verification_questions_and_answers=plan_and_execution_response,
+        )
+        verify_prompt = self.model_config.prompt_format.format(
+            prompt=verify_prompt, command=self.task_config.joint.verify_command
         )
         verify_response = self.generate_response(
             verify_prompt, self.task_config.joint.max_tokens_verify
