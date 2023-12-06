@@ -96,9 +96,9 @@ TASK_MAPPING = {
             plan_prompt=PLAN_VERIFICATION_TWO_STEP_PROMPT_WIKI_CATEGORY,
             execute_prompt=EXECUTE_VERIFICATION_TWO_STEP_PROMPT_WIKI_CATEGORY,
             verify_prompt=FINAL_VERIFIED_TWO_STEP_PROMPT_WIKI_CATEGORY,
-            max_tokens_plan=180,
+            max_tokens_plan=300,
             max_tokens_execute=300,
-            max_tokens_verify=15,
+            max_tokens_verify=150,
         ),
         joint=JointConfig(
             plan_and_execute_prompt=PLAN_AND_EXECUTION_JOINT_PROMPT_WIKI_CATEGORY,

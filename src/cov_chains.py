@@ -128,7 +128,7 @@ class ChainOfVerification:
 
     def run_joint_chain(self, question: str, baseline_response: str):
         plan_and_execution_prompt = (
-            self.task_config.joint.plan_and_execute_joint_prompt.format(
+            self.task_config.joint.plan_and_execute_prompt.format(
                 original_question=question,
                 baseline_response=baseline_response,
             )
