@@ -22,9 +22,7 @@ Actual Question: {original_question}"""
 
 BASELINE_PROMPT_MULTI_QA = """Answer the below question correctly and in a concise manner without much details. Only answer what the question is asked. NO ADDITIONAL DETAILS.
 
-Question: {original_question}
-
-Answer:"""
+Question: {original_question}"""
 
 ############################### TWO STEP MULTI QA PROMPT #########################################
 PLAN_VERIFICATION_TWO_STEP_PROMPT_MULTI_QA = """Your task is to create a series of verification questions based on the below original question. The verification questions are meant for verifying the factual acuracy in the baseline response.
@@ -65,9 +63,8 @@ Actual Original Question: {original_question}
 Baseline Answer: {baseline_response}
 
 Verification Questions & Answer Pairs From another source:
-{verification_questions}
+{verification_questions} & {verification_answers}"""
 
-Final Refined Answer:"""
 ############################### TWO STEP WIKI PROMPT #########################################
 
 PLAN_VERIFICATION_TWO_STEP_PROMPT_WIKI = """Your task is to create a series of verification questions based on the below question, the verfication question template and baseline response.
@@ -161,6 +158,35 @@ Baseline Answer: {baseline_response}
 Verification Questions & Answer Pairs From another source:
 {verification_questions} & {verification_answers}"""
 
+############################### JOINT MULTI QA PROMPT #########################################
+PLAN_AND_EXECUTION_JOINT_PROMPT_MULTI_QA = """Given the below `Original Question` and `Baseline Response`, create a series of verification questions and answers to finally filter the refined answer. NO ADDITIONAL DETAILS.
+Example Question: Who invented the first printing press and in what year?
+Example Baseline Response: Johannes Gutenberg, 1450.
+Example Verification Questions and Answers: 1. Did Johannes Gutenberg invent the first printing press? Yes, Johannes Gutenberg invented the first printing press.
+2. Did Johannes Gutenberg invent the first printing press in 1450? Yes, Johannes Gutenberg invented the first printing press in 1450.
+
+Original Question: {original_question}
+Baseline Response: {baseline_response}"""
+
+FINAL_VERIFIED_JOINT_PROMPT_MULTI_QA = """Given the below `Original Question` and `Baseline Response`, analyze the `Verification Questions & Answers` to finally filter the refined answer. NO ADDITIONAL DETAILS.
+Example Context:
+
+Example Original Question: Who invented the first printing press and in what year?
+Example Baseline Response: Johannes Gutenberg, 1450.
+Example Verification Questions & Answer Pairs From another source:
+1. Did Johannes Gutenberg invent the first printing press? Yes, Johannes Gutenberg invented the first printing press.
+2. Did Johannes Gutenberg invent the first printing press in 1450? Yes, Johannes Gutenberg invented the first printing press in 1450.
+Example Final Refined Answer: Johannes Gutenberg, 1450.
+
+Context:
+
+Actual Original Question: {original_question}
+
+Baseline Response: {baseline_response}
+
+Verification Questions & Answer Pairs From another source:
+{verification_questions_and_answers}"""
+
 ############################### JOINT WIKI PROMPT #########################################
 
 PLAN_AND_EXECUTION_JOINT_PROMPT_WIKI = """Given the below `Original Question` and `Baseline Answer`, create a series of verification questions and answers to finally filter the refined answer. NO ADDITIONAL DETAILS.
@@ -175,9 +201,7 @@ Verification questions and  answers: 1. Where was Matt Damon born? Cambridge, Ma
 
 Original Question: {original_question}
 
-Baseline Response: {baseline_response}
-
-Verification Questions and Answers:"""
+Baseline Response: {baseline_response}"""
 
 FINAL_VERIFIED_JOINT_PROMPT_WIKI = """Given the below `Original Question` and `Baseline Answer`, analyze the `Verification Questions & Answers` to finally filter the refined answer. NO ADDITIONAL DETAILS.
 Provide the answer as a numbered list of persons.
@@ -199,9 +223,7 @@ Actual Original Question: {original_question}
 Baseline Answer: {baseline_response}
 
 Verification Questions & Answer Pairs From another source:
-{verification_questions_and_answers}
-
-Final Refined Answer:"""
+{verification_questions_and_answers}"""
 
 ############################### Two Step Wiki Category Prompt #########################################
 BASELINE_PROMPT_WIKI_CATEGORY = """Answer the below question which is asking for a list of entities (names, places, locations etc). Output should be a numbered list and only contains the relevant & concise enitites as answer. NO ADDITIONAL DETAILS.
@@ -255,6 +277,7 @@ Actual Question: {original_question}
 Baseline Response: {baseline_response}"""
 
 
+
 EXECUTE_VERIFICATION_TWO_STEP_PROMPT_WIKI_CATEGORY = """Answer the following questions. Think step by step and answer each question concisely.
 
 Example Questions: 1. Is Jaws directed by Steven Spielberg?
@@ -295,11 +318,56 @@ Example Explanation: Based on the verification questions and answers, only Jaws,
 Context:
 
 Actual Original Question: {original_question}
-Baseline Answer: {baseline_response}
+Baseline Response: {baseline_response}
 
 Verification Questions & Answer Pairs From another source:
 {verification_questions} & {verification_answers}"""
 
+############################### Joint Wiki Category Prompt #########################################
+PLAN_AND_EXECUTION_JOINT_PROMPT_WIKI_CATEGORY = """Given the below `Original Question` and `Baseline Response`, create a series of verification questions and answers to finally filter the refined answer. NO ADDITIONAL DETAILS.
+Example Question: Name some movies directed by Steven Spielberg.
+Example Verification Question Template: Is [movie] directed by [Steven Spielberg]?
+Example Baseline Response: 1. Jaws
+2. Jurassic Park
+3. Indiana Jones
+4. E.T.
+5. TENET
+Example Verification Questions and Answers: 1. Is Jaws directed by Steven Spielberg? Yes, Jaws is directed by Steven Spielberg.
+2. Is Jurassic Park directed by Steven Spielberg? Yes, Jurassic Park is directed by Steven Spielberg.
+3. Is Indiana Jones directed by Steven Spielberg? Yes, Indiana Jones is directed by Steven Spielberg.
+4. Is E.T. directed by Steven Spielberg? Yes, E.T. is directed by Steven Spielberg.
+5. Is TENET directed by Steven Spielberg? No, TENET is directed by Christopher Nolan.
 
-PLAN_AND_EXECUTION_JOINT_PROMPT_WIKI_CATEGORY=""
-FINAL_VERIFIED_JOINT_PROMPT_WIKI_CATEGORY=""
+Original Question: {original_question}
+Baseline Response: {baseline_response}"""
+
+FINAL_VERIFIED_JOINT_PROMPT_WIKI_CATEGORY = """Given the below `Original Question` and `Baseline Response`, analyze the `Verification Questions & Answers From another source` to finally filter the refined answer. NO ADDITIONAL DETAILS.
+Example Context:
+
+Example Original Question: Name some movies directed by Steven Spielberg.
+Example Baseline Response: 1. Jaws
+2. Jurassic Park
+3. Indiana Jones
+4. E.T.
+5. TENET
+Example Verification Questions & Answer Pairs From another source:
+1. Is Jaws directed by Steven Spielberg? Yes, Jaws is directed by Steven Spielberg.
+2. Is Jurassic Park directed by Steven Spielberg? Yes, Jurassic Park is directed by Steven Spielberg.
+3. Is Indiana Jones directed by Steven Spielberg? Yes, Indiana Jones is directed by Steven Spielberg.
+4. Is E.T. directed by Steven Spielberg? Yes, E.T. is directed by Steven Spielberg.
+5. Is TENET directed by Steven Spielberg? No, TENET is directed by Christopher Nolan.
+Example Final Refined Answer: 1. Jaws
+2. Jurassic Park
+3. Indiana Jones
+4. E.T.
+
+Example Explanation: Based on the verification questions and answers, only Jaws, Jurassic Park, Indiana Jones and E.T. are directed by Steven Spielberg. TENET is directed by Christopher Nolan.
+
+Context:
+
+Actual Original Question: {original_question}
+
+Baseline Response: {baseline_response}
+
+Verification Questions & Answer Pairs From another source:
+{verification_questions_and_answers}"""
