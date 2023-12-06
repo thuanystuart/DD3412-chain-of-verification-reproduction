@@ -20,6 +20,8 @@ from src.prompts import (
     FINAL_VERIFIED_TWO_STEP_PROMPT_WIKI_CATEGORY,
     PLAN_AND_EXECUTION_JOINT_PROMPT_WIKI_CATEGORY,
     FINAL_VERIFIED_JOINT_PROMPT_WIKI_CATEGORY,
+    PLAN_AND_EXECUTION_JOINT_PROMPT_MULTI_QA,
+    FINAL_VERIFIED_JOINT_PROMPT_MULTI_QA,
 )
 
 SETTINGS = ["two_step", "joint"]
@@ -86,7 +88,12 @@ TASK_MAPPING = {
             max_tokens_execute=400,
             max_tokens_verify=300,
         ),
-        joint=None
+        joint=JointConfig(
+            plan_and_execute_prompt=PLAN_AND_EXECUTION_JOINT_PROMPT_MULTI_QA,
+            verify_prompt=FINAL_VERIFIED_JOINT_PROMPT_MULTI_QA,
+            max_tokens_plan_and_execute=600,
+            max_tokens_verify=200,
+        )
     ),
     "wikidata_category": TaskConfig(
         id="wikidata_category",
