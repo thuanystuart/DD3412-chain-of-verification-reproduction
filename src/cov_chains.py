@@ -1,53 +1,58 @@
 import json
 import sys
-from src.utils import import_model_and_tokenizer, MODEL_MAPPING, Model
-from src.prompts import (
-    BASELINE_PROMPT_WIKI,
-    PLAN_VERIFICATION_TWO_STEP_PROMPT_WIKI,
-    EXECUTE_VERIFICATION_TWO_STEP_PROMPT_WIKI,
-    PLAN_AND_EXECUTION_JOINT_PROMPT_WIKI,
-    FINAL_VERIFIED_TWO_STEP_PROMPT_WIKI,
-    FINAL_VERIFIED_JOINT_PROMPT_WIKI,
-    BASELINE_PROMPT_MULTI_QA,
-    PLAN_VERIFICATION_TWO_STEP_PROMPT_MULTI_QA,
-    EXECUTE_VERIFICATION_TWO_STEP_PROMPT_MULTI_QA,
-    FINAL_VERIFIED_TWO_STEP_PROMPT_MULTI_QA,
-    BASELINE_PROMPT_WIKI_CATEGORY,
-    PLAN_VERIFICATION_TWO_STEP_PROMPT_WIKI_CATEGORY,
-    EXECUTE_VERIFICATION_TWO_STEP_PROMPT_WIKI_CATEGORY,
-    FINAL_VERIFIED_TWO_STEP_PROMPT_WIKI_CATEGORY,
-    PLAN_AND_EXECUTION_JOINT_PROMPT_WIKI_CATEGORY,
-    FINAL_VERIFIED_JOINT_PROMPT_WIKI_CATEGORY,
+from typing import Dict
+from src.utils import (
+    TaskConfig,
+    import_model_and_tokenizer,
+    MODEL_MAPPING,
+    ModelConfig,
+    TASK_MAPPING,
+    SETTINGS,
 )
 
 
-class ChainofVerification:
+class ChainOfVerification:
     def __init__(
         self, model_id, top_p, temperature, task, setting, questions, access_token
     ):
         self.model_id = model_id
-        self.model: Model = MODEL_MAPPING[model_id]
-        if self.model is None:
-            print("Invalid Model ID. Please write either 'mistral', 'llama2' or 'zephyr'.")
+        self.model_config: ModelConfig = MODEL_MAPPING.get(model_id, None)
+        if self.model_config is None:
+            print(f"Invalid model. Valid models are: {', '.join(MODEL_MAPPING.keys())}")
+            sys.exit()
+
+        self.task = task
+        self.task_config: TaskConfig = TASK_MAPPING.get(task, None)
+        if self.task_config is None:
+            print(f"Invalid task. Valid taks are: {', '.join(TASK_MAPPING.keys())}")
+            sys.exit()
+
+        self.setting = setting
+        if self.setting not in SETTINGS:
+            print(f"Invalid setting. Valid settings are: {', '.join(SETTINGS)}")
+            sys.exit()
+        if self.task_config.__dict__[self.setting] is None:
+            print(
+                f"Invalid combination. Settings {self.setting} was not implemented for task {self.task}"
+            )
             sys.exit()
 
         self.access_token = access_token
         self.questions = questions
         self.top_p = top_p
         self.temperature = temperature
-        self.task = task
-        self.setting = setting
 
         self.model, self.tokenizer = import_model_and_tokenizer(
-            self.model, access_token=self.access_token
+            self.model_config, access_token=self.access_token
         )
 
-    def generate_response(self, prompt, max_tokens):
-        if self.model.is_llama:
-            # prompt = f"""<s>[INST] <<SYS>>{prompt_tmpl}\n<</SYS>>\nAnswer: [/INST]"""
+    def generate_response(self, prompt: str, max_tokens: int) -> str:
+        self.model_config.prompt_format.format(prompt=prompt)
+        if self.model_config.is_llama:
             input_ids = self.tokenizer(
                 prompt, return_tensors="pt", truncation=True
             ).input_ids.cuda()
+
             outputs = self.model.generate(
                 input_ids=input_ids,
                 max_new_tokens=max_tokens,
@@ -55,312 +60,121 @@ class ChainofVerification:
                 top_p=self.top_p,
                 temperature=self.temperature,
             )
-            # tokens = self.tokenizer.batch_decode(outputs.detach().cpu().numpy(), skip_special_tokens=True)[0][len(prompt_tmpl):]
             tokens = self.tokenizer.batch_decode(
                 outputs.detach().cpu().numpy(), skip_special_tokens=True
             )[0][0:]
-            tokens = tokens.split("[/INST]")[1]  # comment for multiqa
+            if self.task_config.id != "multi_qa":
+                tokens = tokens.split("[/INST]")[1]
         # else:
         #     prompt = f"<|system|>\n</s>\n<|user|>\n{prompt_tmpl}</s>\n<|assistant|>\n"
         #     input_ids = self.tokenizer(prompt, return_tensors="pt", truncation=True).input_ids.cuda()
         #     outputs = self.model.generate(input_ids=input_ids, max_new_tokens=max_tokens, do_sample=True, top_p=self.top_p,temperature=self.temperature)
         #     tokens = self.tokenizer.batch_decode(outputs.detach().cpu().numpy(), skip_special_tokens=True)[0][len(prompt_tmpl):]
         #     tokens = tokens.split("<|assistant|>")[1]
-        return tokens
+        return tokens.split("\n\n")[1]
 
-    def run_verification_chain(self, original_question):
-        if self.task == "wikidata":
-            baseline_prompt_tmpl = BASELINE_PROMPT_WIKI.format(
-                original_question=original_question
+    def get_baseline_tokens(self, question: str) -> str:
+        baseline_prompt = self.task_config.baseline_prompt.format(
+            original_question=question
+        )
+        return self.generate_response(baseline_prompt, self.task_config.max_tokens)
+
+    def run_two_step_chain(self, question: str, baseline_response: str):
+        plan_prompt = self.task_config.two_step.plan_prompt.format(
+            original_question=question,
+            baseline_response=baseline_response,
+        )
+        plan_response = self.generate_response(
+            plan_prompt, self.task_config.two_step.max_tokens_plan
+        )
+
+        execute_prompt = self.task_config.two_step.execute_prompt.format(
+            verification_questions=plan_response
+        )
+        execute_response = self.generate_response(
+            execute_prompt, self.task_config.two_step.max_tokens_execute
+        )
+
+        verify_prompt = self.task_config.two_step.verify_prompt.format(
+            original_question=question,
+            baseline_response=baseline_response,
+            verification_questions=plan_response,
+            verification_answers=execute_response,
+        )
+        verify_response = self.generate_response(
+            verify_prompt, self.task_config.two_step.max_tokens_verify
+        )
+
+        return (
+            plan_response,
+            execute_response,
+            verify_response,
+        )
+
+    def run_joint_chain(self, question: str, baseline_response: str):
+        plan_and_execution_prompt = (
+            self.task_config.joint.plan_and_execute_joint_prompt.format(
+                original_question=question,
+                baseline_response=baseline_response,
             )
-            baseline_prompt = f"""<s>[INST] <<SYS>>{baseline_prompt_tmpl}\n<</SYS>>\nAnswer: [/INST]"""
-            baseline_tokens = self.generate_response(baseline_prompt, 150)
-            baseline_tokens = baseline_tokens.split("\n\n")[1]
-            if self.setting == "two_step":
-                verification_question_prompt_tmpl = (
-                    PLAN_VERIFICATION_TWO_STEP_PROMPT_WIKI.format(
-                        original_question=original_question,
-                        baseline_response=baseline_tokens,
-                    )
-                )
-                verification_prompt = f"""<s>[INST] <<SYS>>{verification_question_prompt_tmpl}\n<</SYS>>\nVerification Questions: [/INST]"""
-                verif_tokens = self.generate_response(verification_prompt, 300).split(
-                    "\n\n"
-                )[1]
-                # verif_tokens = verif_tokens.split("\n\n")[1]
+        )
+        plan_and_execution_response = self.generate_response(
+            plan_and_execution_prompt,
+            self.task_config.joint.max_tokens_plan_and_execute,
+        )
 
-                execute_questions_prompt_tmpl = (
-                    EXECUTE_VERIFICATION_TWO_STEP_PROMPT_WIKI.format(
-                        verification_questions=verif_tokens
-                    )
-                )
-                execute_prompt = f"""<s>[INST] <<SYS>>{execute_questions_prompt_tmpl}\n<</SYS>>\nAnswers: [/INST]"""
-                execute_verif_tokens = self.generate_response(execute_prompt, 300)
-                execute_verif_tokens = execute_verif_tokens.split("\n\n")[1]
+        verify_prompt = self.task_config.joint.verify_prompt.format(
+            original_question=question,
+            baseline_response=baseline_response,
+            verification_questions_and_answers=plan_and_execution_response,
+        )
+        verify_response = self.generate_response(
+            verify_prompt, self.task_config.joint.max_tokens_verify
+        )
 
-                final_verified_prompt_tmpl = FINAL_VERIFIED_TWO_STEP_PROMPT_WIKI.format(
-                    original_question=original_question,
-                    baseline_response=baseline_tokens,
-                    verification_questions=verif_tokens,
-                    verification_answers=execute_verif_tokens,
-                )
-                final_verified_prompt = f"""<s>[INST] <<SYS>>{final_verified_prompt_tmpl}\n<</SYS>>\nFinal Refined Answer: [/INST]"""
-                final_verified_tokens = self.generate_response(
-                    final_verified_prompt, 300
-                )
-                final_verified_tokens = final_verified_tokens.split("\n\n")[1]
+        return plan_and_execution_response, verify_response
 
-                return (
-                    baseline_tokens,
-                    verif_tokens,
-                    execute_verif_tokens,
-                    final_verified_tokens,
-                )
-            elif self.setting == "joint":
-                plan_and_execution_prompt_tmpl = (
-                    PLAN_AND_EXECUTION_JOINT_PROMPT_WIKI.format(
-                        original_question=original_question,
-                        baseline_response=baseline_tokens,
-                    )
-                )
-                plan_and_execution_prompt = f"""<s>[INST] <<SYS>>{plan_and_execution_prompt_tmpl}\n<</SYS>>\nVerification Questions and Answers: [/INST]"""
-                plan_and_execution_tokens = self.generate_response(
-                    plan_and_execution_prompt, 500
-                ).split("\n\n")[1]
-                # if "Verification Questions and Answers:" in plan_and_execution_tokens:
-                #     plan_and_execution_tokens = plan_and_execution_tokens.split("Verification Questions and Answers:")[1]
-                #     if "Note:" in plan_and_execution_tokens:
-                #         plan_and_execution_tokens = plan_and_execution_tokens.split("Note:")[0]
+    def print_result(self, result: Dict[str, str]):
+        for key, value in result.items():
+            print(f"{key}: {value}")
+            print("----------------------\n")
+        print("=========================================\n")
 
-                final_verified_prompt_tmpl = FINAL_VERIFIED_JOINT_PROMPT_WIKI.format(
-                    original_question=original_question,
-                    baseline_response=baseline_tokens,
-                    verification_questions_and_answers=plan_and_execution_tokens,
-                )
-                final_verified_prompt = f"""<s>[INST] <<SYS>>{final_verified_prompt_tmpl}\n<</SYS>>\nFinal Refined Answer: [/INST]"""
-                final_verified_tokens = self.generate_response(
-                    final_verified_prompt, 150
-                ).split("\n\n")[1]
-
-                return baseline_tokens, plan_and_execution_tokens, final_verified_tokens
-            else:
-                print(
-                    "Invalid setting specified. Please specify either 'two_step' or 'joint'!----"
-                )
-        elif self.task == "wikidata_category":
-            baseline_prompt_tmpl = BASELINE_PROMPT_WIKI_CATEGORY.format(
-                original_question=original_question
-            )
-            baseline_prompt = f"""<s>[INST] <<SYS>>{baseline_prompt_tmpl}\n<</SYS>>\nAnswer: [/INST]"""
-            baseline_tokens = self.generate_response(baseline_prompt, 100).split(
-                "\n\n"
-            )[1]
-            if self.setting == "two_step":
-                verification_question_prompt_tmpl = (
-                    PLAN_VERIFICATION_TWO_STEP_PROMPT_WIKI_CATEGORY.format(
-                        original_question=original_question,
-                        baseline_response=baseline_tokens,
-                    )
-                )
-                verification_prompt = f"""<s>[INST] <<SYS>>{verification_question_prompt_tmpl}\n<</SYS>>\nVerification Questions: [/INST]"""
-                verif_tokens = self.generate_response(verification_prompt, 180).split(
-                    "\n\n"
-                )[1]
-
-                execute_questions_prompt_tmpl = (
-                    EXECUTE_VERIFICATION_TWO_STEP_PROMPT_WIKI_CATEGORY.format(
-                        verification_questions=verif_tokens
-                    )
-                )
-                execute_prompt = f"""<s>[INST] <<SYS>>{execute_questions_prompt_tmpl}\n<</SYS>>\nAnswers: [/INST]"""
-                execute_verif_tokens = self.generate_response(
-                    execute_prompt, 180
-                ).split("\n\n")[1]
-
-                final_verified_prompt_tmpl = (
-                    FINAL_VERIFIED_TWO_STEP_PROMPT_WIKI_CATEGORY.format(
-                        original_question=original_question,
-                        baseline_response=baseline_tokens,
-                        verification_questions=verif_tokens,
-                        verification_answers=execute_verif_tokens,
-                    )
-                )
-                final_prompt = f"""<s>[INST] <<SYS>>{final_verified_prompt_tmpl}\n<</SYS>>\nFinal Refined Answer: [/INST]"""
-                final_verified_tokens = self.generate_response(final_prompt, 100).split(
-                    "\n\n"
-                )[1]
-
-                return (
-                    baseline_tokens,
-                    verif_tokens,
-                    execute_verif_tokens,
-                    final_verified_tokens,
-                )
-            elif self.setting == "joint":
-                plan_and_execution_prompt_tmpl = (
-                    PLAN_AND_EXECUTION_JOINT_PROMPT_WIKI_CATEGORY.format(
-                        original_question=original_question,
-                        baseline_response=baseline_tokens,
-                    )
-                )
-                plan_and_execution_prompt = f"""<s>[INST] <<SYS>>{plan_and_execution_prompt_tmpl}\n<</SYS>>\nVerification Questions and Answers: [/INST]"""
-                plan_and_execution_tokens = self.generate_response(
-                    plan_and_execution_prompt, 400
-                ).split("\n\n")[1]
-
-                final_verified_prompt_tmpl = (
-                    FINAL_VERIFIED_JOINT_PROMPT_WIKI_CATEGORY.format(
-                        original_question=original_question,
-                        baseline_response=baseline_tokens,
-                        verification_questions_and_answers=plan_and_execution_tokens,
-                    )
-                )
-                final_verified_prompt = f"""<s>[INST] <<SYS>>{final_verified_prompt_tmpl}\n<</SYS>>\nFinal Refined Answer: [/INST]"""
-                final_verified_tokens = self.generate_response(
-                    final_verified_prompt, 100
-                ).split("\n\n")[1]
-
-                return baseline_tokens, plan_and_execution_tokens, final_verified_tokens
-        elif self.task == "multi_qa":
-            baseline_prompt_tmpl = BASELINE_PROMPT_MULTI_QA.format(
-                original_question=original_question
-            )
-            baseline_prompt = f"""<s>[INST] <<SYS>>{baseline_prompt_tmpl}\n<</SYS>>\nAnswers: [/INST]"""
-            baseline_tokens = self.generate_response(baseline_prompt, 200).split(
-                "\n\n"
-            )[1]
-            if self.setting == "two_step":
-                plan_verification_prompt_tmpl = (
-                    PLAN_VERIFICATION_TWO_STEP_PROMPT_MULTI_QA.format(
-                        original_question=original_question,
-                        baseline_response=baseline_tokens,
-                    )
-                )
-                plan_verification_prompt = f"""<s>[INST] <<SYS>>{plan_verification_prompt_tmpl}\n<</SYS>>\nVerification Questions: [/INST]"""
-                plan_verification_tokens = self.generate_response(
-                    plan_verification_prompt, 400
-                ).split("\n\n")[1]
-                # if "some verification questions based on the baseline response:"  in plan_verification_tokens:
-                #     plan_verification_tokens = plan_verification_tokens.split("some verification questions based on the baseline response:")[1]
-
-                execute_verification_prompt_tmpl = (
-                    EXECUTE_VERIFICATION_TWO_STEP_PROMPT_MULTI_QA.format(
-                        verification_questions=plan_verification_tokens
-                    )
-                )
-                execute_verification_prompt = f"""<s>[INST] <<SYS>>{execute_verification_prompt_tmpl}\n<</SYS>>\nAnswers: [/INST]"""
-                execute_verification_tokens = self.generate_response(
-                    execute_verification_prompt, 400
-                ).split("\n\n")[1]
-                # if "Here are my answers:" in execute_verification_tokens:
-                #     execute_verification_tokens = execute_verification_tokens.split("Here are my answers:")[1]
-
-                final_verified_prompt_tmpl = (
-                    FINAL_VERIFIED_TWO_STEP_PROMPT_MULTI_QA.format(
-                        original_question=original_question,
-                        baseline_response=baseline_tokens,
-                        verification_questions=plan_verification_tokens,
-                        verification_answers=execute_verification_tokens,
-                    )
-                )
-                final_verified_prompt = f"""<s>[INST] <<SYS>>{final_verified_prompt_tmpl}\n<</SYS>>\nFinal Refined Answer: [/INST]"""
-                final_verified_tokens = self.generate_response(
-                    final_verified_prompt, 300
-                ).split("\n\n")[1]
-                # if "here's the final refined answer:" in final_verified_tokens:
-                #     final_verified_tokens = final_verified_tokens.split("here's the final refined answer:")[1]
-                # if "is:" in final_verified_tokens:
-                #     final_verified_tokens = final_verified_tokens.split("is:")[1]
-
-                return (
-                    baseline_tokens,
-                    plan_verification_tokens,
-                    execute_verification_tokens,
-                    final_verified_tokens,
-                )
-            else:
-                print(
-                    "Invalid setting specified. Please specify either 'two_step' or 'joint'!!!!!"
-                )
-        else:
-            print(
-                "Invalid dataset specified. Please specify either 'wikidata' or 'multi_qa'!"
-            )
-
-    def run_and_store_results(self):
+    def run_chain(self):
         all_results = []
-        for q in self.questions:
+        for question in self.questions:
+            baseline_response = self.get_baseline_tokens(question)
             if self.setting == "two_step":
                 (
-                    baseline_tokens,
                     plan_verification_tokens,
                     execute_verification_tokens,
                     final_verified_tokens,
-                ) = self.run_verification_chain(q)
-                result_entry = {
-                    "Question": q,
-                    "Baseline Answer": baseline_tokens,
+                ) = self.run_two_step_chain(question, baseline_response)
+                result = {
+                    "Question": question,
+                    "Baseline Answer": baseline_response,
                     "Verification Questions": plan_verification_tokens,
                     "Execute Plan": execute_verification_tokens,
                     "Final Refined Answer": final_verified_tokens,
                 }
-                print("----------------------\n")
-                print(f"Question: {q}")
-                print("----------------------\n")
-                print(f"Baseline Answer: {baseline_tokens}")
-                print("----------------------\n")
-                print(f"Verification Questions: {plan_verification_tokens}")
-                print("----------------------\n")
-                print(f"Execute Plan: {execute_verification_tokens}")
-                print("----------------------\n")
-                print(f"Final Refined Answer: {final_verified_tokens}")
-                print("=========================================\n")
-                all_results.append(result_entry)
+                self.print_result(result)
+                all_results.append(result)
             elif self.setting == "joint":
                 (
-                    baseline_tokens,
                     plan_and_execution_tokens,
                     final_verified_tokens,
-                ) = self.run_verification_chain(q)
-                result_entry = {
-                    "Question": q,
-                    "Baseline Answer": baseline_tokens,
+                ) = self.run_joint_chain(question, baseline_response)
+                result = {
+                    "Question": question,
+                    "Baseline Answer": baseline_response,
                     "Plan and Execution": plan_and_execution_tokens,
                     "Final Refined Answer": final_verified_tokens,
                 }
-                all_results.append(result_entry)
-            else:
-                print(
-                    "Invalid setting specified. Please specify either 'two_step' or 'joint'!***"
-                )
+                self.print_result(result)
+                all_results.append(result)
 
-        valid_combinations = {
-            ("llama2", "wikidata", "two_step"),
-            ("llama2", "wikidata", "joint"),
-            ("llama2", "multi_qa", "two_step"),
-            ("zephyr", "wikidata", "two_step"),
-            ("zephyr", "wikidata", "joint"),
-            ("zephyr", "multi_qa", "two_step"),
-            ("mistral", "wikidata", "two_step"),
-            ("mistral", "wikidata", "joint"),
-            ("mistral", "multi_qa", "two_step"),
-            ("llama2_70b", "wikidata", "two_step"),
-            ("llama2_70b", "wikidata", "joint"),
-            ("llama2_70b", "multi_qa", "two_step"),
-            ("llama-65b", "wikidata", "two_step"),
-            ("llama-65b", "wikidata", "joint"),
-            ("llama-65b", "multi_qa", "two_step"),
-            ("llama2_70b", "wikidata_category", "two_step"),
-            ("llama2_70b", "wikidata_category", "joint"),
-        }
-
-        if (self.model_id, self.task, self.setting) in valid_combinations:
-            result_file_path = (
-                f"./results/{self.model_id}_{self.task}_{self.setting}_results.json"
-            )
-            with open(result_file_path, "w") as json_file:
-                json.dump(all_results, json_file, indent=2, ensure_ascii=False)
-        else:
-            print(
-                "Invalid model, dataset, or setting specified. Please check your inputs."
-            )
+        result_file_path = (
+            f"./results/{self.model_id}_{self.task}_{self.setting}_results.json"
+        )
+        with open(result_file_path, "w", encoding="utf-8") as json_file:
+            json.dump(all_results, json_file, indent=2, ensure_ascii=False)

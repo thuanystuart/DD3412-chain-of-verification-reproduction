@@ -1,4 +1,4 @@
-from src.cov_chains import ChainofVerification
+from src.cov_chains import ChainOfVerification
 from data.data_processor import (
     read_json,
     get_questions_from_list,
@@ -13,16 +13,17 @@ llama_id = "llama-65b"
 access_token = "YOUR_ACCESS_TOKEN"
 file_path = "PATH_TO_THE_FILE"
 
-file_path = 'PATH_TO_WIKIDATA_DATASET'
-file_path_multi = 'PATH_TO_MULTI_QA_DATASET'
-file_path_wikidata_categories = 'PATH_TO_WIKIDATA_CATEGORIES_DATASET'
+file_path = "PATH_TO_WIKIDATA_DATASET"
+file_path_multi = "PATH_TO_MULTI_QA_DATASET"
+file_path_wikidata_categories = "PATH_TO_WIKIDATA_CATEGORIES_DATASET"
 
 wikidata_dataset = "wikidata"
 multi_qa_dataset = "multi_qa"
 wikidata_category_dataset = "wikidata_category"
 access_token = "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"
 
-task = wikidata_category_dataset
+file_path = "./dataset/multispanqa_dataset.json"
+task = multi_qa_dataset
 
 valid_combinations = {
     ("llama2", "wikidata", "two_step"),
@@ -50,7 +51,7 @@ if task == wikidata_dataset:
 else:
     questions = get_questions_from_list(data)
 
-chain = ChainofVerification(
+chain = ChainOfVerification(
     model_id=llama2_id,
     top_p=0.9,
     temperature=0.07,
@@ -59,4 +60,4 @@ chain = ChainofVerification(
     questions=questions,
     access_token=access_token,
 )
-chain.run_and_store_results()
+chain.run_chain()
