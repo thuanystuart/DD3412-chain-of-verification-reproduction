@@ -1,4 +1,5 @@
-from src.cov_chains import ChainOfVerificationHuggingFace, ChainOfVerificationOpenAI
+from src.cov_chains_hf import ChainOfVerificationHuggingFace
+from src.cov_chains_openai import ChainOfVerificationOpenAI
 from data.data_processor import (
     read_json,
     get_questions_from_list,
@@ -9,6 +10,7 @@ from src.utils import get_absolute_path
 from dotenv import dotenv_values
 CONFIG = dotenv_values(get_absolute_path(".configurations"))
 
+gpt_35_id = "gpt3"
 llama2_id = "llama2"
 llama_2_70b_id = "llama2_70b"
 llama_id = "llama-65b"
@@ -59,12 +61,11 @@ chain_hf.run_chain()
 
 
 chain_openai = ChainOfVerificationOpenAI(
-    model_id=llama2_id,
-    top_p=0.9,
+    model_id=gpt_35_id,
     temperature=0.07,
     task=task,
     setting="two_step",
     questions=questions,
-    hf_access_token=hf_access_token,
+    openai_access_token=openain_access_token,
 )
 chain_openai.run_chain()
