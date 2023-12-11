@@ -31,7 +31,6 @@ class ChainOfVerificationHuggingFace(ChainOfVerification):
             tokens = self.tokenizer.batch_decode(
                 outputs.detach().cpu().numpy(), skip_special_tokens=True
             )[0][0:]
-            #if self.task_config.id != "multi_qa":
             tokens = tokens.split("[/INST]")[1]
         
         if len(tokens.split("\n\n")) > 1 and tokens.split("\n\n")[1] is not None:
@@ -41,4 +40,3 @@ class ChainOfVerificationHuggingFace(ChainOfVerification):
 
     def process_prompt(self, prompt, command) -> str:
         return self.model_config.prompt_format.format(prompt=prompt, command=command)
-    

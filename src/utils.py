@@ -12,10 +12,7 @@ from src.prompts import (
     PLAN_AND_EXECUTION_JOINT_PROMPT_WIKI,
     FINAL_VERIFIED_JOINT_PROMPT_WIKI,
     ##
-    BASELINE_PROMPT_MULTI_QA,
-    PLAN_VERIFICATION_TWO_STEP_PROMPT_MULTI_QA,
-    EXECUTE_VERIFICATION_TWO_STEP_PROMPT_MULTI_QA,
-    FINAL_VERIFIED_TWO_STEP_PROMPT_MULTI_QA,
+    EXECUTE_VERIFICATION_FACTORED_PROMPT_WIKI,
     ##
     BASELINE_PROMPT_WIKI_CATEGORY,
     PLAN_VERIFICATION_TWO_STEP_PROMPT_WIKI_CATEGORY,
@@ -25,11 +22,33 @@ from src.prompts import (
     PLAN_AND_EXECUTION_JOINT_PROMPT_WIKI_CATEGORY,
     FINAL_VERIFIED_JOINT_PROMPT_WIKI_CATEGORY,
     ##
+    EXECUTE_VERIFICATION_FACTORED_PROMPT_WIKI_CATEGORY,
+    ##
+    BASELINE_PROMPT_MULTI_QA,
+    PLAN_VERIFICATION_TWO_STEP_PROMPT_MULTI_QA,
+    EXECUTE_VERIFICATION_TWO_STEP_PROMPT_MULTI_QA,
+    FINAL_VERIFIED_TWO_STEP_PROMPT_MULTI_QA,
+    ##
     PLAN_AND_EXECUTION_JOINT_PROMPT_MULTI_QA,
     FINAL_VERIFIED_JOINT_PROMPT_MULTI_QA,
+    ##
+    EXECUTE_VERIFICATION_FACTORED_PROMPT_MULTI_QA,
 )
 
-SETTINGS = ["two_step", "joint"]
+SETTINGS = ["two_step", "joint", "factored"]
+
+@dataclasses.dataclass
+class FactoredConfig:
+    max_tokens_plan: int
+    max_tokens_execute: int
+    max_tokens_verify: int
+    plan_prompt: str
+    execute_prompt: str
+    verify_prompt: str
+    plan_command: str = " Verification Questions: "
+    execute_command: str = " Answer: "
+    verify_command: str = " Final Refined Answer: "
+
 @dataclasses.dataclass
 class TwoStepConfig:
     max_tokens_plan: int
@@ -38,9 +57,9 @@ class TwoStepConfig:
     plan_prompt: str
     execute_prompt: str
     verify_prompt: str
-    plan_command: str = "Verification Questions: "
-    execute_command: str = "Answers: "
-    verify_command: str = "Final Refined Answer: "
+    plan_command: str = " Verification Questions: "
+    execute_command: str = " Answers: "
+    verify_command: str = " Final Refined Answer: "
 
 @dataclasses.dataclass
 class JointConfig:
@@ -48,8 +67,8 @@ class JointConfig:
     max_tokens_verify: int
     plan_and_execute_prompt: str
     verify_prompt: str
-    plan_and_execute_command: str = "Verification Questions and Answers: "
-    verify_command: str = "Final Refined Answer: "
+    plan_and_execute_command: str = " Verification Questions and Answers: "
+    verify_command: str = " Final Refined Answer: "
 
 @dataclasses.dataclass
 class TaskConfig:
@@ -58,7 +77,8 @@ class TaskConfig:
     baseline_prompt: str
     two_step: TwoStepConfig
     joint: JointConfig
-    baseline_command: str = "Answer: "
+    factored: FactoredConfig
+    baseline_command: str = " Answer: "
 
 
 TASK_MAPPING = {
@@ -79,7 +99,15 @@ TASK_MAPPING = {
             verify_prompt=FINAL_VERIFIED_JOINT_PROMPT_WIKI,
             max_tokens_plan_and_execute=500,
             max_tokens_verify=150,
-        )
+        ),
+        factored=FactoredConfig(
+            plan_prompt=PLAN_VERIFICATION_TWO_STEP_PROMPT_WIKI,
+            execute_prompt=EXECUTE_VERIFICATION_FACTORED_PROMPT_WIKI,
+            verify_prompt=FINAL_VERIFIED_TWO_STEP_PROMPT_WIKI,
+            max_tokens_plan=300,
+            max_tokens_execute=70,
+            max_tokens_verify=300,
+        ),
     ),
     "multi_qa": TaskConfig(
         id="multi_qa",
@@ -98,7 +126,15 @@ TASK_MAPPING = {
             verify_prompt=FINAL_VERIFIED_JOINT_PROMPT_MULTI_QA,
             max_tokens_plan_and_execute=600,
             max_tokens_verify=200,
-        )
+        ),
+        factored=FactoredConfig(
+            plan_prompt=PLAN_VERIFICATION_TWO_STEP_PROMPT_MULTI_QA,
+            execute_prompt=EXECUTE_VERIFICATION_FACTORED_PROMPT_MULTI_QA,
+            verify_prompt=FINAL_VERIFIED_TWO_STEP_PROMPT_MULTI_QA,
+            max_tokens_plan=400,
+            max_tokens_execute=90,
+            max_tokens_verify=300,
+        ),
     ),
     "wikidata_category": TaskConfig(
         id="wikidata_category",
@@ -117,7 +153,15 @@ TASK_MAPPING = {
             verify_prompt=FINAL_VERIFIED_JOINT_PROMPT_WIKI_CATEGORY,
             max_tokens_plan_and_execute=400,
             max_tokens_verify=100,
-        )
+        ),
+        factored=FactoredConfig(
+            plan_prompt=PLAN_VERIFICATION_TWO_STEP_PROMPT_WIKI_CATEGORY,
+            execute_prompt=EXECUTE_VERIFICATION_FACTORED_PROMPT_WIKI_CATEGORY,
+            verify_prompt=FINAL_VERIFIED_TWO_STEP_PROMPT_WIKI_CATEGORY,
+            max_tokens_plan=300,
+            max_tokens_execute=70,
+            max_tokens_verify=150,
+        ),
     ),
 }
 
@@ -138,8 +182,8 @@ MODEL_MAPPING = {
     "gpt3": ModelConfig(
         id="gpt-3.5-turbo-0613",
         prompt_format=GPT_PROMPT_FORMAT,
-        is_llama=False, 
-        is_protected=False, # Shirin: I do not get what it means!
+        is_llama=False,
+        is_protected=False,
     ),
     "llama2": ModelConfig(
         id="meta-llama/Llama-2-13b-chat-hf",
