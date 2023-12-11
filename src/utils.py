@@ -129,6 +129,12 @@ LLAMA_PROMPT_FORMAT = (
     """<s>[INST] <<SYS>>{prompt}\n<</SYS>>\n{command}: [/INST]"""
 )
 MODEL_MAPPING = {
+    "gpt3": ModelConfig(
+        id="",
+        prompt_format=STD_PROMPT_FORMAT,
+        is_llama=False, 
+        is_protected=False, # Shirin: I do not get what it means!
+    ),
     "mistral": ModelConfig(
         id="mistralai/Mistral-7B-Instruct-v0.1",
         prompt_format=STD_PROMPT_FORMAT,

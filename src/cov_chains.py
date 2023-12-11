@@ -9,62 +9,10 @@ from src.utils import (
     TASK_MAPPING,
     SETTINGS,
 )
-
+from langchain.prompts import PromptTemplate
 
 class ChainOfVerification:
-    def __init__(
-        self, model_id, top_p, temperature, task, setting, questions, hf_access_token
-    ):
-        raise NotImplementedError("Subclasses must implement this method.")
-
-    def generate_response(self, prompt: str, max_tokens: int) -> str:
-        raise NotImplementedError("Subclasses must implement this method.")
-
-    def get_baseline_tokens(self, question: str) -> str:
-        raise NotImplementedError("Subclasses must implement this method.")
-
-    def run_two_step_chain(self, question: str, baseline_response: str):
-       raise NotImplementedError("Subclasses must implement this method.")
-
-    def run_joint_chain(self, question: str, baseline_response: str):
-        raise NotImplementedError("Subclasses must implement this method.")
-
-    def print_result(self, result: Dict[str, str]):
-        raise NotImplementedError("Subclasses must implement this method.")
-
-    def run_chain(self):
-        raise NotImplementedError("Subclasses must implement this method.")
-    
-
-class ChainOfVerificationOpenAI(ChainOfVerification):
-    def __init__(
-        self, model_id, top_p, temperature, task, setting, questions, hf_access_token
-    ):
-        raise NotImplementedError("Subclasses must implement this method.")
-
-    def generate_response(self, prompt: str, max_tokens: int) -> str:
-        raise NotImplementedError("Subclasses must implement this method.")
-
-    def get_baseline_tokens(self, question: str) -> str:
-        raise NotImplementedError("Subclasses must implement this method.")
-
-    def run_two_step_chain(self, question: str, baseline_response: str):
-       raise NotImplementedError("Subclasses must implement this method.")
-
-    def run_joint_chain(self, question: str, baseline_response: str):
-        raise NotImplementedError("Subclasses must implement this method.")
-
-    def print_result(self, result: Dict[str, str]):
-        raise NotImplementedError("Subclasses must implement this method.")
-
-    def run_chain(self):
-        raise NotImplementedError("Subclasses must implement this method.")
-
-
-class ChainOfVerificationHuggingFace(ChainOfVerification):
-    def __init__(
-        self, model_id, top_p, temperature, task, setting, questions, hf_access_token
-    ):
+    def __init__(self, model_id, task, setting):
         self.model_id = model_id
         self.model_config: ModelConfig = MODEL_MAPPING.get(model_id, None)
         if self.model_config is None:
@@ -86,7 +34,69 @@ class ChainOfVerificationHuggingFace(ChainOfVerification):
                 f"Invalid combination. Settings {self.setting} was not implemented for task {self.task}"
             )
             sys.exit()
+        
 
+    def generate_response(self, prompt: str, max_tokens: int) -> str:
+        raise NotImplementedError("Subclasses must implement this method.")
+
+    def get_baseline_response(self, question: str) -> str:
+        raise NotImplementedError("Subclasses must implement this method.")
+
+    def run_two_step_chain(self, question: str, baseline_response: str):
+       raise NotImplementedError("Subclasses must implement this method.")
+
+    def run_joint_chain(self, question: str, baseline_response: str):
+        raise NotImplementedError("Subclasses must implement this method.")
+
+    def print_result(self, result: Dict[str, str]):
+        raise NotImplementedError("Subclasses must implement this method.")
+
+    def run_chain(self):
+        raise NotImplementedError("Subclasses must implement this method.")
+    
+
+class ChainOfVerificationOpenAI(ChainOfVerification):
+    def __init__(
+        self, model_id, temperature, task, setting, questions, openai_access_token
+    ):
+        super().__init__(model_id, task, setting)
+        self.openai_access_token = openai_access_token
+        self.questions = questions
+        self.temperature = temperature
+
+    def generate_response(self, prompt: str, max_tokens: int) -> str:
+        raise NotImplementedError("Subclasses must implement this method.")
+
+    def get_baseline_response(self, question: str) -> str:
+        baseline_response_prompt_template = PromptTemplate(
+            input_variables=["original_question"],
+            template=self.task_config.baseline_prompt
+        )
+        baseline_prompt = baseline_response_prompt_template.format(original_question=question)
+        
+        return baseline_prompt
+
+    def run_two_step_chain(self, question: str, baseline_response: str):
+       raise NotImplementedError("Subclasses must implement this method.")
+
+    def run_joint_chain(self, question: str, baseline_response: str):
+        raise NotImplementedError("Subclasses must implement this method.")
+
+    def print_result(self, result: Dict[str, str]):
+        raise NotImplementedError("Subclasses must implement this method.")
+
+    def run_chain(self):
+        for question in self.questions:
+            baseline_response = self.get_baseline_response(question)
+            print("")
+
+
+class ChainOfVerificationHuggingFace(ChainOfVerification):
+    def __init__(
+        self, model_id, top_p, temperature, task, setting, questions, hf_access_token
+    ):
+        super().__init__(model_id, task, setting)
+        
         self.hf_access_token = hf_access_token
         self.questions = questions
         self.top_p = top_p
@@ -126,7 +136,7 @@ class ChainOfVerificationHuggingFace(ChainOfVerification):
         else:
             return tokens
 
-    def get_baseline_tokens(self, question: str) -> str:
+    def get_baseline_response(self, question: str) -> str:
         baseline_prompt = self.task_config.baseline_prompt.format(
             original_question=question
         )
@@ -215,7 +225,7 @@ class ChainOfVerificationHuggingFace(ChainOfVerification):
     def run_chain(self):
         all_results = []
         for question in self.questions:
-            baseline_response = self.get_baseline_tokens(question)
+            baseline_response = self.get_baseline_response(question)
             if self.setting == "two_step":
                 (
                     plan_verification_tokens,
