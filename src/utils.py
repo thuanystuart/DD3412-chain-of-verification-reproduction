@@ -197,7 +197,7 @@ MODEL_MAPPING = {
         is_llama=True,
         is_protected=True,
     ),
-    "llama": ModelConfig(
+    "llama-65b": ModelConfig(
         id="huggyllama/llama-65b",
         prompt_format=LLAMA_PROMPT_FORMAT,
         is_llama=True,
