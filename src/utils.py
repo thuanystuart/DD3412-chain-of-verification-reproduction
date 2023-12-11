@@ -141,18 +141,6 @@ MODEL_MAPPING = {
         is_llama=False, 
         is_protected=False, # Shirin: I do not get what it means!
     ),
-    "mistral": ModelConfig(
-        id="mistralai/Mistral-7B-Instruct-v0.1",
-        prompt_format=STD_PROMPT_FORMAT,
-        is_llama=False,
-        is_protected=False,
-    ),
-    "zephyr": ModelConfig(
-        id="HuggingFaceH4/zephyr-7b-beta",
-        prompt_format=STD_PROMPT_FORMAT,
-        is_llama=False,
-        is_protected=False,
-    ),
     "llama2": ModelConfig(
         id="meta-llama/Llama-2-13b-chat-hf",
         prompt_format=LLAMA_PROMPT_FORMAT,
