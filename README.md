@@ -4,7 +4,7 @@
 
 First, create a python virtual environment and install the requirements:
 ```bash
-pip install -r requirements
+pip install -r requirements.txt
 ```
 Then, create a file named `.configuration` to store the confidential data, such as OpenAI and HuggingFace API keys. This file should look like:
 ```
