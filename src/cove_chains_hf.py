@@ -1,4 +1,4 @@
-from src.cov_chains import ChainOfVerification
+from src.cove_chains import ChainOfVerification
 from src.utils import import_model_and_tokenizer
 
 

@@ -58,7 +58,7 @@ if __name__ == "__main__":
         questions = get_questions_from_list(data)
 
     if args.model == "gpt3":
-        from src.cov_chains_openai import ChainOfVerificationOpenAI
+        from src.cove_chains_openai import ChainOfVerificationOpenAI
         chain_openai = ChainOfVerificationOpenAI(
             model_id=args.model,
             temperature=args.temperature,
@@ -69,7 +69,7 @@ if __name__ == "__main__":
         )
         chain_openai.run_chain()
     else:
-        from src.cov_chains_hf import ChainOfVerificationHuggingFace
+        from src.cove_chains_hf import ChainOfVerificationHuggingFace
         chain_hf = ChainOfVerificationHuggingFace(
             model_id=args.model,
             top_p=args.top_p,

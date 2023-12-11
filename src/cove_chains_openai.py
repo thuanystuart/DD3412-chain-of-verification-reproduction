@@ -1,4 +1,4 @@
-from src.cov_chains import ChainOfVerification
+from src.cove_chains import ChainOfVerification
 from langchain.prompts import PromptTemplate
 from langchain.chat_models import ChatOpenAI
 from langchain.schema import StrOutputParser
