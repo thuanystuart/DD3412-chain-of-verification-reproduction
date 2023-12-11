@@ -10,7 +10,7 @@ from src.utils import (
 )
 
 class ChainOfVerification:
-    def __init__(self, model_id, task, setting):
+    def __init__(self, model_id, task, setting, questions):
         self.model_id = model_id
         self.model_config: ModelConfig = MODEL_MAPPING.get(model_id, None)
         if self.model_config is None:
@@ -32,6 +32,8 @@ class ChainOfVerification:
                 f"Invalid combination. Settings {self.setting} was not implemented for task {self.task}"
             )
             sys.exit()
+
+        self.questions = questions
         
 
     def generate_response(self, prompt: str, max_tokens: int) -> str:
