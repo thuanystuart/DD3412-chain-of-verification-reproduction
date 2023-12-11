@@ -1,0 +1,46 @@
+profession;profession_code;city;city_code
+actors;Q33999;RJ, Rio de Janeiro;Q8678
+actors;Q33999;Prague;Q1085
+actors;Q33999;Berlin;Q64
+actors;Q33999;Munich;Q1726
+actors;Q33999;Paris;Q90
+painters;Q1028181;Paris;Q90
+painters;Q1028181;Florence;Q2044
+painters;Q1028181;Amsterdam;Q727
+painters;Q1028181;Rome;Q220
+painters;Q1028181;NY, New York;Q60
+pianists;Q486748;Paris;Q90
+pianists;Q486748;NY, New York;Q60
+pianists;Q486748;London;Q84
+pianists;Q486748;Moscow;Q649
+pianists;Q486748;Tokyo;Q1490
+writers;Q36180;Tokyo;Q1490
+writers;Q36180;Berlin;Q64
+writers;Q36180;Moscow;Q649
+writers;Q36180;Rome;Q220
+writers;Q36180;Chicago;Q1297
+journalists;Q1930187;Paris;Q90
+journalists;Q1930187;Vienna;Q1741
+journalists;Q1930187;NY, New York;Q60
+journalists;Q1930187;Moscow;Q649
+journalists;Q1930187;London;Q84
+photographers;Q33231;Paris;Q90
+photographers;Q33231;NY, New York;Q60
+photographers;Q33231;Prague;Q1085
+photographers;Q33231;Berlin;Q64
+photographers;Q33231;Amsterdam;Q727
+film directors;Q2526255;Moscow;Q649
+film directors;Q2526255;Los Angeles;Q65
+film directors;Q2526255;Rome;Q220
+film directors;Q2526255;NY, New York;Q60
+film directors;Q2526255;Budapest;Q1781
+university teachers;Q1622272;Budapest;Q1781
+university teachers;Q1622272;Hamburg;Q1055
+university teachers;Q1622272;Vienna;Q1741
+university teachers;Q1622272;Berlin;Q64
+university teachers;Q1622272;Rome;Q220
+screenwriter;Q28389;Los Angeles;Q65
+screenwriter;Q28389;London;Q84
+screenwriter;Q28389;Moscow;Q649
+screenwriter;Q28389;Paris;Q90
+screenwriter;Q28389;Rome;Q220

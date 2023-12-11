@@ -10,3 +10,4 @@ wandb
 sparqlwrapper
 openai
 python-dotenv
+jsonlines
