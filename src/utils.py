@@ -161,6 +161,18 @@ MODEL_MAPPING = {
     ),
 }
 
+
+def get_absolute_path(path_relative_to_project_root):
+    import os
+    current_directory = os.path.realpath(
+        os.path.join(os.getcwd(), os.path.dirname(__file__)))
+    final_directory = os.path.join(
+        current_directory,
+        rf'../{path_relative_to_project_root}'
+    )
+
+    return final_directory
+
 def import_model_and_tokenizer(model: ModelConfig, access_token: str = None):
     bnb_config = BitsAndBytesConfig(
         load_in_4bit=True,

@@ -4,37 +4,32 @@ from data.data_processor import (
     get_questions_from_list,
     get_questions_from_dict,
 )
+from src.utils import get_absolute_path
 
-mistral_id = "mistral"
+from dotenv import dotenv_values
+CONFIG = dotenv_values(get_absolute_path(".configurations"))
+
 llama2_id = "llama2"
-zephyr_id = "zephyr"
 llama_2_70b_id = "llama2_70b"
 llama_id = "llama-65b"
-access_token = "YOUR_ACCESS_TOKEN"
-file_path = "PATH_TO_THE_FILE"
 
-file_path = "PATH_TO_WIKIDATA_DATASET"
-file_path_multi = "PATH_TO_MULTI_QA_DATASET"
-file_path_wikidata_categories = "PATH_TO_WIKIDATA_CATEGORIES_DATASET"
+hf_access_token = CONFIG["HF_API_KEY"]
+openain_access_token = CONFIG["OPENAI_API_KEY"]
+
+file_path_wikidata = get_absolute_path("dataset/wikidata_questions.json")
+file_path_multispan = get_absolute_path("dataset/multispanqa_dataset.json")
+file_path_wikidata_categories = get_absolute_path("dataset/wikidata_category_dataset.json")
 
 wikidata_dataset = "wikidata"
 multi_qa_dataset = "multi_qa"
 wikidata_category_dataset = "wikidata_category"
-access_token = "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"
 
-file_path = "./dataset/multispanqa_dataset.json"
-task = multi_qa_dataset
+task = wikidata_dataset
 
 valid_combinations = {
     ("llama2", "wikidata", "two_step"),
     ("llama2", "wikidata", "joint"),
     ("llama2", "multi_qa", "two_step"),
-    ("zephyr", "wikidata", "two_step"),
-    ("zephyr", "wikidata", "joint"),
-    ("zephyr", "multi_qa", "two_step"),
-    ("mistral", "wikidata", "two_step"),
-    ("mistral", "wikidata", "joint"),
-    ("mistral", "multi_qa", "two_step"),
     ("llama2_70b", "wikidata", "two_step"),
     ("llama2_70b", "wikidata", "joint"),
     ("llama2_70b", "multi_qa", "two_step"),
@@ -45,7 +40,7 @@ valid_combinations = {
 }
 
 
-data = read_json(file_path)
+data = read_json(file_path_wikidata)
 if task == wikidata_dataset:
     questions = get_questions_from_dict(data)
 else:
@@ -58,6 +53,6 @@ chain = ChainOfVerification(
     task=task,
     setting="two_step",
     questions=questions,
-    access_token=access_token,
+    access_token=hf_access_token,
 )
 chain.run_chain()
