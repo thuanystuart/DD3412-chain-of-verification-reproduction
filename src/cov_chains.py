@@ -13,7 +13,57 @@ from src.utils import (
 
 class ChainOfVerification:
     def __init__(
-        self, model_id, top_p, temperature, task, setting, questions, access_token
+        self, model_id, top_p, temperature, task, setting, questions, hf_access_token
+    ):
+        raise NotImplementedError("Subclasses must implement this method.")
+
+    def generate_response(self, prompt: str, max_tokens: int) -> str:
+        raise NotImplementedError("Subclasses must implement this method.")
+
+    def get_baseline_tokens(self, question: str) -> str:
+        raise NotImplementedError("Subclasses must implement this method.")
+
+    def run_two_step_chain(self, question: str, baseline_response: str):
+       raise NotImplementedError("Subclasses must implement this method.")
+
+    def run_joint_chain(self, question: str, baseline_response: str):
+        raise NotImplementedError("Subclasses must implement this method.")
+
+    def print_result(self, result: Dict[str, str]):
+        raise NotImplementedError("Subclasses must implement this method.")
+
+    def run_chain(self):
+        raise NotImplementedError("Subclasses must implement this method.")
+    
+
+class ChainOfVerificationOpenAI(ChainOfVerification):
+    def __init__(
+        self, model_id, top_p, temperature, task, setting, questions, hf_access_token
+    ):
+        raise NotImplementedError("Subclasses must implement this method.")
+
+    def generate_response(self, prompt: str, max_tokens: int) -> str:
+        raise NotImplementedError("Subclasses must implement this method.")
+
+    def get_baseline_tokens(self, question: str) -> str:
+        raise NotImplementedError("Subclasses must implement this method.")
+
+    def run_two_step_chain(self, question: str, baseline_response: str):
+       raise NotImplementedError("Subclasses must implement this method.")
+
+    def run_joint_chain(self, question: str, baseline_response: str):
+        raise NotImplementedError("Subclasses must implement this method.")
+
+    def print_result(self, result: Dict[str, str]):
+        raise NotImplementedError("Subclasses must implement this method.")
+
+    def run_chain(self):
+        raise NotImplementedError("Subclasses must implement this method.")
+
+
+class ChainOfVerificationHuggingFace(ChainOfVerification):
+    def __init__(
+        self, model_id, top_p, temperature, task, setting, questions, hf_access_token
     ):
         self.model_id = model_id
         self.model_config: ModelConfig = MODEL_MAPPING.get(model_id, None)
@@ -37,13 +87,13 @@ class ChainOfVerification:
             )
             sys.exit()
 
-        self.access_token = access_token
+        self.hf_access_token = hf_access_token
         self.questions = questions
         self.top_p = top_p
         self.temperature = temperature
 
         self.model, self.tokenizer = import_model_and_tokenizer(
-            self.model_config, access_token=self.access_token
+            self.model_config, access_token=self.hf_access_token
         )
 
     def generate_response(self, prompt: str, max_tokens: int) -> str:

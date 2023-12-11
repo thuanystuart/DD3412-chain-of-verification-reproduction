@@ -1,4 +1,4 @@
-from src.cov_chains import ChainOfVerification
+from src.cov_chains import ChainOfVerificationHuggingFace, ChainOfVerificationOpenAI
 from data.data_processor import (
     read_json,
     get_questions_from_list,
@@ -46,13 +46,25 @@ if task == wikidata_dataset:
 else:
     questions = get_questions_from_list(data)
 
-chain = ChainOfVerification(
+chain_hf = ChainOfVerificationHuggingFace(
     model_id=llama2_id,
     top_p=0.9,
     temperature=0.07,
     task=task,
     setting="two_step",
     questions=questions,
-    access_token=hf_access_token,
+    hf_access_token=hf_access_token,
 )
-chain.run_chain()
+chain_hf.run_chain()
+
+
+chain_openai = ChainOfVerificationOpenAI(
+    model_id=llama2_id,
+    top_p=0.9,
+    temperature=0.07,
+    task=task,
+    setting="two_step",
+    questions=questions,
+    hf_access_token=hf_access_token,
+)
+chain_openai.run_chain()
