@@ -11,3 +11,4 @@ sparqlwrapper
 openai
 python-dotenv
 jsonlines
+langchain
