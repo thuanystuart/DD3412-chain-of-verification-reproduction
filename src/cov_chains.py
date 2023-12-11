@@ -35,18 +35,96 @@ class ChainOfVerification:
 
         self.questions = questions
         
-
-    def generate_response(self, prompt: str, max_tokens: int) -> str:
+    def call_llm(self, prompt: str, max_tokens: int) -> str:
         raise NotImplementedError("Subclasses must implement this method.")
+    
+    def process_prompt(self, prompt, command) -> str:
+        raise NotImplementedError("Subclasses must implement this method.")
+    
+    def generate_response(self, prompt: str, max_tokens: int, command) -> str:
+        processed_prompt = self.process_prompt(prompt, command)
+        return self.call_llm(processed_prompt, max_tokens)
 
     def get_baseline_response(self, question: str) -> str:
-        raise NotImplementedError("Subclasses must implement this method.")
-
+        baseline_prompt = self.task_config.baseline_prompt.format(original_question=question)
+        return self.generate_response(
+            prompt=baseline_prompt,
+            max_tokens=self.task_config.max_tokens,
+            command=self.task_config.baseline_command
+        )
+        
     def run_two_step_chain(self, question: str, baseline_response: str):
-       raise NotImplementedError("Subclasses must implement this method.")
+        # Create Plan
+        plan_prompt = self.task_config.two_step.plan_prompt.format(
+            original_question=question,
+            baseline_response=baseline_response,
+        )
+        
+        plan_response = self.generate_response(
+            prompt=plan_prompt, 
+            max_tokens=self.task_config.two_step.max_tokens_plan,
+            command=self.task_config.two_step.plan_command
+        )
+
+        ## Execute Plan
+        execute_prompt = self.task_config.two_step.execute_prompt.format(verification_questions=plan_response)
+        
+        execute_response = self.generate_response(
+            prompt=execute_prompt, 
+            max_tokens=self.task_config.two_step.max_tokens_execute,
+            command=self.task_config.two_step.execute_command
+        )
+        
+        ## Verify
+        verify_prompt = self.task_config.two_step.verify_prompt.format(
+            original_question=question,
+            baseline_response=baseline_response,
+            verification_questions=plan_response,
+            verification_answers=execute_response,
+        )
+        
+        verify_response = self.generate_response(
+            prompt=verify_prompt, 
+            max_tokens=self.task_config.two_step.max_tokens_verify,
+            command=self.task_config.two_step.verify_command
+        )
+
+        return (
+            plan_response,
+            execute_response,
+            verify_response,
+        )
 
     def run_joint_chain(self, question: str, baseline_response: str):
-        raise NotImplementedError("Subclasses must implement this method.")
+        ## Plan and Execute
+        plan_and_execution_prompt = (
+            self.task_config.joint.plan_and_execute_prompt.format(
+                original_question=question,
+                baseline_response=baseline_response,
+            )
+        )
+        
+        plan_and_execution_response = self.generate_response(
+            prompt=plan_and_execution_prompt,
+            max_tokens=self.task_config.joint.max_tokens_plan_and_execute,
+            command=self.task_config.joint.plan_and_execute_command
+        )
+        
+        ## Verify 
+        verify_prompt = self.task_config.joint.verify_prompt.format(
+            original_question=question,
+            baseline_response=baseline_response,
+            verification_questions_and_answers=plan_and_execution_response,
+        )
+        
+        verify_response = self.generate_response(
+            prompt=verify_prompt, 
+            max_tokens=self.task_config.joint.max_tokens_verify,
+            command=self.task_config.joint.verify_command
+        )
+
+        return plan_and_execution_response, verify_response
+
 
     def print_result(self, result: Dict[str, str]):
         for key, value in result.items():

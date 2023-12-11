@@ -18,50 +18,10 @@ class ChainOfVerificationOpenAI(ChainOfVerification):
             max_tokens=500
         )
 
-    def generate_response(self, prompt: str, max_tokens: int) -> str:
+    def call_llm(self, prompt: str, max_tokens: int) -> str:
         llm_chain = PromptTemplate.from_template(prompt) | self.llm | StrOutputParser()
         return llm_chain.invoke({})
 
-    def get_baseline_response(self, question: str) -> str:
-        baseline_prompt = self.task_config.baseline_prompt.format(
-            original_question=question
-        )
-        return self.generate_response(baseline_prompt, self.task_config.max_tokens)
-
-    def run_two_step_chain(self, question: str, baseline_response: str):
-        # Create Plan
-        plan_prompt = self.task_config.two_step.plan_prompt.format(
-            original_question=question,
-            baseline_response=baseline_response,
-        )
-        plan_response = self.generate_response(plan_prompt, self.task_config.two_step.max_tokens_plan)
-        
-        ## Execute Plan
-        execute_prompt = self.task_config.two_step.execute_prompt.format(
-            verification_questions=plan_response
-        )
-        execute_response = self.generate_response(
-            execute_prompt, self.task_config.two_step.max_tokens_execute
-        )
-        
-        ## Verify
-        verify_prompt = self.task_config.two_step.verify_prompt.format(
-            original_question=question,
-            baseline_response=baseline_response,
-            verification_questions=plan_response,
-            verification_answers=execute_response,
-        )
-        verify_response = self.generate_response(
-            verify_prompt, self.task_config.two_step.max_tokens_verify
-        )
-        
-        return (
-            plan_response,
-            execute_response,
-            verify_response,
-        )
-        
-        
-    def run_joint_chain(self, question: str, baseline_response: str):
-        raise NotImplementedError("Subclasses must implement this method.")
-
+    def process_prompt(self, prompt, _) -> str:
+        # We do not need to do any processing here!
+        return prompt
