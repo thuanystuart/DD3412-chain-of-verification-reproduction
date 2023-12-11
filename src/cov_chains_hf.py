@@ -6,10 +6,8 @@ class ChainOfVerificationHuggingFace(ChainOfVerification):
     def __init__(
         self, model_id, top_p, temperature, task, setting, questions, hf_access_token
     ):
-        super().__init__(model_id, task, setting)
-        
+        super().__init__(model_id, task, setting, questions)
         self.hf_access_token = hf_access_token
-        self.questions = questions
         self.top_p = top_p
         self.temperature = temperature
 

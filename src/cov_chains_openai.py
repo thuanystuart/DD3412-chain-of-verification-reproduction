@@ -8,9 +8,8 @@ class ChainOfVerificationOpenAI(ChainOfVerification):
     def __init__(
         self, model_id, temperature, task, setting, questions, openai_access_token
     ):
-        super().__init__(model_id, task, setting)
+        super().__init__(model_id, task, setting, questions)
         self.openai_access_token = openai_access_token
-        self.questions = questions
         self.temperature = temperature
         
         self.llm = ChatOpenAI(
