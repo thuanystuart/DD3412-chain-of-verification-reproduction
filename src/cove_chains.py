@@ -148,7 +148,7 @@ class ChainOfVerification:
         execute_responses = []
         for planned_question in planned_questions:
             execute_prompt = self.task_config.factored.execute_prompt.format(
-                verification_questions=planned_question
+                verification_question=planned_question
             )
             execute_response = self.generate_response(
                 prompt=execute_prompt,

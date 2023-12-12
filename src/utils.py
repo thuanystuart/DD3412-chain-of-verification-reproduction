@@ -109,8 +109,8 @@ TASK_MAPPING = {
             max_tokens_verify=300,
         ),
     ),
-    "multi_qa": TaskConfig(
-        id="multi_qa",
+    "multispanqa": TaskConfig(
+        id="multispanqa",
         max_tokens=200,
         baseline_prompt=BASELINE_PROMPT_MULTI_QA,
         two_step=TwoStepConfig(
@@ -176,7 +176,7 @@ class ModelConfig:
 STD_PROMPT_FORMAT = """{prompt}"""
 GPT_PROMPT_FORMAT = """{prompt}\n\nAnswer:"""
 LLAMA_PROMPT_FORMAT = (
-    """<s>[INST] <<SYS>>{prompt}\n<</SYS>>\n{command}: [/INST]"""
+    """<s>[INST] <<SYS>>{prompt}\n<</SYS>>\n{command} [/INST]"""
 )
 MODEL_MAPPING = {
     "gpt3": ModelConfig(
