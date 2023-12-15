@@ -22,7 +22,7 @@ HF_API_KEY=hf_abc.......
 To execute CoVe, use the command below:
 
 ```bash
->> bash scripts/wikidat.sh # for wikidata task, and Llama2-70b model
+>> bash scripts/wikidata.sh # for wikidata task, and Llama2-70b model
 ```
 
 - Available models are: `llama2`, `llama2_70b`, `llama-65b`, `gpt3`
