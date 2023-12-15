@@ -56,7 +56,7 @@ if __name__ == "__main__":
     data = list(filter(lambda sample: sample["metadata"]["template"] == "_", data))
     data = list(filter(lambda sample: " or " not in sample["query"], data))
 
-    # filter for short answers <= 3 tokens
+    # filter for short answers
     data = list(
         filter(
             lambda sample: len(sample["docs"]) >= 6 and len(sample["docs"]) <= 10, data
